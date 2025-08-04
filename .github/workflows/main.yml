@@ -28,7 +28,7 @@ jobs:
               "ClashMi_Config.yaml":{
                 "proxy-providers": 
                   {
-                    "[1].exclude-filter": "123"
+                    "星链.exclude-filter": "123"
                   }   
               }
             }
