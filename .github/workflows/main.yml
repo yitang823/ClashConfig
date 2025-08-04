@@ -23,10 +23,10 @@ jobs:
           # Property Path - valid jsonPath expression
           propertyPath: tun
           # New property value
-          value: 789
+          value: 000000
           createPR: false
           masterBranchName: main
-          updateFile: true
+          updateFile: false
           
       - uses: exuanbo/actions-deploy-gist@v1.1.4
         with:
