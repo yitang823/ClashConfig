@@ -26,9 +26,8 @@ jobs:
           changes: |
             {
               "proxy-providers": {
-                "星链": {
+                "星链": 
                   "exclude-filter": "123"
-                  }
                 }
             }
 
