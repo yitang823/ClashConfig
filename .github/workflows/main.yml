@@ -25,6 +25,7 @@ jobs:
           # New property value
           value: 456
           createPR: true
+          token: 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
  
           
       - uses: exuanbo/actions-deploy-gist@v1.1.4
