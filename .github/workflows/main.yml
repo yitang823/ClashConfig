@@ -19,7 +19,7 @@ jobs:
           # YAML file to read from
           file: ClashMi_Config.yaml
           # List of keys to follow
-          key-path: proxy-providers
+          key-path: "proxy-providers"
 
     
       - name: YAML Update Action
