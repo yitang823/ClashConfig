@@ -11,25 +11,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      #- permissions:
-      #      contents: write
-      #      pull-requests: write
-      
-      #- name: YAML Update Action
-      #  uses: fjogeleit/yaml-update-action@v0.16.0
-      #  with:
-      #    # YAML file which should be updated
-      #    valueFile: ClashMi_Config.yaml
-      #    createPR: false
-      #    masterBranchName: main
-      #    updateFile: false
-      #    commitUserName: yitang823
-      #    commitUserEmail: yitang823@gamil.com
-      #    message: test
-      #    changes: |
-      #      {
-      #        "tun": 5676879
-      #      }
+    
+      - name: YAML Update Action
+        uses: fjogeleit/yaml-update-action@v0.16.0
+        with:
+          # YAML file which should be updated
+          valueFile: ClashMi_Config.yaml
+          createPR: false
+          masterBranchName: main
+          updateFile: false
+          commitUserName: yitang823
+          commitUserEmail: yitang823@gamil.com
+          message: test
+          changes: |
+            {
+              "proxy-providers": {
+                "星链": {
+                  "exclude-filter": "123"
+                  }
+                }
+            }
+
           
       - uses: exuanbo/actions-deploy-gist@v1.1.4
         with:
