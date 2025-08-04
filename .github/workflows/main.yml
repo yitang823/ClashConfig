@@ -22,7 +22,7 @@ jobs:
           commitUserName: yitang823
           commitUserEmail: yitang823@gamil.com
           message: test
-          propertyPath: 'proxy-providers.Mitce.exclude-filter'
+          propertyPath: "#{$proxy-providers}.Mitce.exclude-filter"
           value: "123"
         
 
