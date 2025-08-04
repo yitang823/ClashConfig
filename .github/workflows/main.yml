@@ -22,14 +22,9 @@ jobs:
           commitUserName: yitang823
           commitUserEmail: yitang823@gamil.com
           message: test
-          changes: |
-            {
-              "ClashMi_Config.yaml":{
-                "proxy-providers.Mitce": { 
-                  "exclude-filter": "123"
-                  } 
-              }
-            }
+          propertyPath: 'proxy-providers.Mitce.exclude-filter'
+          value: "123"
+        
 
       - uses: exuanbo/actions-deploy-gist@v1.1.4
         with:
