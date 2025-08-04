@@ -11,15 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Read yaml
+      - name: YAML Parser
         # You may pin to the exact commit or the version.
-        # uses: jbutcher5/read-yaml@39cf058cf4ea746b66d7f49f4da10a81204450cc
-        uses: jbutcher5/read-yaml@1.6
+        # uses: martinhaintz/ga-yaml-parser@ab949f97a775be9797b2e82235ba4eca9dea1c11
+        uses: martinhaintz/ga-yaml-parser@v0.1.2
         with:
-          # YAML file to read from
+          # YAML file which should parsed
           file: ClashMi_Config.yaml
-          # List of keys to follow
-          key-path: "proxy-providers"
 
     
       - name: YAML Update Action
