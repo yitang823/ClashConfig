@@ -25,10 +25,9 @@ jobs:
           message: test
           changes: |
             {
-              "proxy-providers": {
+              "proxy-providers": 
                 "星链": 
                   "exclude-filter": "123"
-                }
             }
 
           
