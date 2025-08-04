@@ -26,11 +26,14 @@ jobs:
           changes: |
             {
               "proxy-providers": 
-                "星链": 
-                  "exclude-filter": "123"
+                {
+                  "星链": 
+                    {
+                      "exclude-filter": "123"
+                    }
+                  }
             }
 
-          
       - uses: exuanbo/actions-deploy-gist@v1.1.4
         with:
           # Set personal access token for updating gist.
