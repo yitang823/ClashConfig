@@ -11,6 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: YAML to JSON
+      # You may pin to the exact commit or the version.
+      # uses: NeddM/YAML-to-JSON@45522149ebf558eb6ac95ef827d328cc9a585474
+        uses: NeddM/YAML-to-JSON@v1.1
+        with:
+          # The YAML file path
+          input: ClashMi_Config.yaml
+          # The JSON file path
+          output: ClashMi_Config.json
+
     
       - name: YAML Update Action
         uses: fjogeleit/yaml-update-action@v0.16.0
