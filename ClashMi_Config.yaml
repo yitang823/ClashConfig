@@ -1,4 +1,4 @@
-tun: '789'
+tun: '0'
 proxy-providers:
   Mitce:
     url: https://app.mitce.net/?sid=145054&token=d70484910852
