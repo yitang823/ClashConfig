@@ -25,10 +25,12 @@ jobs:
           message: test
           changes: |
             {
+              "ClashMi_Config.yaml":{
                 "proxy-providers": 
                   {
                     "[1].exclude-filter": "123"
-                  }
+                  }   
+              }
             }
 
       - uses: exuanbo/actions-deploy-gist@v1.1.4
