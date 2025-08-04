@@ -28,7 +28,9 @@ jobs:
               "ClashMi_Config.yaml":{
                 "proxy-providers": 
                   {
-                    "Mitce.exclude-filter": "123"
+                    "Mitce" : {
+                       "exclude-filter": "123"
+                        }
                   }   
               }
             }
