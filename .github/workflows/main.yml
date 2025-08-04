@@ -25,6 +25,7 @@ jobs:
           # New property value
           value: 456
           createPR: true
+          masterBranchName: main
           
       - uses: exuanbo/actions-deploy-gist@v1.1.4
         with:
