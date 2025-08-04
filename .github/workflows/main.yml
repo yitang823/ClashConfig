@@ -21,12 +21,19 @@ jobs:
           # YAML file which should be updated
           valueFile: ClashMi_Config.yaml
           # Property Path - valid jsonPath expression
-          propertyPath: tun
+          #propertyPath: tun
           # New property value
-          value: 000000
+          #value: 9874234
           createPR: false
           masterBranchName: main
           updateFile: false
+          commitUserName: yitang823
+          commitUserEmail: yitang823@gamil.com
+          message: test
+          changes: |
+            {
+              "tun": 5676879
+            }
           
       - uses: exuanbo/actions-deploy-gist@v1.1.4
         with:
