@@ -106,7 +106,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: 直连
     override:
-      additional-prefix: "[试用]-[漏网之鱼] "
+      additional-prefix: "[试用]-[漏网] "
 
 
 proxies:
