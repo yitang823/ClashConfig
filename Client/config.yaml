@@ -1,6 +1,4 @@
-default-proxy-providers: 
-#default-proxy-providers: 
-  &default-proxy-providers
+default-proxy-providers: &default-proxy-providers
   type: http
   interval: 7200
   health-check:
@@ -180,9 +178,11 @@ dns:
     - +.dler.cloud
     - +.0tk8a3a1q4t94dler.com
     - +.aerianas.top
-    - +. 1163088.xyz
+
     - teams.events.data.microsoft.com
     - api.flightproxy.teams.microsoft.com
+
+    - +. 1163088.xyz
 
   default-nameserver:
     - '114.114.114.114#DIRECT'
@@ -255,38 +255,27 @@ proxy-groups:
   - {name: Amazon, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/amazon.svg"}
   - {name: Apple, <<: *default,   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"}
   - {name: Microsoft, <<: *default,    "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"} 
- # - {name: Spotify, <<: *default}
-  #- {name: Steam, <<: *default}
   - {name: Game, <<: *default, "icon":"https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/xbox.svg"}
   
-  #- {name: Claude, <<: *default}
-  #- {name: Crypto, <<: *default}
-  #- {name: Perplexity, <<: *default}
   - {name: 香港-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg"}
   - {name: 日本-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"}
   - {name: 新加坡-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/sg.svg"}
   - {name: 美国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$",   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg"}
   
   - {name: 台湾-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg"}
-  - {name: 漏网之鱼, type: select, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$", 
+  - {name: 漏网之鱼, type: select, include-all: true, tolerance: 50, interval: 300, 
+    filter: "^((?!(广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$", 
     "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg",
     proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动]}  
-  
-  #- {name: IPV6, type: select, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg",  filter: "^((?!(拒绝|星链)).)*$"}
-  - {name: IPV6, type:  url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg",  filter:  "(?=.*(IPV6|IPv6)).*$"}
-  
+
   - {name: 国内, <<: *default,"icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
   - {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
-
-  #- {name: MyDomain, type: url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter: "(?=.*(土耳其TR01-1x|马来西亚 1.5|1.5X 英国 02)).*$"}
-
-  #- {name: 私人, type: url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter: "(?=.*(土耳其TR01-1x|马来西亚 1.5|1.5X 英国 02)).*$", hidden: true} 
-  #- {name: MyDomain, type: select, include-all: true,  interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg"}
-  
   - {name: 所有-手动, type: select, include-all: true, filter: "^((?!(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  
   - {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
-
+  - {name: IPV6, type:  url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg",  filter:  "(?=.*(IPV6|IPv6)).*$"}
+  
   #- {name: 加拿大-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(加拿大)).*$"}
   #- {name: 亚洲-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea|印度|马来|印尼|泰国|澳门|柬埔寨|菲律宾|越南|孟家拉|阿联酋|沙特|曼谷)).*$"}
   #- {name: 欧洲-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(英国|UK|法国|FR|fr|德国|俄罗斯|DE|葡萄牙|冰岛|卢森堡|瑞士|西班牙|spain|土耳其|荷兰|瑞士|爱尔兰|意大利|西班牙|瑞典|挪威|冰岛|捷克|波兰|匈牙利|摩尔|乌克兰|立陶宛|保加利亚|以色列|希腊|阿塞拜疆|吉尔吉斯|哈萨)).*$"}
@@ -332,34 +321,31 @@ rules:
   - DOMAIN-SUFFIX, digitalplat.org, 国外
   - DOMAIN-SUFFIX, huanxiong.buzz, 国外
 
+
+  - RULE-SET,Google / Domain,Google
+  - RULE-SET,Google / IP,Google,no-resolve
+  - RULE-SET,Youtube / Domain,YouTube
+  - RULE-SET,GitHub / Domain,GitHub
   - RULE-SET,ChatGPT / Domain,ChatGPT
   - RULE-SET,Copilot / Domain,ChatGPT
-  - RULE-SET,Meta AI / Domain,Meta AI
-  - RULE-SET,GitHub / Domain,GitHub
+
   - RULE-SET,Telegram / Domain,Telegram
   - RULE-SET,Telegram / IP,Telegram,no-resolve
   - RULE-SET,Twitter / Domain,Twitter(X)
   - RULE-SET,WhatsApp / Domain,WhatsApp
-  - RULE-SET,Facebook / Domain,Facebook
-  - RULE-SET,Amazon / Domain,Amazon
+  - RULE-SET,Facebook / Domain,Facebook  
 
-  #- PROCESS-NAME,nc,DIRECT
-  - RULE-SET,Block / Domain, Block 
-
-
-  - RULE-SET,Apple / Domain,Apple
-  - RULE-SET,Apple-CN / Domain,Apple  
-  - RULE-SET,Microsoft / Domain,Microsoft
-  #- RULE-SET,OKX / Domain,Crypto
-  #- RULE-SET,Bybit / Domain,Crypto
-  #- RULE-SET,Binance / Domain,Crypto
-  - RULE-SET,Youtube / Domain,YouTube
+    
   - RULE-SET,TikTok / Domain,TikTok
+  - RULE-SET,Meta AI / Domain,Meta AI
   - RULE-SET,Netflix / Domain,Netflix
   - RULE-SET,Netflix / IP,Netflix,no-resolve
   - RULE-SET,Disney / Domain,Disney
-  #- RULE-SET,HBO / Domain,HBO
-  #- RULE-SET,Spotify / Domain,Spotify
+
+  - RULE-SET,Amazon / Domain,Amazon
+  - RULE-SET,Apple / Domain,Apple
+  - RULE-SET,Apple-CN / Domain,Apple  
+  - RULE-SET,Microsoft / Domain,Microsoft
   - RULE-SET,Steam / Domain,Game
   - RULE-SET,Epic / Domain,Game
   - RULE-SET,EA / Domain,Game
@@ -367,15 +353,15 @@ rules:
   - RULE-SET,UBI / Domain,Game
   - RULE-SET,PlayStation / Domain,Game
   - RULE-SET,Nintend / Domain,Game
-  - RULE-SET,Google / Domain,Google
-  - RULE-SET,Google / IP,Google,no-resolve
-  - RULE-SET,Proxy / Domain,国外
-  - RULE-SET,Globe / Domain,国外  
-  #- RULE-SET,tld-not-cn,国外
+
   - RULE-SET,Direct / Domain,国内
   - RULE-SET,China / Domain,国内
   - RULE-SET,China / IP,国内,no-resolve
   - RULE-SET,Private / Domain,国内
+  - RULE-SET,Proxy / Domain,国外
+  - RULE-SET,Globe / Domain,国外  
+  - RULE-SET,Block / Domain, Block 
+
   - GEOSITE,CN,国内
   - GEOIP,LAN,国内,no-resolve
   - GEOIP,CN,国内,no-resolve
