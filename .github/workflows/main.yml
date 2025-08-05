@@ -1,7 +1,9 @@
 name: Deploy to Gist
 run-name: Sync gist file 'Mihomo_Config_Client'
-on: [push]
-
+#on: [push]
+on:
+  label:
+    types: [created, deleted]
 jobs:
   to-gist:
     runs-on: ubuntu-latest
