@@ -45,7 +45,7 @@ proxy-providers:
       additional-prefix: "[Mitce] "
 
 #Temporary
-  元宝:
+  元宝机场:
     url: https://di4e.kefu.email/api/yuanbao/1b68d38e748557f1a8ebb1dae16c536d
     <<: *default-proxy-providers
     proxy: 直连 
@@ -94,12 +94,19 @@ proxy-providers:
     override:
       additional-prefix: "[试用]-[Kitty Cloud] "   
 
-  # 浣熊机场:
-  #   url: http://sub.huanxiong.pics/xiaohuanxiong/bbb508028a88bf8e86d8a14156f7a1cb
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     additional-prefix: "[试用]-[浣熊机场] "
+  HGFAST:
+    url: https://gogof.hgfastgo.com/api/v1/client/subscribe?token=1267fbf2f3f6c41994817c502b5a10fb
+    <<: *default-proxy-providers
+    proxy: 直连
+    override:
+      additional-prefix: "[试用]-[HGFAST] " 
+      
+  漏网之鱼:
+    url: https://mxemx.kovmk.website/api/v1/client/subscribe?token=5df6a64615e10c826f1f1a4ab253e4a8
+    <<: *default-proxy-providers
+    proxy: 直连
+    override:
+      additional-prefix: "[试用]-[漏网之鱼] "
 
 
 proxies:
@@ -320,7 +327,7 @@ rules:
   - DOMAIN-SUFFIX, zongyunti.site, 国外
   - DOMAIN-SUFFIX, digitalplat.org, 国外
   - DOMAIN-SUFFIX, huanxiong.buzz, 国外
-
+  - DOMAIN-SUFFIX, cukug.website, 国外
 
   - RULE-SET,Google / Domain,Google
   - RULE-SET,Google / IP,Google,no-resolve
