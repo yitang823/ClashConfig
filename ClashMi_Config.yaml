@@ -5,7 +5,7 @@ default-proxy-providers: &default-proxy-providers
     enable: true
     url: https://www.gstatic.com/generate_204
     interval: 180
-  exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02"
+  exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城"
 
 proxy-providers:
 #Long-Term
@@ -278,12 +278,15 @@ proxy-groups:
   - {name: 国内, <<: *default,"icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
   - {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
   - {name: 所有-手动, type: select, include-all: true, filter: "^((?!(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
-  - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, proxies: [星舰云-自动,星链-自动,HGFAST-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
   - {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
   - {name: IPV6, type:  url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg",  filter:  "(?=.*(IPV6|IPv6)).*$"}
   
-  #- {name: 加拿大-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(加拿大)).*$"}
+  - {name: HGFAST-自动, hidden: true, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?(HGFAST)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 星舰云-自动, hidden: true, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?(星舰云)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 星链-自动, hidden: true, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?(星链)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  
   #- {name: 亚洲-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea|印度|马来|印尼|泰国|澳门|柬埔寨|菲律宾|越南|孟家拉|阿联酋|沙特|曼谷)).*$"}
   #- {name: 欧洲-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(英国|UK|法国|FR|fr|德国|俄罗斯|DE|葡萄牙|冰岛|卢森堡|瑞士|西班牙|spain|土耳其|荷兰|瑞士|爱尔兰|意大利|西班牙|瑞典|挪威|冰岛|捷克|波兰|匈牙利|摩尔|乌克兰|立陶宛|保加利亚|以色列|希腊|阿塞拜疆|吉尔吉斯|哈萨)).*$"}
   #- {name: 美洲-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(加拿大|墨西哥|秘鲁|巴西|智利|哥伦比亚)).*$"}
