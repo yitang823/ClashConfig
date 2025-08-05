@@ -101,7 +101,7 @@ proxy-providers:
     override:
       additional-prefix: "[试用]-[HGFAST] " 
       
-  漏网之鱼:
+  漏网:
     url: https://mxemx.kovmk.website/api/v1/client/subscribe?token=5df6a64615e10c826f1f1a4ab253e4a8
     <<: *default-proxy-providers
     proxy: 直连
