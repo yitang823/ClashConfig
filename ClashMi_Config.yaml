@@ -279,7 +279,7 @@ proxy-groups:
 
   - {name: 国内, <<: *default,"icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
   - {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
-  - {name: 所有-手动, type: select, include-all: true, filter: "^((?!(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 所有-手动, type: select, include-all: true, proxies: [星舰云-自动,星链-自动,HGFAST-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, proxies: [星舰云-自动,星链-自动,HGFAST-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
   - {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
