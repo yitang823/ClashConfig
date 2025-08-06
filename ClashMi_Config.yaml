@@ -254,7 +254,7 @@ ipv6: false
 # TUN 模块
 # ========================
 tun:
-  enable: false #true
+  enable: true #true
   stack: mixed
   device: Mihomo-Tun
   endpoint-independent-nat: true
