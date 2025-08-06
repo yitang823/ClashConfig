@@ -251,7 +251,6 @@ profile:
 # ========================
 # Sniffer 模块
 # ========================
-
 sniffer:
   enable: true
   sniff:
@@ -350,6 +349,7 @@ rules:
   - DOMAIN-KEYWORD, wogg, DIRECT
   
   - DOMAIN-SUFFIX, 1163088.xyz, DIRECT
+  - DOMAIN-SUFFIX, yitang.qzz.io, DIRECT
 
   - DOMAIN-SUFFIX, dport.top, 国外
   - DOMAIN-SUFFIX, 688997.xyz, 国外
