@@ -6,12 +6,15 @@ default-proxy-providers: &default-proxy-providers
     url: https://www.gstatic.com/generate_204
     interval: 180
   exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城"
-
+  override:
+    udp: true
+    ip-version: ipv6-prefer
+    
 proxy-providers:
 #Long-Term
   星链:
     url: https://xship.top/v1/subscribe?starlink=0-MIp_48V1G5mPjY5FkdsgTp
-    proxy: 直连
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
       additional-prefix: "[星链] "
@@ -25,21 +28,21 @@ proxy-providers:
 
   牛逼:
     url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=cdb94063e8fcc0d6da6b857e0369b315
-    proxy: 直连
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
       additional-prefix: "[牛逼] "
 
   纵云梯:
     url: https://wub.zongyunti.site/api/v1/client/subscribe?token=f102d379571c96f175a3d3996f7eb194
-    proxy: 直连
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
       additional-prefix: "[纵云梯] "      
 
   Mitce:
     url: https://app.mitce.net/?sid=145054&token=d70484910852
-    proxy: 直连
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
       additional-prefix: "[Mitce] "
@@ -48,19 +51,19 @@ proxy-providers:
   元宝机场:
     url: https://di4e.kefu.email/api/yuanbao/1b68d38e748557f1a8ebb1dae16c536d
     <<: *default-proxy-providers
-    proxy: 直连 
+    proxy: DIRECT 
     override:
       additional-prefix: "[试用]-[元宝机场] "
       
   星港机场:
-    url: https://1a.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
+    url: https://2c.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
     <<: *default-proxy-providers
     proxy: 国外
     override:
       additional-prefix: "[试用]-[星港机场] "
       
   NewGate:
-    url: https://new.crosswall.dpdns.org/submit/21e81f4efe533583ccb4a6e218304e5e
+    url: https://subme.crosswall.dpdns.org/submit/21e81f4efe533583ccb4a6e218304e5e
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -76,12 +79,12 @@ proxy-providers:
   白嫖机场:
     url: https://www.1112244.xyz/baipiao/803df9378f8b3e91894fa74be04b8f93
     <<: *default-proxy-providers
-    proxy: 直连
+    proxy: DIRECT
     override:
       additional-prefix: "[试用]-[白嫖机场] "  
       
   数字航站:
-    url: https://gw.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
+    url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -90,14 +93,14 @@ proxy-providers:
   Kitty Cloud:
     url: https://kittycloud.xx.kg/api/86cef832c6afac6c7c9244fced087ed6
     <<: *default-proxy-providers
-    proxy: 直连
+    proxy: DIRECT
     override:
       additional-prefix: "[试用]-[Kitty Cloud] "   
 
   HGFAST:
     url: https://gogof.hgfastgo.com/api/v1/client/subscribe?token=1267fbf2f3f6c41994817c502b5a10fb
     <<: *default-proxy-providers
-    proxy: 直连
+    proxy: DIRECT
     override:
       additional-prefix: "[试用]-[HGFAST] " 
       
