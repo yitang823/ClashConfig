@@ -6,10 +6,11 @@ default-proxy-providers: &default-proxy-providers
     url: https://www.gstatic.com/generate_204
     interval: 180
   exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城"
-  override:
-    udp: true
-    ip-version: ipv6-prefer
-    
+
+default-proxy-providers-override: &default-proxy-providers-override
+  udp: true
+  ip-version: ipv6-prefer
+  
 proxy-providers:
 #Long-Term
   星链:
@@ -17,6 +18,7 @@ proxy-providers:
     proxy: DIRECT
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[星链] "
 
   星舰云:
@@ -24,6 +26,7 @@ proxy-providers:
     proxy: 国外
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[星舰云] "
 
   牛逼:
@@ -31,6 +34,7 @@ proxy-providers:
     proxy: DIRECT
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
   纵云梯:
@@ -38,6 +42,7 @@ proxy-providers:
     proxy: DIRECT
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[纵云梯] "      
 
   Mitce:
@@ -45,6 +50,7 @@ proxy-providers:
     proxy: DIRECT
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[Mitce] "
 
 #Temporary
@@ -53,6 +59,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: DIRECT 
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[元宝机场] "
       
   星港机场:
@@ -60,6 +67,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: 国外
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
       
   NewGate:
@@ -67,6 +75,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: 国外
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[NewGate] "
 
   Nexia:
@@ -74,6 +83,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: 国外
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[Nexia] "
 
   白嫖机场:
@@ -81,6 +91,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[白嫖机场] "  
       
   数字航站:
@@ -88,6 +99,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: 国外
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[数字航站] "        
       
   Kitty Cloud:
@@ -95,6 +107,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[Kitty Cloud] "   
 
   HGFAST:
@@ -102,6 +115,7 @@ proxy-providers:
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[HGFAST] " 
       
   #漏网:
@@ -231,6 +245,19 @@ tun:
 profile:
   store-selected: true
   store-fake-ip: true
+
+# ========================
+# Sniffer 模块
+# ========================
+
+sniffer:
+  enable: true
+  sniff:
+    TLS:
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
 
 # ========================
 # 策略组定义
