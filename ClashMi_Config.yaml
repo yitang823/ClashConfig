@@ -233,7 +233,7 @@ ipv6: true
 # TUN 模块
 # ========================
 tun:
-  enable: true
+  enable: false #true
   stack: mixed
   device: utun
   endpoint-independent-nat: true
