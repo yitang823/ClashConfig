@@ -342,6 +342,7 @@ defaultType-Test: &defaultTypeTest
   url: http://www.gstatic.com/generate_204
   lazy: false
   <<: *useproxies
+  exclude-filter: "星链"
 
 
   
