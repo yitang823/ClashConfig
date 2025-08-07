@@ -336,24 +336,24 @@ defaultType-Test: &defaultTypeTest
   #proxies: [直连,所有-手动,所有-自动,香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,亚洲-自动,欧洲-自动,美洲-自动,漏网之鱼,拒绝]
 proxy-groups:
   - {name: Google, <<: *default, <<: *defaultproxies, <<: *useproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"}
-  - {name: YouTube, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"}
-  - {name: GitHub, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/github.svg"}
+  - {name: YouTube, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"}
+  - {name: GitHub, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/github.svg"}
   - {name: ChatGPT, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg"}
   
-  - {name: Telegram, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"}
-  - {name: Twitter(X), <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/twitter.svg"}
-  - {name: WhatsApp, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/whatsapp.svg"}
-  - {name: Facebook, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/facebook.svg"}
+  - {name: Telegram, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"}
+  - {name: Twitter(X), <<: *default, <<: *defaultproxies,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/twitter.svg"}
+  - {name: WhatsApp, <<: *default, <<: *defaultproxies,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/whatsapp.svg"}
+  - {name: Facebook, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/facebook.svg"}
   
-  - {name: TikTok, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/tiktok.svg"}
-  - {name: Meta AI, <<: *default,   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/instagram.svg"}
-  - {name: Netflix, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/netflix.svg"} 
-  - {name: Disney, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/disney_plus.svg"} 
+  - {name: TikTok, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/tiktok.svg"}
+  - {name: Meta AI, <<: *default,  <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/instagram.svg"}
+  - {name: Netflix, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/netflix.svg"} 
+  - {name: Disney, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/disney_plus.svg"} 
 
-  - {name: Amazon, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/amazon.svg"}
-  - {name: Apple, <<: *default,   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"}
-  - {name: Microsoft, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"} 
-  - {name: Game, <<: *default, "icon":"https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/xbox.svg"}
+  - {name: Amazon, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/amazon.svg"}
+  - {name: Apple, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"}
+  - {name: Microsoft, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"} 
+  - {name: Game, <<: *default, <<: *defaultproxies, "icon":"https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/xbox.svg"}
   
   - {name: 香港-自动, <<: *defaultTypeTest, filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg"}
   - {name: 日本-自动, <<: *defaultTypeTest, filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"}
@@ -366,8 +366,8 @@ proxy-groups:
     "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg",
     proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,试用-自动]}  
 
-  - {name: 国内, <<: *default,"icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
-  - {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
+  - {name: 国内, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
+  - {name: 国外, <<: *default, <<: *defaultproxies, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
   - {name: 所有-手动, type: select, include-all: true, proxies: [星舰云-自动,星链-自动,HGFAST-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 所有-自动, <<: *defaultTypeTest, proxies: [星舰云-自动,星链-自动,HGFAST-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
