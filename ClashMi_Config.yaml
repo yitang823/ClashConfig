@@ -1,3 +1,7 @@
+# ========================
+# 代理集合定义
+# ========================
+
 default-proxy-providers: &default-proxy-providers
   type: http
   interval: 7200
@@ -5,6 +9,7 @@ default-proxy-providers: &default-proxy-providers
     enable: true
     url: https://www.gstatic.com/generate_204
     interval: 180
+    lazy: false
   exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城"
 
 default-proxy-providers-override: &default-proxy-providers-override
@@ -118,12 +123,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[HGFAST] " 
       
-  #漏网:
-  #  url: https://mxemx.kovmk.website/api/v1/client/subscribe?token=5df6a64615e10c826f1f1a4ab253e4a8
-   # <<: *default-proxy-providers
-  #  proxy: 直连
-   # override:
-   #   additional-prefix: "[试用]-[漏网] "
+  暴雪机场:
+    url: https://tyuiokljhcgfxrtfyuxias.bxvpn.xyz/baofengxue/98a8052bae4bb4ee5a77ff4a69b1ca1a
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[暴雪机场] " 
 
 
 proxies:
@@ -283,7 +289,7 @@ sniffer:
       override-destination: true
 
 # ========================
-# 策略组定义
+# 代理组定义
 # ========================
 default: &default
   type: select
@@ -337,7 +343,7 @@ proxy-groups:
   - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, proxies: [星舰云-自动,星链-自动,HGFAST-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
   - {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
-  - {name: IPV6, type:  url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg",  proxies: [直连], filter:  "(?=.*(IPV6|IPv6)).*$"}
+  - {name: IPV6, type:  url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter:  "(?=.*(IPV6|IPv6)).*$"}
   
   - {name: HGFAST-自动, hidden: true, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?(HGFAST)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星舰云-自动, hidden: true, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?(星舰云)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
@@ -349,7 +355,7 @@ proxy-groups:
 
 
 # ========================
-# 规则引擎（rules）
+# 路由规则
 # ========================
 rules:
   # 自定义规则
@@ -435,7 +441,7 @@ rules:
   - MATCH,漏网之鱼
 
 # ========================
-# 规则集提供者
+# 规则集合
 # ========================
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
