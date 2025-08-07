@@ -336,7 +336,7 @@ defaultOthers: &defaultOthers
 # Type: url-test
 defaultType-Test: &defaultTypeTest
   type: url-test
-  include-all: true
+  #include-all: true
   interval: 180
   tolerance: 50
   url: http://www.gstatic.com/generate_204
