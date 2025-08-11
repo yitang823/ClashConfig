@@ -91,13 +91,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[Nexia] "
 
-  白嫖机场:
-    url: https://www.1112244.xyz/baipiao/803df9378f8b3e91894fa74be04b8f93
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[白嫖机场] "  
+  #白嫖机场:
+    #url: https://www.1112244.xyz/baipiao/803df9378f8b3e91894fa74be04b8f93
+    #<<: *default-proxy-providers
+    #proxy: DIRECT
+    #override:
+      #<<: *default-proxy-providers-override
+      #additional-prefix: "[试用]-[白嫖机场] "  
       
   数字航站:
     url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
@@ -107,13 +107,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[数字航站] "        
       
-  Kitty Cloud:
-    url: https://kittycloud.xx.kg/api/86cef832c6afac6c7c9244fced087ed6
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Kitty Cloud] "   
+  #Kitty Cloud:
+    #url: https://kittycloud.xx.kg/api/86cef832c6afac6c7c9244fced087ed6
+    #<<: *default-proxy-providers
+    #proxy: DIRECT
+    #override:
+      #<<: *default-proxy-providers-override
+      #additional-prefix: "[试用]-[Kitty Cloud] "   
 
   HGFAST:
     url: https://gogof.hgfastgo.com/api/v1/client/subscribe?token=1267fbf2f3f6c41994817c502b5a10fb
