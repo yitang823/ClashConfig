@@ -302,9 +302,9 @@ useproxies: &useproxies
     - 星港机场
     - NewGate
     - Nexia
-    - 白嫖机场
+    #- 白嫖机场
     - 数字航站
-    - Kitty Cloud
+    #- Kitty Cloud
     - HGFAST
     - 暴雪机场
   
