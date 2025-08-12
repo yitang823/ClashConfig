@@ -48,7 +48,7 @@ proxy-providers:
     <<: *default-proxy-providers
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[纵云梯] "      
+      additional-prefix: "[纵云梯] " 
 
   Mitce:
     url: https://app.mitce.net/?sid=145054&token=d70484910852
@@ -113,7 +113,7 @@ proxy-providers:
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[数字航站] "        
+      additional-prefix: "[试用]-[数字航站] "      
       
   #Kitty Cloud:
     #url: https://kittycloud.xx.kg/api/86cef832c6afac6c7c9244fced087ed6
@@ -129,7 +129,7 @@ proxy-providers:
     proxy: DIRECT
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[HGFAST] " 
+      additional-prefix: "[试用]-[HGFAST] "
       
   暴雪机场:
     url: https://tyuiokljhcgfxrtfyuxias.bxvpn.xyz/baofengxue/98a8052bae4bb4ee5a77ff4a69b1ca1a
@@ -137,7 +137,15 @@ proxy-providers:
     proxy: DIRECT
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[暴雪机场] " 
+      additional-prefix: "[试用]-[暴雪机场] "
+
+  免流云机场:
+    url: http://sdfdfgdhsghf.hne4vh.site/api/v1/client/subscribe?token=4277c247d354e05f290671f50d1fb872
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[免流云机场] "  
 
 # ========================
 # 主要端口设置
