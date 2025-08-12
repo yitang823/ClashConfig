@@ -324,6 +324,7 @@ useproxies: &useproxies
     #- Kitty Cloud
     - HGFAST
     - 暴雪机场
+    - 免流云机场
   
 defaultproxies: &defaultproxies
   proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,直连,所有-手动,所有-自动]
