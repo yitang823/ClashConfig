@@ -338,7 +338,7 @@ useproxies: &useproxies
     #- 白嫖机场
     - 数字航站
     #- Kitty Cloud
-    - HGFAST
+    #- HGFAST
     - 暴雪机场
     - 免流云机场
     - SaHa机场
