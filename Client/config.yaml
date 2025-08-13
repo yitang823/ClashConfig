@@ -148,7 +148,7 @@ proxy-providers:
       additional-prefix: "[试用]-[免流云机场] "
 
   SaHa机场:
-    url: https://sub.sahayun.xyz/saha?token=MzA4OjFlMGE4OWZiMTBhMzM5YTMzMmY5MTY3YzhkNzA4NmI5MGZlNzQ3ODI
+    url: https://sub.sahayun.xyz/saha?token=HMfSgXkBS9h_8jAN9nJax_7V0cst6JgN
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
