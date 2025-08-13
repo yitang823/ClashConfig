@@ -83,13 +83,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
       
-  NewGate:
-    url: https://subme.crosswall.dpdns.org/submit/21e81f4efe533583ccb4a6e218304e5e
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[NewGate] "
+  #NewGate:
+    #url: https://subme.crosswall.dpdns.org/submit/21e81f4efe533583ccb4a6e218304e5e
+    #<<: *default-proxy-providers
+    #proxy: 国外
+    #override:
+      #<<: *default-proxy-providers-override
+      #additional-prefix: "[试用]-[NewGate] "
 
   Nexia:
     url: https://n67.688997.xyz/api/v1/client/subscribe?token=fecb1dbd81f15eedadb2c5ebe5cb0cb3
@@ -333,7 +333,7 @@ useproxies: &useproxies
     
     #- 元宝机场
     - 星港机场
-    - NewGate
+    #- NewGate
     - Nexia
     #- 白嫖机场
     - 数字航站
