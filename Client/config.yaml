@@ -1,3 +1,7 @@
+# ========================
+# 代理集合定义
+# ========================
+
 default-proxy-providers: &default-proxy-providers
   type: http
   interval: 7200
@@ -5,15 +9,21 @@ default-proxy-providers: &default-proxy-providers
     enable: true
     url: https://www.gstatic.com/generate_204
     interval: 180
-  exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01"
+    lazy: false
+  exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组"
 
+default-proxy-providers-override: &default-proxy-providers-override
+  udp: true
+  ip-version: ipv6-prefer
+  
 proxy-providers:
 #Long-Term
   星链:
     url: https://xship.top/v1/subscribe?starlink=0-MIp_48V1G5mPjY5FkdsgTp
-    proxy: 直连
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[星链] "
 
   星舰云:
@@ -21,90 +31,137 @@ proxy-providers:
     proxy: 国外
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[星舰云] "
 
   牛逼:
     url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=cdb94063e8fcc0d6da6b857e0369b315
-    proxy: 直连
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
   纵云梯:
     url: https://wub.zongyunti.site/api/v1/client/subscribe?token=f102d379571c96f175a3d3996f7eb194
-    proxy: 直连
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
-      additional-prefix: "[纵云梯] "      
+      <<: *default-proxy-providers-override
+      additional-prefix: "[纵云梯] " 
 
   Mitce:
     url: https://app.mitce.net/?sid=145054&token=d70484910852
-    proxy: 直连
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[Mitce] "
 
-#Temporary
-  元宝:
-    url: https://di4e.kefu.email/api/yuanbao/1b68d38e748557f1a8ebb1dae16c536d
+  Nova加速:
+    url: http://38.207.177.31/api/v1/client/subscribe?token=ff6082c4e967614851d92cde0940a8db
+    proxy: DIRECT
     <<: *default-proxy-providers
-    proxy: 直连 
     override:
-      additional-prefix: "[试用]-[元宝机场] "
+      <<: *default-proxy-providers-override
+      additional-prefix: "[Nova加速] "
+
+#Temporary
+  #元宝机场:
+    #url: https://di4e.kefu.email/api/yuanbao/1b68d38e748557f1a8ebb1dae16c536d
+    #<<: *default-proxy-providers
+    #proxy: DIRECT 
+    #override:
+     # <<: *default-proxy-providers-override
+      #additional-prefix: "[试用]-[元宝机场] "
       
   星港机场:
-    url: https://1a.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
+    url: https://2c.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
     <<: *default-proxy-providers
     proxy: 国外
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
       
-  NewGate:
-    url: https://new.crosswall.dpdns.org/submit/21e81f4efe533583ccb4a6e218304e5e
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      additional-prefix: "[试用]-[NewGate] "
+  #NewGate:
+    #url: https://subme.crosswall.dpdns.org/submit/21e81f4efe533583ccb4a6e218304e5e
+    #<<: *default-proxy-providers
+    #proxy: 国外
+    #override:
+      #<<: *default-proxy-providers-override
+      #additional-prefix: "[试用]-[NewGate] "
 
   Nexia:
     url: https://n67.688997.xyz/api/v1/client/subscribe?token=fecb1dbd81f15eedadb2c5ebe5cb0cb3
     <<: *default-proxy-providers
     proxy: 国外
     override:
+      <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[Nexia] "
 
-  白嫖机场:
-    url: https://www.1112244.xyz/baipiao/803df9378f8b3e91894fa74be04b8f93
-    <<: *default-proxy-providers
-    proxy: 直连
-    override:
-      additional-prefix: "[试用]-[白嫖机场] "  
+  #白嫖机场:
+    #url: https://www.1112244.xyz/baipiao/803df9378f8b3e91894fa74be04b8f93
+    #<<: *default-proxy-providers
+    #proxy: DIRECT
+    #override:
+      #<<: *default-proxy-providers-override
+      #additional-prefix: "[试用]-[白嫖机场] "  
       
   数字航站:
-    url: https://gw.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
+    url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
     <<: *default-proxy-providers
     proxy: 国外
     override:
-      additional-prefix: "[试用]-[数字航站] "        
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[数字航站] "      
       
-  Kitty Cloud:
-    url: https://kittycloud.xx.kg/api/86cef832c6afac6c7c9244fced087ed6
+  #Kitty Cloud:
+    #url: https://kittycloud.xx.kg/api/86cef832c6afac6c7c9244fced087ed6
+    #<<: *default-proxy-providers
+    #proxy: DIRECT
+    #override:
+      #<<: *default-proxy-providers-override
+      #additional-prefix: "[试用]-[Kitty Cloud] "   
+
+  HGFAST:
+    url: https://gogof.hgfastgo.com/api/v1/client/subscribe?token=1267fbf2f3f6c41994817c502b5a10fb
     <<: *default-proxy-providers
-    proxy: 直连
+    proxy: DIRECT
     override:
-      additional-prefix: "[试用]-[Kitty Cloud] "   
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[HGFAST] "
+      
+  暴雪机场:
+    url: https://tyuiokljhcgfxrtfyuxias.bxvpn.xyz/baofengxue/98a8052bae4bb4ee5a77ff4a69b1ca1a
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[暴雪机场] "
 
-  # 浣熊机场:
-  #   url: http://sub.huanxiong.pics/xiaohuanxiong/bbb508028a88bf8e86d8a14156f7a1cb
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     additional-prefix: "[试用]-[浣熊机场] "
+  免流云机场:
+    url: http://sdfdfgdhsghf.hne4vh.site/api/v1/client/subscribe?token=4277c247d354e05f290671f50d1fb872
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[免流云机场] "
 
-
-proxies:
-  - {name: 直连, type: direct}
-  - {name: 拒绝, type: reject}
+  SaHa机场:
+    url: https://sub.sahayun.xyz/saha?token=MzA4OjFlMGE4OWZiMTBhMzM5YTMzMmY5MTY3YzhkNzA4NmI5MGZlNzQ3ODI
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[SaHa机场] "
+      
+  边角料机场:
+    url: https://sub.bjljc.xyz/api/biaojianliao/7c1955d157bb7c45c3a76d2ee1a31368
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[边角料机场] "
 
 # ========================
 # 主要端口设置
@@ -137,11 +194,8 @@ dns:
   use-system-hosts: false
   cache-algorithm: arc
   enhanced-mode: fake-ip
-  fake-ip-range: 198.20.0.1/16
+  fake-ip-range: 198.67.0.1/16
   fake-ip-filter-mode: blacklist
-  nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
   fake-ip-filter:
     - +.lan
     - +.local
@@ -184,6 +238,10 @@ dns:
 
     - +. 1163088.xyz
 
+  nameserver:
+    - 223.5.5.5 #dns.alidns.com
+    - 119.29.29.29
+    
   default-nameserver:
     - '114.114.114.114#DIRECT'
     - '223.5.5.5#DIRECT'
@@ -199,96 +257,186 @@ dns:
     - https://doh.pub/dns-query
 
   nameserver-policy:
-    'geosite:private,cn': 223.5.5.5
+    geosite:private,cn: 
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
 
+    geosite:geolocation-!cn:
+      - https://dns.google/dns-query
+      - https://dns.adguard.com/dns-query
+      #- 223.5.5.5
+      #- 119.29.29.29
+
+# ========================
+# GEO 模块
+# ========================
+geodata-mode: false
+geox-url:
+  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+  geosite: https://github.com/Loyalsoldier/v2ray-rules-dat/blob/release/geosite.dat
+  #https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb
+  asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
+
+# ========================
+# IPV6 开关
+# ========================  
 ipv6: true
 
 # ========================
 # TUN 模块
 # ========================
 tun:
-  enable: true
+  enable: true #true
   stack: mixed
-  device: utun
+  device: Mihomo-Tun
   endpoint-independent-nat: true
   auto-route: true
   auto-detect-interface: true
   auto-redirect: true
-  strict-route: false
+  strict-route: true
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
 
 profile:
   store-selected: true
   store-fake-ip: true
 
 # ========================
-# 策略组定义
+# Sniffer 模块
 # ========================
+sniffer:
+  enable: true
+  sniff:
+    TLS:
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+
+# ========================
+# 代理组定义
+# ========================
+proxies:
+  - {name: 直连, type: direct, ip-version: ipv6-prefer}
+  - {name: 拒绝, type: reject}
+
+useproxies: &useproxies
+  use:
+    #- 星链
+    - 星舰云
+    - 牛逼
+    - 纵云梯
+    - Mitce
+    - Nova加速
+    
+    #- 元宝机场
+    - 星港机场
+    #- NewGate
+    - Nexia
+    #- 白嫖机场
+    - 数字航站
+    #- Kitty Cloud
+    - HGFAST
+    - 暴雪机场
+    - 免流云机场
+    - SaHa机场
+    - 边角料机场
+  
+defaultproxies: &defaultproxies
+  proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,直连,所有-手动,所有-自动]
+  
+# Type: select
 default: &default
   type: select
-  proxies: [直连,所有-手动,所有-自动,香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,拒绝]
-  interval: 300
-  timeout: 2000
-  tolerance: 50
-  #include-all: true
   url: https://www.google.com/generate_204
+  interval: 180
   lazy: false
+  timeout: 2000
   max-failed-times: 5
-  hidden: false
+  tolerance: 50
+  <<: *defaultproxies
+
+defaultOthers: &defaultOthers
+  type: select
+  url: https://www.google.com/generate_204
+  interval: 180
+  lazy: false
+  timeout: 2000
+  max-failed-times: 5
+  tolerance: 50
+  <<: *useproxies
+  proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,试用-自动]
+  
+# Type: url-test
+defaultType-Test: &defaultTypeTest
+  type: url-test
+  #include-all: true
+  interval: 180
+  tolerance: 50
+  url: http://www.gstatic.com/generate_204
+  lazy: false
+  <<: *useproxies
+  exclude-filter: "星链"
 
   #proxies: [直连,所有-手动,所有-自动,香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,亚洲-自动,欧洲-自动,美洲-自动,漏网之鱼,拒绝]
 proxy-groups:
-  - {name: Google, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"}
+  - {name: Google, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"}
   - {name: YouTube, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"}
   - {name: GitHub, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/github.svg"}
   - {name: ChatGPT, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg"}
   
-  - {name: Telegram, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"}
+  - {name: Telegram, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"}
   - {name: Twitter(X), <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/twitter.svg"}
   - {name: WhatsApp, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/whatsapp.svg"}
-  - {name: Facebook, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/facebook.svg"}
+  - {name: Facebook, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/facebook.svg"}
   
-  - {name: TikTok, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/tiktok.svg"}
-  - {name: Meta AI, <<: *default,   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/instagram.svg"}
+  - {name: TikTok, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/tiktok.svg"}
+  - {name: Meta AI, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/instagram.svg"}
   - {name: Netflix, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/netflix.svg"} 
   - {name: Disney, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/disney_plus.svg"} 
 
-  - {name: Amazon, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/amazon.svg"}
-  - {name: Apple, <<: *default,   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"}
-  - {name: Microsoft, <<: *default,    "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"} 
+  - {name: Amazon, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/amazon.svg"}
+  - {name: Apple, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"}
+  - {name: Microsoft, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"} 
   - {name: Game, <<: *default, "icon":"https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/xbox.svg"}
   
-  - {name: 香港-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg"}
-  - {name: 日本-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"}
-  - {name: 新加坡-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/sg.svg"}
-  - {name: 美国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$",   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg"}
+  - {name: 香港-自动, <<: *defaultTypeTest, filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg"}
+  - {name: 日本-自动, <<: *defaultTypeTest, filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"}
+  - {name: 新加坡-自动, <<: *defaultTypeTest, filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/sg.svg"}
+  - {name: 美国-自动, <<: *defaultTypeTest, filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$",   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg"}
   
-  - {name: 台湾-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg"}
-  - {name: 漏网之鱼, type: select, include-all: true, tolerance: 50, interval: 300, 
-    filter: "^((?!(广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$", 
-    "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg",
-    proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动]}  
+  - {name: 台湾-自动, <<: *defaultTypeTest, filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg"}
+  - {name: 漏网之鱼, <<: *defaultOthers, 
+    filter: "^((?!(直连|所有-手动|所有-自动|试用|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$", 
+    "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"}  
 
-  - {name: 国内, <<: *default,"icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
+  - {name: 国内, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
   - {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
-  - {name: 所有-手动, type: select, include-all: true, filter: "^((?!(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
-  - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 所有-手动, type: select, include-all: true, proxies: [星舰云-自动,HGFAST-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 所有-自动, <<: *defaultTypeTest, proxies: [星舰云-自动,HGFAST-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
-  - {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
-  - {name: IPV6, type:  url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg",  filter:  "(?=.*(IPV6|IPv6)).*$"}
+  #- {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
+  - {name: IPV6, <<: *defaultTypeTest, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter:  "(?=.*(IPV6|IPv6)).*$"}
   
-  #- {name: 加拿大-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(加拿大)).*$"}
+  - {name: HGFAST-自动, hidden: true, <<: *defaultTypeTest, filter: "^((?(HGFAST)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 星舰云-自动, hidden: true, <<: *defaultTypeTest, filter: "^((?(星舰云)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 星链-自动, hidden: true, <<: *defaultTypeTest, filter: "^((?(星链)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 试用-自动, hidden: true, <<: *defaultTypeTest, filter: "^((?(试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  
   #- {name: 亚洲-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea|印度|马来|印尼|泰国|澳门|柬埔寨|菲律宾|越南|孟家拉|阿联酋|沙特|曼谷)).*$"}
   #- {name: 欧洲-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(英国|UK|法国|FR|fr|德国|俄罗斯|DE|葡萄牙|冰岛|卢森堡|瑞士|西班牙|spain|土耳其|荷兰|瑞士|爱尔兰|意大利|西班牙|瑞典|挪威|冰岛|捷克|波兰|匈牙利|摩尔|乌克兰|立陶宛|保加利亚|以色列|希腊|阿塞拜疆|吉尔吉斯|哈萨)).*$"}
   #- {name: 美洲-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(加拿大|墨西哥|秘鲁|巴西|智利|哥伦比亚)).*$"}
 
 
 # ========================
-# 规则引擎（rules）
+# 路由规则
 # ========================
 rules:
   # 自定义规则
   - DOMAIN-SUFFIX,googleapis.cn, 国内 # Google服务
-  - DOMAIN-SUFFIX,gstatic.com, 国内 # Google静态资源
+  - DOMAIN-SUFFIX,gstatic.com, 国外 # Google静态资源
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com, 国内 # Google Play下载服务
   - DOMAIN-SUFFIX,github.io, 国内 # Github Pages
   - DOMAIN,v2rayse.com, 国内 #V2rayse节点工具
@@ -305,6 +453,7 @@ rules:
   - DOMAIN-KEYWORD, wogg, DIRECT
   
   - DOMAIN-SUFFIX, 1163088.xyz, DIRECT
+  - DOMAIN-SUFFIX, yitang.qzz.io, DIRECT
 
   - DOMAIN-SUFFIX, dport.top, 国外
   - DOMAIN-SUFFIX, 688997.xyz, 国外
@@ -320,7 +469,7 @@ rules:
   - DOMAIN-SUFFIX, zongyunti.site, 国外
   - DOMAIN-SUFFIX, digitalplat.org, 国外
   - DOMAIN-SUFFIX, huanxiong.buzz, 国外
-
+  - DOMAIN-SUFFIX, cukug.website, 国外
 
   - RULE-SET,Google / Domain,Google
   - RULE-SET,Google / IP,Google,no-resolve
@@ -360,7 +509,7 @@ rules:
   - RULE-SET,Private / Domain,国内
   - RULE-SET,Proxy / Domain,国外
   - RULE-SET,Globe / Domain,国外  
-  - RULE-SET,Block / Domain, Block 
+  - RULE-SET,Block / Domain, 拒绝 
 
   - GEOSITE,CN,国内
   - GEOIP,LAN,国内,no-resolve
@@ -368,7 +517,7 @@ rules:
   - MATCH,漏网之鱼
 
 # ========================
-# 规则集提供者
+# 规则集合
 # ========================
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
