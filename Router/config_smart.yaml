@@ -1,0 +1,732 @@
+# ========================
+# Clash-ALL 优化配置
+# ========================
+
+# 机场节点订阅
+
+default-proxy-providers: 
+#default-proxy-providers: 
+  &default-proxy-providers
+  type: http
+  interval: 7200
+  health-check:
+    enable: true
+    url: https://www.gstatic.com/generate_204
+    interval: 180
+  exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01"
+
+proxy-providers:
+#Long-Term
+  星链:
+    url: https://xship.top/v1/subscribe?starlink=0-MIp_48V1G5mPjY5FkdsgTp
+    proxy: 直连
+    <<: *default-proxy-providers
+    override:
+      additional-prefix: "[星链] "
+
+  星舰云:
+    url: http://vip.subscribe-xing.xyz/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
+    proxy: 国外
+    <<: *default-proxy-providers
+    override:
+      additional-prefix: "[星舰云] "
+
+  牛逼:
+    url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=cdb94063e8fcc0d6da6b857e0369b315
+    proxy: 直连
+    <<: *default-proxy-providers
+    override:
+      additional-prefix: "[牛逼] "
+
+  纵云梯:
+    url: https://wub.zongyunti.site/api/v1/client/subscribe?token=f102d379571c96f175a3d3996f7eb194
+    proxy: 直连
+    <<: *default-proxy-providers
+    override:
+      additional-prefix: "[纵云梯] "      
+
+  Mitce:
+    url: https://app.mitce.net/?sid=145054&token=d70484910852
+    proxy: 直连
+    <<: *default-proxy-providers
+    override:
+      additional-prefix: "[Mitce] "
+
+#Temporary
+  元宝:
+    url: https://di4e.kefu.email/api/yuanbao/1b68d38e748557f1a8ebb1dae16c536d
+    <<: *default-proxy-providers
+    proxy: 直连 
+    override:
+      additional-prefix: "[试用]-[元宝机场] "
+      
+  星港机场:
+    url: https://1a.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      additional-prefix: "[试用]-[星港机场] "
+      
+  NewGate:
+    url: https://new.crosswall.dpdns.org/submit/21e81f4efe533583ccb4a6e218304e5e
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      additional-prefix: "[试用]-[NewGate] "
+
+  Nexia:
+    url: https://n67.688997.xyz/api/v1/client/subscribe?token=fecb1dbd81f15eedadb2c5ebe5cb0cb3
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      additional-prefix: "[试用]-[Nexia] "
+
+  白嫖机场:
+    url: https://www.1112244.xyz/baipiao/803df9378f8b3e91894fa74be04b8f93
+    <<: *default-proxy-providers
+    proxy: 直连
+    override:
+      additional-prefix: "[试用]-[白嫖机场] "  
+      
+  数字航站:
+    url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
+    <<: *default-proxy-providers
+    proxy: 直连
+    override:
+      additional-prefix: "[试用]-[数字航站] "        
+      
+  Kitty Cloud:
+    url: https://kittycloud.xx.kg/api/86cef832c6afac6c7c9244fced087ed6
+    <<: *default-proxy-providers
+    proxy: 直连
+    override:
+      additional-prefix: "[试用]-[Kitty Cloud] "   
+
+  浣熊机场:
+    url: http://sub.huanxiong.pics/xiaohuanxiong/bbb508028a88bf8e86d8a14156f7a1cb
+    <<: *default-proxy-providers
+    proxy: 直连
+    override:
+      additional-prefix: "[试用]-[浣熊机场] "
+
+proxies:
+  - {name: 直连, type: direct, ip-version: ipv6-prefer, udp: true}
+  - {name: 拒绝, type: reject}
+
+# ========================
+# 主要端口设置
+# ========================
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+
+allow-lan: true
+mode: rule
+log-level: info
+
+external-controller: 0.0.0.0:9090
+# external-ui: ui
+# external-ui-name: zashboard
+# external-ui-url: https://gh-proxy.com/GitHub.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+secret: "123456"
+
+# ========================
+# DNS 设置
+# ========================
+dns:
+  enable: true
+  listen: 0.0.0.0:7874
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 198.20.0.1/16
+  fake-ip-filter:
+    - +.lan
+    - +.local
+    - geosite:cn
+# 牛逼   
+    - +.66jc.top  
+    - +.jueduibupao.top  
+    
+ #元宝
+    - +.yuanbaojc.site
+
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+      # QQ快速登录检测失败
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+        # 追加以下条目
+    - +.in-addr.arpa
+    - +.ip6.arpa
+    - time.*.com
+    - time.*.gov
+    - pool.ntp.org
+      # 微信快速登录检测失败
+    - localhost.work.weixin.qq.com 
+    - +.66jc.top
+    - +.jueduibupao.top
+    - +.qeayr.cn
+    - +.saojc.xyz
+    - +.sssyun.xyz
+    - +.dler.cloud
+    - +.0tk8a3a1q4t94dler.com
+    - +.aerianas.top
+    #- +. 1163088.xyz
+    - teams.events.data.microsoft.com
+    - api.flightproxy.teams.microsoft.com
+    
+  nameserver:
+    - 223.5.5.5 #dns.alidns.com
+    - 119.29.29.29
+    
+  default-nameserver:
+    - '114.114.114.114#DIRECT'
+    - '223.5.5.5#DIRECT'
+    - '119.29.29.29#DIRECT'
+    - '180.76.76.76#DIRECT'
+    - '180.184.1.1#DIRECT'
+
+  proxy-server-nameserver:
+    - 'https://dns.alidns.com/dns-query#DIRECT'
+    - 'https://doh.pub/dns-query#DIRECT'
+    - 'https://doh.onedns.net/dns-query#DIRECT'
+    - https://223.5.5.5/dns-query
+    - https://doh.pub/dns-query
+
+  nameserver-policy:
+    geosite:private,cn: 
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+
+    geosite:geolocation-!cn:
+      - https://dns.google/dns-query
+      - https://dns.adguard.com/dns-query
+      #- 223.5.5.5
+      #- 119.29.29.29
+    
+ipv6: true
+
+# ========================
+# TUN 模块
+# ========================
+tun:
+  enable: true
+  stack: mixed
+  device: openclashtun
+  endpoint-independent-nat: false
+  auto-route: true
+  auto-detect-interface: true
+  auto-redirect: true
+  strict-route: true
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# ========================
+# 策略组定义
+# ========================
+default: &default
+  type: select
+  proxies:
+    - 直连
+    - 所有-智选
+    - 所有-手选
+
+    - 香港-智选
+    - 香港-故转
+
+    - 台湾-智选
+    - 台湾-故转
+
+    - 日本-智选
+    - 日本-故转
+
+    - 新加坡-智选
+    - 新加坡-故转
+
+    - 美国-智选
+    - 美国-故转
+    
+    - 其他-智选
+    - 其他-故转
+
+    - 拒绝
+
+proxy-groups:
+
+  # 业务分流组
+  #AI (ChatGPT/Claude/Copilot/Gemini/Groq/Grok)
+  - {name: AI, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg"}
+  - {name: Meta AI, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/instagram.svg"}
+  #- {name: Perplexity, <<: *default}
+  #Stream Media (TikTok/Netflix/Disney/Amazon/HBO/Crunchyroll/Popcorn/Spotify)
+  - {name: Stream Media, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"}
+  - {name: SNS, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/twitter.svg"}
+
+  
+  - {name: GitHub, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/github.svg"}
+  - {name: Crypto, <<: *default}
+  #- {name: Reddit, <<: *default}  
+  #- {name: Nvidia, <<: *default}
+  - {name: Apple, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"}
+  - {name: Microsoft, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"}
+  - {name: Google, <<: *default,  "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"}
+
+  # Games (Steam/Epic/EA/Blizzard/UBI/PlayStation/Nintend)
+  - {name: Games, <<: *default, "icon":"https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/xbox.svg"}
+  #Crypto (OKX/Bybit/Binance)
+
+  #- {name: Test, <<: *default}
+  
+  - {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
+  - {name: 国内, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
+  - {name: 其他, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"}  
+
+  #- {name: IPV6, type:  url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg",  filter:  "(?=.*(IPV6|IPv6)).*$"} 
+ 
+  - name: IPV6
+    type: smart
+    include-all: true
+    uselightgbm: true
+    collectdata: true
+    hidden: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 2
+    strategy: sticky-sessions
+    interval: 180
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg"
+    filter:  "(?=.*(IPV6|IPv6)).*$"
+
+  # 所有组
+  - name: 所有-手选
+    #type: select
+    type: url-test
+    tolerance: 50
+    interval: 300
+    include-all: true
+    filter: "^((?!(直连|拒绝)).)*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"
+    
+  - name: 所有-智选
+    type: smart
+    include-all: true
+    policy-priority: ".*试用.*:1.2"
+    uselightgbm: true
+    collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 2
+    strategy: sticky-sessions
+    interval: 180
+    filter: "^((?!(直连|拒绝)).)*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"
+
+  # 香港组
+  - name: 香港-故转
+    type: fallback
+    interval: 180
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg"
+    lazy: false
+    proxies:
+      - 香港-手选
+      - 香港-智选
+   
+   
+  - name: 香港-手选
+    #type: select
+    type: url-test
+    tolerance: 50
+    interval: 300
+    include-all: true
+    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg"
+    
+  - name: 香港-智选
+    type: smart
+    include-all: true
+    hidden: true
+    policy-priority: ".*试用.*:1.2"
+    uselightgbm: true
+    collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 2
+    strategy: sticky-sessions
+    interval: 180
+    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg"
+ 
+  # 台湾组
+  - name: 台湾-故转
+    type: fallback
+    interval: 180
+    lazy: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg"
+    proxies:
+      - 台湾-手选
+      - 台湾-智选
+
+  - name: 台湾-手选
+    #type: select
+    type: url-test
+    tolerance: 50
+    interval: 300
+    include-all: true
+    filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg"
+
+  - name: 台湾-智选
+    type: smart
+    include-all: true
+    policy-priority: ".*试用.*:1.2"
+    uselightgbm: true
+    collectdata: true
+    hidden: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 2
+    strategy: sticky-sessions
+    interval: 180
+    filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg"
+
+  # 日本组
+  - name: 日本-故转
+    type: fallback
+    interval: 180
+    lazy: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"
+    proxies:
+      - 日本-手选
+      - 日本-智选
+
+  - name: 日本-手选
+    #type: select
+    type: url-test
+    tolerance: 50
+    interval: 300
+    include-all: true
+    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"
+
+  - name: 日本-智选
+    type: smart
+    include-all: true
+    policy-priority: ".*试用.*:1.2"
+    uselightgbm: true
+    collectdata: true
+    hidden: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 2
+    strategy: sticky-sessions
+    interval: 180
+    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"
+
+  # 新加坡组
+  - name: 新加坡-故转
+    type: fallback
+    interval: 180
+    lazy: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/sg.svg"
+    proxies:
+      - 新加坡-手选
+      - 新加坡-智选
+
+  - name: 新加坡-手选
+    #type: select
+    type: url-test
+    tolerance: 50
+    interval: 300
+    include-all: true
+    filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/sg.svg"
+
+  - name: 新加坡-智选
+    type: smart
+    include-all: true
+    policy-priority: ".*试用.*:1.2"
+    uselightgbm: true
+    hidden: true
+    collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 2
+    strategy: sticky-sessions
+    interval: 180
+    filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/sg.svg"
+
+  # 美国组
+  - name: 美国-故转
+    type: fallback
+    interval: 180
+    lazy: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg"
+    proxies:
+      - 美国-手选
+      - 美国-智选
+
+  - name: 美国-手选
+    #type: select
+    type: url-test
+    tolerance: 50
+    interval: 300
+    include-all: true
+    filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg"
+
+  - name: 美国-智选
+    type: smart
+    include-all: true
+    policy-priority: ".*试用.*:1.2"
+    uselightgbm: true
+    hidden: true
+    collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 2
+    strategy: sticky-sessions
+    interval: 180
+    filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg"
+
+
+  # 其他组
+  - name: 其他-故转
+    type: fallback
+    interval: 180
+    lazy: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"
+    proxies:
+      - 其他-手选
+      - 其他-智选
+
+  - name: 其他-手选
+    #type: select
+    type: url-test
+    tolerance: 50
+    interval: 300
+    include-all: true
+    filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"
+
+  - name: 其他-智选
+    type: smart
+    include-all: true
+    policy-priority: ".*试用.*:1.2"
+    uselightgbm: true
+    collectdata: true
+    hidden: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 2
+    strategy: sticky-sessions
+    interval: 180
+    filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$"
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"
+    
+  - {name: Block, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
+
+# ========================
+# 规则引擎（rules）
+# ========================
+rules:
+  - DOMAIN-KEYWORD,  wogg, DIRECT
+  - DOMAIN-KEYWORD,  teams, DIRECT
+  - DOMAIN-SUFFIX, teams.microsoft.com, DIRECT
+  - DOMAIN, statics.teams.cdn.office.net, DIRECT
+  
+  - DOMAIN, nagarro-my.sharepoint.com,DIRECT
+  - DOMAIN-SUFFIX, database.windows.net, DIRECT
+  - DOMAIN-SUFFIX,figma.com, DIRECT
+  - DOMAIN-SUFFIX, 1163088.xyz, IPV6,no-resolve
+  - DOMAIN-SUFFIX, ipv6, IPV6
+  - DOMAIN, ipv6.msftconnecttest.com, IPV6
+  - DOMAIN-SUFFIX, ygpy.net, 国外
+  - DOMAIN-SUFFIX, xingclouds.xyz, 国外
+  - DOMAIN-SUFFIX, xiangbizi.com, DIRECT
+  - DOMAIN-SUFFIX, qzz.io, 国外
+  - DOMAIN-SUFFIX,ledupeiyou.com, DIRECT
+  - DOMAIN-SUFFIX,  xn--mes199cbl6a.com, 国外
+ 
+  #- RULE-SET,TEST / Domain,Test
+  - RULE-SET,Block / Domain,Block  
+
+  # GitHub
+  - RULE-SET,GitHub / Domain,GitHub    
+
+  # AI
+  - RULE-SET,ChatGPT / Domain,AI
+  - RULE-SET,Claude / Domain,AI
+  - RULE-SET,Copilot / Domain,AI
+  - RULE-SET,Gemini / Domain,AI
+  - RULE-SET,Groq / Domain,AI
+  - RULE-SET,Grok / Domain,AI
+
+  # Meta AI
+  - RULE-SET,Meta AI / Domain,Meta AI
+
+  #- RULE-SET,Perplexity / Domain,
+  
+  # Steam Media
+  - RULE-SET,TikTok / Domain,Stream Media
+  - RULE-SET,Netflix / Domain,Stream Media
+  - RULE-SET,Netflix / IP,Stream Media,no-resolve
+  - RULE-SET,Disney / Domain,Stream Media
+  - RULE-SET,Amazon / Domain,Stream Media
+  - RULE-SET,HBO / Domain,Stream Media
+  - RULE-SET,Crunchyroll / Domain,Stream Media
+  - RULE-SET,Popcorn / Domain,Stream Media  
+  - RULE-SET,Spotify / Domain,Stream Media
+  - RULE-SET,Youtube / Domain,Stream Media
+
+  # Microsoft
+  - RULE-SET,Microsoft / Domain,Microsoft
+  
+  # Apple
+  - RULE-SET,Apple / Domain,Apple
+  - RULE-SET,Apple-CN / Domain,Apple  
+  
+  #Google
+  - RULE-SET,Google / Domain,Google
+  - RULE-SET,Google / IP,Google,no-resolve
+
+  # Crypto
+  - RULE-SET,OKX / Domain,Crypto
+  - RULE-SET,Bybit / Domain,Crypto
+  - RULE-SET,Binance / Domain,Crypto
+
+  # Games
+  - RULE-SET,Steam / Domain,Games
+  - RULE-SET,Epic / Domain,Games
+  - RULE-SET,EA / Domain,Games
+  - RULE-SET,Blizzard / Domain,Games
+  - RULE-SET,UBI / Domain,Games
+  - RULE-SET,PlayStation / Domain,Games
+  - RULE-SET,Nintend / Domain,Games
+
+  #- RULE-SET,Nvidia / Domain,Nvidia
+  # SNS
+  - RULE-SET,Telegram / Domain,SNS
+  - RULE-SET,Telegram / IP,SNS,no-resolve
+  - RULE-SET,Twitter / Domain,SNS
+  - RULE-SET,WhatsApp / Domain,SNS
+  - RULE-SET,Facebook / Domain,SNS
+  #- RULE-SET,Reddit / Domain,Reddit  
+
+  - RULE-SET,Proxy / Domain,国外
+  - RULE-SET,Global / Domain,国外  
+  - RULE-SET,Direct / Domain,国内
+  - RULE-SET,China / Domain,国内
+  - RULE-SET,China / IP,国内,no-resolve
+  - RULE-SET,Private / Domain,国内
+  - MATCH,其他
+
+# ========================
+# 规则集提供者
+# ========================
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  class: &class {type: http, interval: 86400, behavior: classical, format: text}
+
+rule-providers:
+  #TEST / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list"}
+  # AI
+  ChatGPT / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"}
+  Claude / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list"}
+  Copilot / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Copilot.list"}
+  Gemini / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Gemini.list"}
+  Groq / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/groq.mrs"}
+  Grok / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Grok.list"}
+
+  # Meta AI
+  Meta AI / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/MetaAi.list"}
+  
+  # Steam Media
+  TikTok / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs"}
+  Netflix / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs"}
+  Netflix / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs"}
+  Disney / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/disney.mrs"}
+  Amazon / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/amazon.mrs"}
+  HBO / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hbo.mrs"}
+  Crunchyroll / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Crunchyroll.list"}
+  Popcorn / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Popcorn.list"}
+  Spotify / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs"}
+  Youtube / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs"} 
+  
+  # Microsoft
+  Microsoft / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs"}
+  
+  # Apple
+  Apple-CN / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple-cn.mrs"}
+  Apple / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs"} 
+
+  # Crypto
+  OKX / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/okx.mrs"}
+  Bybit / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bybit.mrs"}
+  Binance / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/binance.mrs"}
+
+  # Games
+  Steam / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs"}
+  Epic / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.list"}
+  EA / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EA/EA.list"}
+  Blizzard / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list"}
+  UBI / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UBI/UBI.list"}
+  PlayStation / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PlayStation/PlayStation.list"}
+  Nintend / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list"}
+
+  # GitHub
+  GitHub / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs"}
+
+  # 国内
+  Direct / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list"}
+  China / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs"}
+  China / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs"}
+  Private / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs"}
+
+  # 国外
+  Proxy / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list"}
+  Global / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list"} 
+
+  # Others
+  Block / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Block.list"}
+
+  Perplexity / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/perplexity.mrs"}
+  Nvidia / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Nvidia/Nvidia.list"}
+  Reddit / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/reddit.mrs"}
+  
+  #SNS
+  Twitter / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/x.mrs"}
+  WhatsApp / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.list"}
+  Facebook / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs"}
+  Telegram / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs"}  
+  Telegram / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs"}
+  
+  # Google
+  Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
+  Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}
+#  GateFireWall / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"}
