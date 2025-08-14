@@ -473,41 +473,8 @@ proxy-groups:
 # ========================
 rules:
   # 自定义规则
-  - DOMAIN-SUFFIX,googleapis.cn, 国内 # Google服务
-  - DOMAIN-SUFFIX,gstatic.com, 国外 # Google静态资源
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com, 国内 # Google Play下载服务
-  - DOMAIN-SUFFIX,github.io, 国内 # Github Pages
-  - DOMAIN,v2rayse.com, 国内 #V2rayse节点工具
-
-  - PROCESS-NAME, ms-teams.exe, DIRECT
-  - DOMAIN,nagarro-my.sharepoint.com, DIRECT #nagarro
-  #- DOMAIN,statics.teams.cdn.office.net,DIRECT #直连
-  - DOMAIN-SUFFIX,teams.microsoft.com, DIRECT #直连
-  #- DOMAIN-KEYWORD,teams, DIRECT # Teams直连
-  - DOMAIN-SUFFIX,figma.com, DIRECT
-  #- DOMAIN-SUFFIX,mcas.ms, 国外 # Teams直连
-
-  - DOMAIN-SUFFIX, database.windows.net, DIRECT #Azure数据库
-  - DOMAIN-KEYWORD, wogg, DIRECT
-  
-  - DOMAIN-SUFFIX, 1163088.xyz, DIRECT
-  #- DOMAIN-SUFFIX, yitang.qzz.io, DIRECT
-
-  - DOMAIN-SUFFIX, dport.top, 国外
-  - DOMAIN-SUFFIX, 688997.xyz, 国外
-  - DOMAIN-SUFFIX, yinheyz.cfd, 国外
-  - DOMAIN-SUFFIX, weixiaojichang.xyz, 国外
-  - DOMAIN-SUFFIX, xg-hub.icu, 国外
-  - DOMAIN-SUFFIX, crosswall.dpdns.org, 国外
-  - DOMAIN-SUFFIX, ygpy.net, 国外
-  - DOMAIN-SUFFIX, xingclouds.xyz, 国外
-  - DOMAIN-SUFFIX, 201593.xyz, 国外
-  - DOMAIN-SUFFIX, subscribe-xing.xyz, 国外
-  - DOMAIN-SUFFIX, claw.cloud,新加坡-智选
-  - DOMAIN-SUFFIX, zongyunti.site, 国外
-  - DOMAIN-SUFFIX, digitalplat.org, 国外
-  - DOMAIN-SUFFIX, huanxiong.buzz, 国外
-  - DOMAIN-SUFFIX, cukug.website, 国外
+  - RULE-SET, Personal, 国外
+  - RULE-SET, Personal-CN, DIRECT
 
   - RULE-SET,Block / Domain, 拒绝 
 
@@ -666,3 +633,7 @@ rule-providers:
   Twitter / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/x.mrs"}
   WhatsApp / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.list"}
   Facebook / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs"}
+
+  # Personal
+  Personal: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal.list"}
+  Personal-CN: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-CN.list"}
