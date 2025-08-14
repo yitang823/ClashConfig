@@ -1,0 +1,17 @@
+DOMAIN-SUFFIX,googleapis.cn # Google服务
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com # Google Play下载服务
+DOMAIN-SUFFIX,github.io # Github Pages
+DOMAIN,v2rayse.com  #V2rayse节点工具
+
+PROCESS-NAME, ms-teams.exe
+DOMAIN,nagarro-my.sharepoint.com #nagarro
+#- DOMAIN,statics.teams.cdn.office.net #直连
+DOMAIN-SUFFIX,teams.microsoft.com #直连
+#- DOMAIN-KEYWORD,teams # Teams直连
+DOMAIN-SUFFIX,figma.com
+
+DOMAIN-SUFFIX, database.windows.net #Azure数据库
+DOMAIN-KEYWORD, wogg
+  
+DOMAIN-SUFFIX, 1163088.xyz
+DOMAIN-SUFFIX, yitang.qzz.io
