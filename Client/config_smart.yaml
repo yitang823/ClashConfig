@@ -253,16 +253,16 @@ dns:
     - 2606:4700:4700::1001
 
   default-nameserver:
-    - '114.114.114.114#DIRECT'
-    - '223.5.5.5#DIRECT'
-    - '119.29.29.29#DIRECT'
-    - '180.76.76.76#DIRECT'
-    - '180.184.1.1#DIRECT'
+    - '114.114.114.114'
+    - '223.5.5.5'
+    - '119.29.29.29'
+    - '180.76.76.76'
+    - '180.184.1.1'
 
   proxy-server-nameserver:
-    - 'https://dns.alidns.com/dns-query#DIRECT'
-    - 'https://doh.pub/dns-query#DIRECT'
-    - 'https://doh.onedns.net/dns-query#DIRECT'
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://doh.onedns.net/dns-query
     - https://223.5.5.5/dns-query
     - https://doh.pub/dns-query
 
