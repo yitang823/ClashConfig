@@ -148,7 +148,7 @@ proxy-providers:
       additional-prefix: "[试用]-[免流云机场] "
 
   SaHa机场:
-    url: https://sub.sahayun.xyz/saha?token=HMfSgXkBS9h_8jAN9nJax_7V0cst6JgN
+    url: https://sub.sahayun.xyz/saha?token=_r6GNIGQPcg5AHFaodkwDyLrP4Nj8eYh
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
@@ -491,7 +491,7 @@ rules:
   - DOMAIN-KEYWORD, wogg, DIRECT
   
   - DOMAIN-SUFFIX, 1163088.xyz, DIRECT
-  - DOMAIN-SUFFIX, yitang.qzz.io, DIRECT
+  #- DOMAIN-SUFFIX, yitang.qzz.io, DIRECT
 
   - DOMAIN-SUFFIX, dport.top, 国外
   - DOMAIN-SUFFIX, 688997.xyz, 国外
