@@ -357,7 +357,7 @@ default: &default
   # timeout: 2000
   # max-failed-times: 5
   # tolerance: 50
-  <<: *useproxies
+  #<<: *useproxies
 
 defaultOthers: &defaultOthers
   type: select
