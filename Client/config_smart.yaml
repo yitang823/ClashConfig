@@ -389,7 +389,7 @@ defaultUrlTest: &defaultUrlTest
   url: http://www.gstatic.com/generate_204
   lazy: false
   <<: *useproxies
-  exclude-filter: "星链|Mitce"
+  exclude-filter: "星链|Mitce|纵云梯"
 
 # Type: smart
 defaultSmart: &defaultSmart
@@ -406,7 +406,7 @@ defaultSmart: &defaultSmart
   strategy: sticky-sessions
   interval: 180
   <<: *useproxies
-  exclude-filter: "星链|Mitce"
+  exclude-filter: "星链|Mitce|纵云梯"
 
   #proxies: [直连,所有-手动,所有-智选,香港-智选,台湾-智选,日本-智选,新加坡-智选,美国-智选,亚洲-智选,欧洲-智选,美洲-智选,漏网之鱼,拒绝]
 proxy-groups:
