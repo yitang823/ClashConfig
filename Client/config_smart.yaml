@@ -163,6 +163,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[边角料机场] "
 
+  Domnn:
+    url: https://sub.domnn.xyz/domnn/bd826157371bea350b438d3f2946cbb9
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[Domnn] "
+
 # ========================
 # 主要端口设置
 # ========================
@@ -353,6 +361,7 @@ useproxies: &useproxies
     - 免流云机场
     - SaHa机场
     - 边角料机场
+    - Domnn
   
 defaultproxies: &defaultproxies
   proxies: [香港-智选,台湾-智选,日本-智选,新加坡-智选,美国-智选,直连,所有-手动,所有-智选]
