@@ -182,6 +182,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[CF 机场] "
 
+  MistNet:
+    url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[MistNet] "
+
 # ========================
 # 主要端口设置
 # ========================
@@ -363,7 +371,9 @@ useproxies: &useproxies
     - SaHa机场
     - 边角料机场
     - Domnn
-  
+    - MistNet
+    - CF 机场
+    
 defaultproxies: &defaultproxies
   proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,直连,所有-手动,所有-自动]
   
