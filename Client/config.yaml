@@ -421,7 +421,7 @@ defaultOthers: &defaultOthers
 defaultAll: &defaultAll
   type: select
   # <<: *useproxies
-  proxies: [星舰云-智选,HGFAST-智选,试用-智选]
+  proxies: [星舰云-自动,HGFAST-自动,试用-自动]
   exclude-filter: "星链|Mitce|纵云梯|HGFAST"
   
 # Type: url-test
