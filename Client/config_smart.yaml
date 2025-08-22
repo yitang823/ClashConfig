@@ -28,7 +28,7 @@ proxy-providers:
       additional-prefix: "[星链] "
 
   星舰云:
-    url: http://vip.subscribe-xing.xyz/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
+    url: https://cdn.subscribe-xing.xyz/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
     proxy: 国外
     <<: *default-proxy-providers
     override:
@@ -191,6 +191,22 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[MistNet] "
+
+  游戏虾:
+    url: https://youxixia.top/api/v1/client/subscribe?token=1cb7d43735ed0403c1b6e75ce16da7ff
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[游戏虾] "
+
+  OK机场:
+    url: https://sub.okjc.xyz/api/okokokokokokokokokokokokokokokok?token=30932e6ebcb9acb6e5094049154f162f
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[OK机场] "
 
 # ========================
 # 主要端口设置
@@ -383,8 +399,10 @@ useproxies: &useproxies
     - SaHa机场
     - 边角料机场
     - Domnn
-     - MistNet
+    - MistNet
     - CF 机场
+    - 游戏虾
+    - OK机场    
 
 defaultproxies: &defaultproxies
   proxies: [香港-智选,台湾-智选,日本-智选,新加坡-智选,美国-智选,直连,所有-手动,所有-智选]
