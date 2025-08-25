@@ -26,7 +26,7 @@ proxy-providers:
       additional-prefix: "[星链] "
 
   星舰云:
-    url: http://vip.subscribe-xing.xyz/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
+    url: https://cdn.subscribe-xing.xyz/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
     proxy: 国外
     <<: *default-proxy-providers
     override:
@@ -41,40 +41,16 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
-  纵云梯:
-    url: https://wub.zongyunti.site/api/v1/client/subscribe?token=f102d379571c96f175a3d3996f7eb194
-    proxy: DIRECT
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[纵云梯] " 
-
-  Mitce:
-    url: https://app.mitce.net/?sid=145054&token=d70484910852
-    proxy: DIRECT
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[Mitce] "
-
-  Nova加速:
-    url: http://38.207.177.31/api/v1/client/subscribe?token=ff6082c4e967614851d92cde0940a8db
-    proxy: DIRECT
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[Nova加速] "
+  # Mitce:
+  #   url: https://app.mitce.net/?sid=145054&token=d70484910852
+  #   proxy: DIRECT
+  #   <<: *default-proxy-providers
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[Mitce] "
 
 #Temporary
 
-  #元宝机场:
-    #url: https://di4e.kefu.email/api/yuanbao/1b68d38e748557f1a8ebb1dae16c536d
-    #<<: *default-proxy-providers
-    #proxy: DIRECT 
-    #override:
-     # <<: *default-proxy-providers-override
-      #additional-prefix: "[试用]-[元宝机场] "
-      
   星港机场:
     url: https://2c.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
     <<: *default-proxy-providers
@@ -82,62 +58,65 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
-      
-  #NewGate:
-    #url: https://subme.crosswall.dpdns.org/submit/21e81f4efe533583ccb4a6e218304e5e
-    #<<: *default-proxy-providers
-    #proxy: 国外
-    #override:
-      #<<: *default-proxy-providers-override
-      #additional-prefix: "[试用]-[NewGate] "
 
-  Nexia:
-    url: https://n67.688997.xyz/api/v1/client/subscribe?token=fecb1dbd81f15eedadb2c5ebe5cb0cb3
+  拼好鸡机场:
+    url: https://sub9.xn--5usv4t3x3c.xyz/pinhaoji/3e4383904e5e9d3173db89f0be2e3c64
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Nexia] "
+      additional-prefix: "[试用]-[拼好鸡机场] "
 
-  #白嫖机场:
-    #url: https://www.1112244.xyz/baipiao/803df9378f8b3e91894fa74be04b8f93
-    #<<: *default-proxy-providers
-    #proxy: DIRECT
-    #override:
-      #<<: *default-proxy-providers-override
-      #additional-prefix: "[试用]-[白嫖机场] "  
-      
-  数字航站:
-    url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
+  迪莫云:
+    url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[数字航站] "      
-      
-  #Kitty Cloud:
-    #url: https://kittycloud.xx.kg/api/86cef832c6afac6c7c9244fced087ed6
-    #<<: *default-proxy-providers
-    #proxy: DIRECT
-    #override:
-      #<<: *default-proxy-providers-override
-      #additional-prefix: "[试用]-[Kitty Cloud] "   
+      additional-prefix: "[试用]-[迪莫云] "
 
-  HGFAST:
-    url: https://gogof.hgfastgo.com/api/v1/client/subscribe?token=1267fbf2f3f6c41994817c502b5a10fb
+  游戏虾:
+    url: https://youxixia.top/api/v1/client/subscribe?token=1cb7d43735ed0403c1b6e75ce16da7ff
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[游戏虾] "
+
+  OK机场:
+    url: https://sub.okjc.xyz/api/okokokokokokokokokokokokokokokok?token=30932e6ebcb9acb6e5094049154f162f
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[HGFAST] "
-      
-  暴雪机场:
-    url: https://tyuiokljhcgfxrtfyuxias.bxvpn.xyz/baofengxue/98a8052bae4bb4ee5a77ff4a69b1ca1a
+      additional-prefix: "[试用]-[OK机场] "
+
+  MistNet:
+    url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[暴雪机场] "
+      additional-prefix: "[试用]-[MistNet] "
+
+  Domnn:
+    url: https://sub.domnn.xyz/domnn/bd826157371bea350b438d3f2946cbb9
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[Domnn] "
+      proxy-name:
+      - pattern: "Domnn\\|"
+        target: ""
+
+  SaHa机场:
+    url: https://sub.sahayun.xyz/saha?token=c273bd8c42ff6736b8cad40a8b4cca21
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[SaHa机场] "
 
   免流云机场:
     url: http://sdfdfgdhsghf.hne4vh.site/api/v1/client/subscribe?token=4277c247d354e05f290671f50d1fb872
@@ -147,21 +126,21 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[免流云机场] "
 
-  SaHa机场:
-    url: https://sub.sahayun.xyz/saha?token=_r6GNIGQPcg5AHFaodkwDyLrP4Nj8eYh
+  暴雪机场:
+    url: https://tyuiokljhcgfxrtfyuxias.bxvpn.xyz/baofengxue/98a8052bae4bb4ee5a77ff4a69b1ca1a
     <<: *default-proxy-providers
-    proxy: DIRECT
+    proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[SaHa机场] "
-      
-  边角料机场:
-    url: https://sub.bjljc.xyz/api/biaojianliao/7c1955d157bb7c45c3a76d2ee1a31368
+      additional-prefix: "[试用]-[暴雪机场] "
+
+  数字航站:
+    url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
     <<: *default-proxy-providers
-    proxy: DIRECT
+    proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[边角料机场] "
+      additional-prefix: "[试用]-[数字航站] "
 
 # ========================
 # 主要端口设置
@@ -289,7 +268,7 @@ ipv6: true
 tun:
   enable: true #true
   stack: mixed
-  device: Mihomo-Tun
+  device: Nikki-Tun
   endpoint-independent-nat: true
   auto-route: true
   auto-detect-interface: true
@@ -338,12 +317,17 @@ useproxies: &useproxies
     #- 白嫖机场
     - 数字航站
     #- Kitty Cloud
-    - HGFAST
+    #- HGFAST
     - 暴雪机场
     - 免流云机场
     - SaHa机场
     - 边角料机场
-  
+    - Domnn
+    - MistNet
+    - CF 机场
+    - 游戏虾
+    - OK机场
+
 defaultproxies: &defaultproxies
   proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,直连,所有-手动,所有-自动]
   
@@ -361,7 +345,7 @@ default: &default
 
 defaultOthers: &defaultOthers
   type: select
-  <<: *useproxies
+  #<<: *useproxies
   proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,试用-自动]
   # url: https://www.google.com/generate_204
   # interval: 180
@@ -370,6 +354,11 @@ defaultOthers: &defaultOthers
   # max-failed-times: 5
   # tolerance: 50
 
+defaultAll: &defaultAll
+  type: select
+  # <<: *useproxies
+  proxies: [星舰云-自动,HGFAST-自动,试用-自动]
+  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
   
 # Type: url-test
 defaultUrlTest: &defaultUrlTest
@@ -379,8 +368,8 @@ defaultUrlTest: &defaultUrlTest
   tolerance: 50
   url: http://www.gstatic.com/generate_204
   lazy: false
-  <<: *useproxies
-  exclude-filter: "星链|Mitce|纵云梯"
+  #<<: *useproxies
+  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
 
 # Type: smart
 defaultSmart: &defaultSmart
@@ -396,8 +385,8 @@ defaultSmart: &defaultSmart
     tolerance: 2
   strategy: sticky-sessions
   interval: 180
-  <<: *useproxies
-  exclude-filter: "星链|Mitce|纵云梯"
+  #<<: *useproxies
+  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
 
   #proxies: [直连,所有-手动,所有-自动,香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,亚洲-自动,欧洲-自动,美洲-自动,漏网之鱼,拒绝]
 proxy-groups:
@@ -438,12 +427,12 @@ proxy-groups:
   
   - {name: 台湾-自动, <<: *defaultUrlTest, filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg"}
   - {name: 漏网之鱼, <<: *defaultOthers, 
-    filter: "^((?!(直连|所有-手动|所有-自动|试用|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$", 
+    filter: "^((?!(所有-手动|所有-自动|试用|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$", 
     "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"}  
 
   #- {name: 国内, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
   #- {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
-  - {name: 所有-手动, type: select, include-all: true, proxies: [星舰云-自动,HGFAST-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 所有-手动, <<: *defaultAll, include-all: true, filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 所有-自动, <<: *defaultUrlTest, proxies: [星舰云-自动,HGFAST-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
   #- {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}

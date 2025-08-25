@@ -58,6 +58,15 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
+
+  拼好鸡机场:
+    url: https://sub9.xn--5usv4t3x3c.xyz/pinhaoji/3e4383904e5e9d3173db89f0be2e3c64
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[拼好鸡机场] "
+
   迪莫云:
     url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
     <<: *default-proxy-providers
