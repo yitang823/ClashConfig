@@ -59,6 +59,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  fold机场:
+    url: https://foldjc.top/api/v1/client/subscribe?token=0241732a5901a83857a0d4dd9a982bb9
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[fold机场] "
+
   拼好鸡机场:
     url: https://sub9.xn--5usv4t3x3c.xyz/pinhaoji/3e4383904e5e9d3173db89f0be2e3c64
     <<: *default-proxy-providers
@@ -357,8 +365,8 @@ defaultOthers: &defaultOthers
 defaultAll: &defaultAll
   type: select
   # <<: *useproxies
-  proxies: [星舰云-自动,HGFAST-自动,试用-自动]
-  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
+  proxies: [星舰云-自动,星链-自动,试用-自动]
+  #exclude-filter: "星链|Mitce|纵云梯|HGFAST"
   
 # Type: url-test
 defaultUrlTest: &defaultUrlTest
@@ -369,7 +377,7 @@ defaultUrlTest: &defaultUrlTest
   url: http://www.gstatic.com/generate_204
   lazy: false
   #<<: *useproxies
-  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
+  #exclude-filter: "星链Mitce|纵云梯|HGFAST"
 
 # Type: smart
 defaultSmart: &defaultSmart
@@ -386,7 +394,7 @@ defaultSmart: &defaultSmart
   strategy: sticky-sessions
   interval: 180
   #<<: *useproxies
-  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
+  #exclude-filter: "星链|Mitce|纵云梯|HGFAST"
 
   #proxies: [直连,所有-手动,所有-自动,香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,亚洲-自动,欧洲-自动,美洲-自动,漏网之鱼,拒绝]
 proxy-groups:
@@ -433,12 +441,12 @@ proxy-groups:
   #- {name: 国内, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
   #- {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
   - {name: 所有-手动, <<: *defaultAll, include-all: true, filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
-  - {name: 所有-自动, <<: *defaultUrlTest, proxies: [星舰云-自动,HGFAST-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 所有-自动, <<: *defaultUrlTest, proxies: [星舰云-自动,星链-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
   #- {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
   - {name: IPV6, <<: *defaultUrlTest, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter:  "(?=.*(IPV6|IPv6)).*$"}
   
-  - {name: HGFAST-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(HGFAST)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  #- {name: HGFAST-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(HGFAST)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星舰云-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(星舰云)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星链-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(星链)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 试用-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(试用)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
