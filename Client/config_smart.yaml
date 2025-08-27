@@ -61,6 +61,22 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  白猫机场:
+    url: https://sub.bmjc.xyz/baimao/0fdbe3b8f526013d0625b21b83d7cc62
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[白猫机场] " 
+
+  星链机场:
+    url: https://cdnrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[XL机场] " 
+
   fold机场:
     url: https://foldjc.top/api/v1/client/subscribe?token=0241732a5901a83857a0d4dd9a982bb9
     <<: *default-proxy-providers
