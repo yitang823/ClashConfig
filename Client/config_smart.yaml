@@ -651,6 +651,6 @@ rule-providers:
   Facebook / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs"}
 
   # Personal
-  Personal: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal.list"}
-  Personal-CN: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-CN.list"}
-  Personal-IPV6: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-IPV6.list"}
+  Personal: {<<: *class, url: "https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal.list"}
+  Personal-CN: {<<: *class, url: "https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-CN.list"}
+  Personal-IPV6: {<<: *class, url: "https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-IPV6.list"}
