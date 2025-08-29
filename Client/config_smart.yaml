@@ -168,14 +168,6 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[暴雪机场] "
 
-  数字航站:
-    url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[数字航站] "
-
 # ========================
 # 主要端口设置
 # ========================
