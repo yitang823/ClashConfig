@@ -59,6 +59,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  西路云:
+    url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[西路云] " 
+
   白猫机场:
     url: https://sub.bmjc.xyz/baimao/0fdbe3b8f526013d0625b21b83d7cc62
     <<: *default-proxy-providers
