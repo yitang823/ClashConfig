@@ -59,6 +59,22 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  优良机场:
+    url: https://sub.yljc.xyz/youliang/ccc613e7d0edf88be43b1d61776dd755
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[优良机场] "
+
+  翻墙侠:
+    url: https://img.mystone.io/static/3ab0547538782b63e01f5e39fe6cf170
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[翻墙侠] "
+
   西路云:
     url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
     <<: *default-proxy-providers
@@ -67,16 +83,8 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[西路云] " 
 
-  白猫机场:
-    url: https://sub.bmjc.xyz/baimao/0fdbe3b8f526013d0625b21b83d7cc62
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[白猫机场] " 
-
   星链机场:
-    url: https://cdnrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
+    url: https://newrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
@@ -90,14 +98,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[fold机场] "
-
-  拼好鸡机场:
-    url: https://sub9.xn--5usv4t3x3c.xyz/pinhaoji/3e4383904e5e9d3173db89f0be2e3c64
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[拼好鸡机场] "
 
   迪莫云:
     url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
@@ -115,14 +115,6 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[游戏虾] "
 
-  OK机场:
-    url: https://sub.okjc.xyz/api/okokokokokokokokokokokokokokokok?token=30932e6ebcb9acb6e5094049154f162f
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[OK机场] "
-
   MistNet:
     url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
     <<: *default-proxy-providers
@@ -130,25 +122,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[MistNet] "
-
-  Domnn:
-    url: https://sub.domnn.xyz/domnn/bd826157371bea350b438d3f2946cbb9
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Domnn] "
-      proxy-name:
-      - pattern: "Domnn\\|"
-        target: ""
-
-  SaHa机场:
-    url: https://sub.sahayun.xyz/saha?token=c273bd8c42ff6736b8cad40a8b4cca21
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[SaHa机场] "
 
   免流云机场:
     url: http://sdfdfgdhsghf.hne4vh.site/api/v1/client/subscribe?token=4277c247d354e05f290671f50d1fb872
