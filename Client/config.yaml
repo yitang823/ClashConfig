@@ -76,12 +76,12 @@ proxy-providers:
       additional-prefix: "[试用]-[翻墙侠] "
 
   西路云:
-    url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
+    url: https://xl.xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
     <<: *default-proxy-providers
-    proxy: 国外
+    proxy: DIRECT
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[西路云] " 
+      additional-prefix: "[试用]-[西路云] "  
 
   星链机场:
     url: https://newrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
