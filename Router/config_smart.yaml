@@ -155,10 +155,6 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[暴雪机场] "
 
-proxies:
-  - {name: 直连, type: direct, ip-version: ipv6-prefer, udp: true}
-  - {name: 拒绝, type: reject}
-
 # ========================
 # 主要端口设置
 # ========================
