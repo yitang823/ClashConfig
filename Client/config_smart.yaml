@@ -64,7 +64,7 @@ proxy-providers:
   R云:
     url: https://gghgyhty.dddddddddddddd.cc/strrn/3565a0bef4877e5eda7443704bf502dc
     <<: *default-proxy-providers
-    proxy: DIRECT
+    proxy: 国外
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[R云] "
@@ -72,7 +72,7 @@ proxy-providers:
   小火龙:
     url: https://xiaohuolongjc.top/api/v1/client/subscribe?token=b5166020cc3b37c834950f9c20288dce
     <<: *default-proxy-providers
-    proxy: DIRECT
+    proxy: 国外
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[小火龙] "
@@ -96,7 +96,7 @@ proxy-providers:
   西路云:
     url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
     <<: *default-proxy-providers
-    proxy: DIRECT
+    proxy: 国外
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[西路云] " 
