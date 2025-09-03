@@ -1,7 +1,6 @@
 # ========================
 # 代理集合定义
 # ========================
-
 default-proxy-providers: &default-proxy-providers
   type: http
   interval: 7200
@@ -11,7 +10,7 @@ default-proxy-providers: &default-proxy-providers
     interval: 180
     lazy: false
   exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组"
-
+  
 default-proxy-providers-override: &default-proxy-providers-override
   udp: true
   ip-version: ipv6-prefer
@@ -27,7 +26,7 @@ proxy-providers:
       additional-prefix: "[星链] "
 
   星舰云:
-    url: http://vip.subscribe-xing.xyz/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
+    url: https://cdn.subscribe-xing.xyz/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
     proxy: 国外
     <<: *default-proxy-providers
     override:
@@ -42,32 +41,16 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
-  纵云梯:
-    url: https://wub.zongyunti.site/api/v1/client/subscribe?token=f102d379571c96f175a3d3996f7eb194
-    proxy: DIRECT
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[纵云梯] " 
-
-  Mitce:
-    url: https://app.mitce.net/?sid=145054&token=d70484910852
-    proxy: DIRECT
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[Mitce] "
-
-  Nova加速:
-    url: http://38.207.177.31/api/v1/client/subscribe?token=ff6082c4e967614851d92cde0940a8db
-    proxy: DIRECT
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[Nova加速] "
+  # Mitce:
+  #   url: https://app.mitce.net/?sid=145054&token=d70484910852
+  #   proxy: DIRECT
+  #   <<: *default-proxy-providers
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[Mitce] "
 
 #Temporary
-      
+
   星港机场:
     url: https://2c.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
     <<: *default-proxy-providers
@@ -75,31 +58,86 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
-    
 
-  Nexia:
-    url: https://n67.688997.xyz/api/v1/client/subscribe?token=fecb1dbd81f15eedadb2c5ebe5cb0cb3
+  R云:
+    url: https://gghgyhty.dddddddddddddd.cc/strrn/3565a0bef4877e5eda7443704bf502dc
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Nexia] "
-      
-  数字航站:
-    url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
+      additional-prefix: "[试用]-[R云] "
+
+  小火龙:
+    url: https://xiaohuolongjc.top/api/v1/client/subscribe?token=b5166020cc3b37c834950f9c20288dce
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[数字航站] "
-      
-  暴雪机场:
-    url: https://tyuiokljhcgfxrtfyuxias.bxvpn.xyz/baofengxue/98a8052bae4bb4ee5a77ff4a69b1ca1a
+      additional-prefix: "[试用]-[小火龙] "
+
+  优良机场:
+    url: https://sub.yljc.xyz/youliang/ccc613e7d0edf88be43b1d61776dd755
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[优良机场] "
+
+  翻墙侠:
+    url: https://img.mystone.io/static/3ab0547538782b63e01f5e39fe6cf170
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[翻墙侠] "
+
+  西路云:
+    url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[暴雪机场] "
+      additional-prefix: "[试用]-[西路云] "  
+
+  星链机场:
+    url: https://newrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[XL机场] " 
+
+  fold机场:
+    url: https://foldjc.top/api/v1/client/subscribe?token=0241732a5901a83857a0d4dd9a982bb9
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[fold机场] "
+
+  迪莫云:
+    url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[迪莫云] "
+
+  游戏虾:
+    url: https://youxixia.top/api/v1/client/subscribe?token=1cb7d43735ed0403c1b6e75ce16da7ff
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[游戏虾] "
+
+  MistNet:
+    url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[MistNet] "
 
   免流云机场:
     url: http://sdfdfgdhsghf.hne4vh.site/api/v1/client/subscribe?token=4277c247d354e05f290671f50d1fb872
@@ -109,21 +147,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[免流云机场] "
 
-  SaHa机场:
-    url: https://sub.sahayun.xyz/saha?token=HMfSgXkBS9h_8jAN9nJax_7V0cst6JgN
+  暴雪机场:
+    url: https://tyuiokljhcgfxrtfyuxias.bxvpn.xyz/baofengxue/98a8052bae4bb4ee5a77ff4a69b1ca1a
     <<: *default-proxy-providers
-    proxy: DIRECT
+    proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[SaHa机场] "
-      
-  边角料机场:
-    url: https://sub.bjljc.xyz/api/biaojianliao/7c1955d157bb7c45c3a76d2ee1a31368
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[边角料机场] "
+      additional-prefix: "[试用]-[暴雪机场] "
 
 proxies:
   - {name: 直连, type: direct, ip-version: ipv6-prefer, udp: true}
@@ -143,9 +173,9 @@ mode: rule
 log-level: info
 
 external-controller: 0.0.0.0:9090
-# external-ui: ui
-# external-ui-name: zashboard
-# external-ui-url: https://gh-proxy.com/GitHub.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+external-ui: ui
+external-ui-name: zashboard
+external-ui-url: https://gh-proxy.com/GitHub.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
 secret: "123456"
 
 # ========================
@@ -155,31 +185,39 @@ dns:
   enable: true
   listen: 0.0.0.0:7874
   ipv6: true
+  prefer-h3: false
+  respect-rules: true
+  use-system-hosts: false
+  cache-algorithm: arc
   enhanced-mode: fake-ip
+  fake-ip-range: 198.67.0.1/16
   fake-ip-filter-mode: blacklist
-  fake-ip-range: 198.20.0.1/16
   fake-ip-filter:
     - +.lan
     - +.local
     - geosite:cn
-# 牛逼   
+
+    # 牛逼   
     - +.66jc.top  
-    - +.jueduibupao.top  
-    
- #元宝
+    - +.jueduibupao.top
+
+    #元宝
     - +.yuanbaojc.site
 
     - +.msftconnecttest.com
     - +.msftncsi.com
+
       # QQ快速登录检测失败
     - localhost.ptlogin2.qq.com
     - localhost.sec.qq.com
-        # 追加以下条目
+
+    # 追加以下条目
     - +.in-addr.arpa
     - +.ip6.arpa
     - time.*.com
     - time.*.gov
     - pool.ntp.org
+
       # 微信快速登录检测失败
     - localhost.work.weixin.qq.com 
     - +.66jc.top
@@ -190,25 +228,37 @@ dns:
     - +.dler.cloud
     - +.0tk8a3a1q4t94dler.com
     - +.aerianas.top
-    #- +. 1163088.xyz
+
     - teams.events.data.microsoft.com
     - api.flightproxy.teams.microsoft.com
-    
+
+    - +. 1163088.xyz
+
   nameserver:
     - 223.5.5.5 #dns.alidns.com
     - 119.29.29.29
-    
+    - 2400:3200:baba::1
+    - 2400:3200::1
+    - 2400:da00::6666
+    - 101.226.4.6
+    - 218.30.118.6
+    - 2001:dc7:1000::1
+    - 2001:4860:4860::8888
+    - 2001:4860:4860::8844
+    - 2606:4700:4700::1111
+    - 2606:4700:4700::1001
+
   default-nameserver:
-    - '114.114.114.114#DIRECT'
-    - '223.5.5.5#DIRECT'
-    - '119.29.29.29#DIRECT'
-    - '180.76.76.76#DIRECT'
-    - '180.184.1.1#DIRECT'
+    - '114.114.114.114'
+    - '223.5.5.5'
+    - '119.29.29.29'
+    - '180.76.76.76'
+    - '180.184.1.1'
 
   proxy-server-nameserver:
-    - 'https://dns.alidns.com/dns-query#DIRECT'
-    - 'https://doh.pub/dns-query#DIRECT'
-    - 'https://doh.onedns.net/dns-query#DIRECT'
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://doh.onedns.net/dns-query
     - https://223.5.5.5/dns-query
     - https://doh.pub/dns-query
 
@@ -222,29 +272,62 @@ dns:
       - https://dns.adguard.com/dns-query
       #- 223.5.5.5
       #- 119.29.29.29
-    
+
+# ========================
+# GEO 模块
+# ========================
+geodata-mode: false
+geox-url:
+  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+  geosite: https://github.com/Loyalsoldier/v2ray-rules-dat/blob/release/geosite.dat
+  #https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb
+  asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
+
+# ========================
+# IPV6 开关
+# ========================  
 ipv6: true
 
 # ========================
 # TUN 模块
 # ========================
 tun:
-  enable: true
+  enable: true #true
   stack: mixed
-  device: openclashtun
-  endpoint-independent-nat: false
+  device: openclash-tun
+  endpoint-independent-nat: true
   auto-route: true
   auto-detect-interface: true
   auto-redirect: true
   strict-route: true
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
 
 profile:
   store-selected: true
   store-fake-ip: true
 
 # ========================
-# 策略组定义
+# Sniffer 模块
 # ========================
+sniffer:
+  enable: true
+  sniff:
+    TLS:
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+
+# ========================
+# 代理组定义
+# ========================
+proxies:
+  - {name: 直连, type: direct, ip-version: ipv6-prefer}
+  - {name: 拒绝, type: reject}
+
 default: &default
   type: select
   proxies:
@@ -303,7 +386,7 @@ proxy-groups:
   - {name: 其他, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"}  
 
   #- {name: IPV6, type:  url-test, include-all: true, tolerance: 50, interval: 300, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg",  filter:  "(?=.*(IPV6|IPv6)).*$"} 
- 
+
   - name: IPV6
     type: smart
     include-all: true
@@ -355,7 +438,6 @@ proxy-groups:
     proxies:
       - 香港-手选
       - 香港-智选
-   
    
   - name: 香港-手选
     #type: select
@@ -567,28 +649,14 @@ proxy-groups:
   - {name: Block, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
 
 # ========================
-# 规则引擎（rules）
+# 路由规则
 # ========================
 rules:
-  - DOMAIN-KEYWORD,  wogg, DIRECT
-  - DOMAIN-KEYWORD,  teams, DIRECT
-  - DOMAIN-SUFFIX, teams.microsoft.com, DIRECT
-  - DOMAIN, statics.teams.cdn.office.net, DIRECT
-  
-  - DOMAIN, nagarro-my.sharepoint.com,DIRECT
-  - DOMAIN-SUFFIX, database.windows.net, DIRECT
-  - DOMAIN-SUFFIX,figma.com, DIRECT
-  - DOMAIN-SUFFIX, 1163088.xyz, IPV6,no-resolve
-  - DOMAIN-SUFFIX, ipv6, IPV6
-  - DOMAIN, ipv6.msftconnecttest.com, IPV6
-  - DOMAIN-SUFFIX, ygpy.net, 国外
-  - DOMAIN-SUFFIX, xingclouds.xyz, 国外
-  - DOMAIN-SUFFIX, xiangbizi.com, DIRECT
-  - DOMAIN-SUFFIX, qzz.io, 国外
-  - DOMAIN-SUFFIX,ledupeiyou.com, DIRECT
-  - DOMAIN-SUFFIX,  xn--mes199cbl6a.com, 国外
- 
-  #- RULE-SET,TEST / Domain,Test
+  # 自定义规则
+  - RULE-SET, Personal, 国外
+  - RULE-SET, Personal-IPV6, IPV6
+  - RULE-SET, Personal-CN, DIRECT
+
   - RULE-SET,Block / Domain,Block  
 
   # GitHub
@@ -662,7 +730,7 @@ rules:
   - MATCH,其他
 
 # ========================
-# 规则集提供者
+# 规则集合
 # ========================
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
@@ -746,3 +814,8 @@ rule-providers:
   Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
   Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}
 #  GateFireWall / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"}
+
+  # Personal
+  Personal: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal.list"}
+  Personal-CN: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-CN.list"}
+  Personal-IPV6: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-IPV6.list"}

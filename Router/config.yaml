@@ -59,13 +59,61 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
-  拼好鸡机场:
-    url: https://sub9.xn--5usv4t3x3c.xyz/pinhaoji/3e4383904e5e9d3173db89f0be2e3c64
+  R云:
+    url: https://gghgyhty.dddddddddddddd.cc/strrn/3565a0bef4877e5eda7443704bf502dc
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[拼好鸡机场] "
+      additional-prefix: "[试用]-[R云] "
+
+  小火龙:
+    url: https://xiaohuolongjc.top/api/v1/client/subscribe?token=b5166020cc3b37c834950f9c20288dce
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[小火龙] "
+
+  优良机场:
+    url: https://sub.yljc.xyz/youliang/ccc613e7d0edf88be43b1d61776dd755
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[优良机场] "
+
+  翻墙侠:
+    url: https://img.mystone.io/static/3ab0547538782b63e01f5e39fe6cf170
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[翻墙侠] "
+
+  西路云:
+    url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[西路云] "  
+
+  星链机场:
+    url: https://newrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[XL机场] " 
+
+  fold机场:
+    url: https://foldjc.top/api/v1/client/subscribe?token=0241732a5901a83857a0d4dd9a982bb9
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[fold机场] "
 
   迪莫云:
     url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
@@ -83,14 +131,6 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[游戏虾] "
 
-  OK机场:
-    url: https://sub.okjc.xyz/api/okokokokokokokokokokokokokokokok?token=30932e6ebcb9acb6e5094049154f162f
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[OK机场] "
-
   MistNet:
     url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
     <<: *default-proxy-providers
@@ -98,25 +138,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[MistNet] "
-
-  Domnn:
-    url: https://sub.domnn.xyz/domnn/bd826157371bea350b438d3f2946cbb9
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Domnn] "
-      proxy-name:
-      - pattern: "Domnn\\|"
-        target: ""
-
-  SaHa机场:
-    url: https://sub.sahayun.xyz/saha?token=c273bd8c42ff6736b8cad40a8b4cca21
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[SaHa机场] "
 
   免流云机场:
     url: http://sdfdfgdhsghf.hne4vh.site/api/v1/client/subscribe?token=4277c247d354e05f290671f50d1fb872
@@ -134,14 +155,6 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[暴雪机场] "
 
-  数字航站:
-    url: https://hz.dport.top/api/v1/client/subscribe?token=b6f34b67ea1c830aa24f7449ce2614d9
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[数字航站] "
-
 # ========================
 # 主要端口设置
 # ========================
@@ -156,9 +169,9 @@ mode: rule
 log-level: info
 
 external-controller: 0.0.0.0:9090
-external-ui: ui
-external-ui-name: zashboard
-external-ui-url: https://gh-proxy.com/GitHub.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+# external-ui: ui
+# external-ui-name: zashboard
+# external-ui-url: https://gh-proxy.com/GitHub.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
 secret: "123456"
 
 # ========================
@@ -357,8 +370,8 @@ defaultOthers: &defaultOthers
 defaultAll: &defaultAll
   type: select
   # <<: *useproxies
-  proxies: [星舰云-自动,HGFAST-自动,试用-自动]
-  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
+  proxies: [星舰云-自动,星链-自动,试用-自动]
+  #exclude-filter: "星链|Mitce|纵云梯|HGFAST"
   
 # Type: url-test
 defaultUrlTest: &defaultUrlTest
@@ -369,7 +382,7 @@ defaultUrlTest: &defaultUrlTest
   url: http://www.gstatic.com/generate_204
   lazy: false
   #<<: *useproxies
-  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
+  #exclude-filter: "星链Mitce|纵云梯|HGFAST"
 
 # Type: smart
 defaultSmart: &defaultSmart
@@ -386,7 +399,7 @@ defaultSmart: &defaultSmart
   strategy: sticky-sessions
   interval: 180
   #<<: *useproxies
-  exclude-filter: "星链|Mitce|纵云梯|HGFAST"
+  #exclude-filter: "星链|Mitce|纵云梯|HGFAST"
 
   #proxies: [直连,所有-手动,所有-自动,香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,亚洲-自动,欧洲-自动,美洲-自动,漏网之鱼,拒绝]
 proxy-groups:
@@ -433,12 +446,12 @@ proxy-groups:
   #- {name: 国内, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg"}
   #- {name: 国外, <<: *default, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg"}
   - {name: 所有-手动, <<: *defaultAll, include-all: true, filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
-  - {name: 所有-自动, <<: *defaultUrlTest, proxies: [星舰云-自动,HGFAST-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  - {name: 所有-自动, <<: *defaultUrlTest, proxies: [星舰云-自动,星链-自动,试用-自动], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
   #- {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
   - {name: IPV6, <<: *defaultUrlTest, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter:  "(?=.*(IPV6|IPv6)).*$"}
   
-  - {name: HGFAST-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(HGFAST)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
+  #- {name: HGFAST-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(HGFAST)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星舰云-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(星舰云)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星链-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(星链)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 试用-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(试用)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
@@ -616,6 +629,6 @@ rule-providers:
   Facebook / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs"}
 
   # Personal
-  Personal: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal.list"}
-  Personal-CN: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-CN.list"}
-  Personal-IPV6: {<<: *class, url: "https://git.ppp.ac.cn/https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-IPV6.list"}
+  Personal: {<<: *class, url: "https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal.list"}
+  Personal-CN: {<<: *class, url: "https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-CN.list"}
+  Personal-IPV6: {<<: *class, url: "https://raw.githubusercontent.com/yitang823/ClashConfig/refs/heads/main/Rule/Personal-IPV6.list"}
