@@ -314,32 +314,32 @@ proxies:
   - {name: 直连, type: direct, ip-version: ipv6-prefer}
   - {name: 拒绝, type: reject}
 
-useproxies: &useproxies
-  use:
-    #- 星链
-    - 星舰云
-    - 牛逼
-    #- 纵云梯
-    #- Mitce
-    - Nova加速
+# useproxies: &useproxies
+#   use:
+#     #- 星链
+#     - 星舰云
+#     - 牛逼
+#     #- 纵云梯
+#     #- Mitce
+#     - Nova加速
     
-    #- 元宝机场
-    - 星港机场
-    #- NewGate
-    - Nexia
-    #- 白嫖机场
-    - 数字航站
-    #- Kitty Cloud
-    #- HGFAST
-    - 暴雪机场
-    - 免流云机场
-    - SaHa机场
-    - 边角料机场
-    - Domnn
-    - MistNet
-    - CF 机场
-    - 游戏虾
-    - OK机场
+#     #- 元宝机场
+#     - 星港机场
+#     #- NewGate
+#     - Nexia
+#     #- 白嫖机场
+#     - 数字航站
+#     #- Kitty Cloud
+#     #- HGFAST
+#     - 暴雪机场
+#     - 免流云机场
+#     - SaHa机场
+#     - 边角料机场
+#     - Domnn
+#     - MistNet
+#     - CF 机场
+#     - 游戏虾
+#     - OK机场
 
 defaultproxies: &defaultproxies
   proxies: [香港-自动,台湾-自动,日本-自动,新加坡-自动,美国-自动,直连,所有-手动,所有-自动]
