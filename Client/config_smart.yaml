@@ -62,7 +62,7 @@ proxy-providers:
       additional-prefix: "[试用]-[星港机场] "
 
   R云:
-    url: hhttps://gghgyhty.dddddddddddddd.cc/strrn/3565a0bef4877e5eda7443704bf502dc
+    url: https://gghgyhty.dddddddddddddd.cc/strrn/3565a0bef4877e5eda7443704bf502dc
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
