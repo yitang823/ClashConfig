@@ -59,6 +59,22 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  R云:
+    url: hhttps://gghgyhty.dddddddddddddd.cc/strrn/3565a0bef4877e5eda7443704bf502dc
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[R云] "
+
+  小火龙:
+    url: https://xiaohuolongjc.top/api/v1/client/subscribe?token=b5166020cc3b37c834950f9c20288dce
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[小火龙] "
+
   优良机场:
     url: https://sub.yljc.xyz/youliang/ccc613e7d0edf88be43b1d61776dd755
     <<: *default-proxy-providers
@@ -76,7 +92,7 @@ proxy-providers:
       additional-prefix: "[试用]-[翻墙侠] "
 
   西路云:
-    url: https://xl.xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
+    url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
