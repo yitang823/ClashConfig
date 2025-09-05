@@ -61,6 +61,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  悦通:
+    url: https://file.yuetoto.com/static/a82b610bff96fd8066164af003910042
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[悦通] "
+
   R云:
     url: https://gghgyhty.dddddddddddddd.cc/strrn/3565a0bef4877e5eda7443704bf502dc
     <<: *default-proxy-providers
