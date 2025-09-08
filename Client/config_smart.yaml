@@ -476,7 +476,7 @@ proxy-groups:
   - {name: 所有-智选, <<: *defaultUrlTest, proxies: [星舰云-智选,星链-智选,试用-智选], filter: "^((?!(直连|拒绝|星舰云|星链|HGFAST|试用)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   
   #- {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
-  - {name: IPV6, <<: *defaultSmart, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter:  "(?=.*(IPV6|IPv6)).*$"}
+  - {name: IPV6, <<: *defaultSmart, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter:  "(?=.*(IPV6|IPv6|ipv6)).*$"}
   
   #- {name: HGFAST-智选, hidden: true, <<: *defaultSmart, filter: "(?=.*(HGFAST)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星舰云-智选, hidden: true, <<: *defaultSmart, filter: "(?=.*(星舰云)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}

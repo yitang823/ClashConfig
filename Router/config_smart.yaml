@@ -413,7 +413,7 @@ proxy-groups:
     strategy: sticky-sessions
     interval: 180
     icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg"
-    filter:  "(?=.*(IPV6|IPv6)).*$"
+    filter:  "(?=.*(IPV6|IPv6|ipv6)).*$"
 
   # 所有组
   - name: 所有-手选
