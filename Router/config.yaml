@@ -59,6 +59,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  轻量机场:
+    url: https://odysseycdn.cyou/api/v1/client/subscribe?token=3894da0c3def2f3c5e141e42775d1f7d
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[轻量机场] "
+
   海豚加速公益机场:
     url: https://www.htyun.cc/s/b5011515ce20454f782ef7f6c4dc6a76
     <<: *default-proxy-providers
