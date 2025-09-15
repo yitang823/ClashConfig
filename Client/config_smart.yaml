@@ -21,7 +21,7 @@ proxy-providers:
 #Long-Term
   星链:
     url: https://xship.top/v1/subscribe?starlink=0-MIp_48V1G5mPjY5FkdsgTp
-    proxy: DIRECT
+    proxy: 国外
     <<: *default-proxy-providers
     override:
       <<: *default-proxy-providers-override
@@ -61,10 +61,18 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  万利达:
+    url: https://mp4.wanlidag.top/s/wld/client/subscribe?token=0225384d6c2f4d519f52b15b25862ebc
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[万利达] "
+
   轻量机场:
     url: https://odysseycdn.cyou/api/v1/client/subscribe?token=3894da0c3def2f3c5e141e42775d1f7d
     <<: *default-proxy-providers
-    proxy: DIRECT
+    proxy: 国外
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[轻量机场] "
@@ -78,7 +86,7 @@ proxy-providers:
       additional-prefix: "[试用]-[海豚加速] "
 
   悦通:
-    url: https://file.yuetoto.com/static/a82b610bff96fd8066164af003910042
+    url: https://file.yuetoto.com/static/ae9a6cc4189d2567532a06addd79aed4
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
@@ -110,7 +118,7 @@ proxy-providers:
       additional-prefix: "[试用]-[优良机场] "
 
   翻墙侠:
-    url: https://img.mystone.io/static/3ab0547538782b63e01f5e39fe6cf170
+    url: https://img.mystone.io/static/ddbf80f4aa8b0c63753e8ddea72d43cd
     <<: *default-proxy-providers
     proxy: DIRECT
     override:
@@ -123,15 +131,15 @@ proxy-providers:
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[西路云] " 
+      additional-prefix: "[试用]-[西路云] "  
 
-  星链机场:
-    url: https://newrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[XL机场] " 
+  # 星链机场:
+  #   url: https://newrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
+  #   <<: *default-proxy-providers
+  #   proxy: DIRECT
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[XL机场] " 
 
   fold机场:
     url: https://foldjc.top/api/v1/client/subscribe?token=0241732a5901a83857a0d4dd9a982bb9
@@ -164,22 +172,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[MistNet] "
-
-  免流云机场:
-    url: http://sdfdfgdhsghf.hne4vh.site/api/v1/client/subscribe?token=4277c247d354e05f290671f50d1fb872
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[免流云机场] "
-
-  # 暴雪机场:
-  #   url: https://tyuiokljhcgfxrtfyuxias.bxvpn.xyz/baofengxue/98a8052bae4bb4ee5a77ff4a69b1ca1a
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[暴雪机场] "
 
 # ========================
 # 主要端口设置
