@@ -62,7 +62,7 @@ proxy-providers:
   万利达:
     url: https://mp4.wanlidag.top/s/wld/client/subscribe?token=0225384d6c2f4d519f52b15b25862ebc
     <<: *default-proxy-providers
-    proxy: DIRECT
+    proxy: 国外
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[万利达] "
