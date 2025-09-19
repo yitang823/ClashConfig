@@ -73,7 +73,7 @@ proxy-providers:
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]
+      additional-prefix: "[试用]-[游乐场] "
 
   可信云:
     url: https://cloud.mxlk.net/s/ca02eacefc95a707302120eeae2295d2

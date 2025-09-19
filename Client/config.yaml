@@ -48,7 +48,7 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[Nova加速] "
-      
+
   # Mitce:
   #   url: https://app.mitce.net/?sid=145054&token=d70484910852
   #   proxy: DIRECT
