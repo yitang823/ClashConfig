@@ -41,6 +41,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
+  Nova加速:
+    url: http://153.121.42.218/api/v1/client/subscribe?token=ff6082c4e967614851d92cde0940a8db
+    proxy: 国外
+    <<: *default-proxy-providers
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[Nova加速] "
+
   # Mitce:
   #   url: https://app.mitce.net/?sid=145054&token=d70484910852
   #   proxy: DIRECT
