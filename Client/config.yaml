@@ -59,6 +59,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[星港机场] "
 
+  游乐场:
+    url: https://ylccloud.top/api/v1/client/subscribe?token=4d87a72281cf46a36179b63b19075dd5
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[游乐场] "
+
   可信云:
     url: https://cloud.mxlk.net/s/ca02eacefc95a707302120eeae2295d2
     <<: *default-proxy-providers
