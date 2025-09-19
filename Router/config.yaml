@@ -115,13 +115,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[小火龙] "
 
-  优良机场:
-    url: https://sub.yljc.xyz/youliang/ccc613e7d0edf88be43b1d61776dd755
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[优良机场] "
+  # 优良机场:
+  #   url: https://sub.yljc.xyz/youliang/ccc613e7d0edf88be43b1d61776dd755
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[优良机场] "
 
   翻墙侠:
     url: https://img.mystone.io/static/ddbf80f4aa8b0c63753e8ddea72d43cd
