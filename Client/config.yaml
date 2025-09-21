@@ -187,13 +187,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[游戏虾] "
 
-  MistNet:
-    url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[MistNet] "
+  # MistNet:
+  #   url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
+  #   <<: *default-proxy-providers
+  #   proxy: DIRECT
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[MistNet] "
 
   # 免流云机场:
   #   url: http://sdfdfgdhsghf.hne4vh.site/api/v1/client/subscribe?token=4277c247d354e05f290671f50d1fb872
