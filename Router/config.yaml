@@ -187,13 +187,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[迪莫云] "
 
-  游戏虾:
-    url: https://youxixia.top/api/v1/client/subscribe?token=1cb7d43735ed0403c1b6e75ce16da7ff
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[游戏虾] "
+  # 游戏虾:
+  #   url: https://youxixia.top/api/v1/client/subscribe?token=1cb7d43735ed0403c1b6e75ce16da7ff
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[游戏虾] "
 
   # MistNet:
   #   url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
