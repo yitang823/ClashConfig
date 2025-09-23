@@ -58,6 +58,13 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  拼好线:
+    url: https://pinhaoxian.top/s/866d286795af968280832fc98717f9af
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[拼好线] "
 
   星港机场:
     url: https://2c.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
