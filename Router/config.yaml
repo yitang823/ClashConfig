@@ -58,6 +58,22 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  白狗:
+    url: https://baigou.kkhhddnn.cn/baidu666?token=2cf60fe73a48d627c460a122876bcaa8
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[白狗] "
+
+  麋鹿机场:
+    url: https://berber.pics/api/v1/client/subscribe?token=6250df5e1fcbf83550c6efc29ec5cca2
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[麋鹿机场] "
+
   拼好线:
     url: https://pinhaoxian.top/s/866d286795af968280832fc98717f9af
     <<: *default-proxy-providers
@@ -186,13 +202,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[fold机场] "
 
-  迪莫云:
-    url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[迪莫云] "
+  # 迪莫云:
+  #   url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[迪莫云] "
 
   # 游戏虾:
   #   url: https://youxixia.top/api/v1/client/subscribe?token=1cb7d43735ed0403c1b6e75ce16da7ff
