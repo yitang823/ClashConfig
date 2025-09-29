@@ -99,7 +99,7 @@ proxy-providers:
       additional-prefix: "[试用]-[星港机场] "
 
   LinluJS:
-    url: https://linlujs.cc/lll/19ec6fb0f22666b9d504fc5a069f48cb
+    url: http://106.15.229.237:20031/lll/19ec6fb0f22666b9d504fc5a069f48cb
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -178,21 +178,21 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[优良机场] "
 
-  翻墙侠:
-    url: https://img.mystone.io/static/ddbf80f4aa8b0c63753e8ddea72d43cd
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[翻墙侠] "
+  # 翻墙侠:
+  #   url: https://img.mystone.io/static/ddbf80f4aa8b0c63753e8ddea72d43cd
+  #   <<: *default-proxy-providers
+  #   proxy: DIRECT
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[翻墙侠] "
 
-  西路云:
-    url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[西路云] "  
+  # 西路云:
+  #   url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[西路云] "  
 
   # 星链机场:
   #   url: https://newrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
