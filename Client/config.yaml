@@ -58,6 +58,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  斑马:
+    url: http://107.173.31.17/s/6ef804d41e93c410264bf2eeacbd3f83
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[斑马] "
+
   白狗:
     url: https://baigou.kkhhddnn.cn/baidu666?token=2cf60fe73a48d627c460a122876bcaa8
     <<: *default-proxy-providers
@@ -65,7 +73,7 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[白狗] "
-      
+
   麋鹿机场:
     url: https://berber.pics/api/v1/client/subscribe?token=6250df5e1fcbf83550c6efc29ec5cca2
     <<: *default-proxy-providers
@@ -106,13 +114,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[游乐场] "
 
-  可信云:
-    url: https://cloud.mxlk.net/s/ca02eacefc95a707302120eeae2295d2
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[可信云] "
+  # 可信云:
+  #   url: https://cloud.mxlk.net/s/ca02eacefc95a707302120eeae2295d2
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[可信云] "
 
   万利达:
     url: https://mp4.wanlidag.top/s/wld/client/subscribe?token=0225384d6c2f4d519f52b15b25862ebc
@@ -130,13 +138,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[轻量机场] "
 
-  海豚加速公益机场:
-    url: https://www.htyun.cc/s/b5011515ce20454f782ef7f6c4dc6a76
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[海豚加速] "
+  # 海豚加速公益机场:
+  #   url: https://www.htyun.cc/s/b5011515ce20454f782ef7f6c4dc6a76
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[海豚加速] "
 
   悦通:
     url: https://file.yuetoto.com/static/ae9a6cc4189d2567532a06addd79aed4
@@ -194,13 +202,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[XL机场] " 
 
-  fold机场:
-    url: https://foldjc.top/api/v1/client/subscribe?token=0241732a5901a83857a0d4dd9a982bb9
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[fold机场] "
+  # fold机场:
+  #   url: https://foldjc.top/api/v1/client/subscribe?token=0241732a5901a83857a0d4dd9a982bb9
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[fold机场] "
 
   # 迪莫云:
   #   url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
