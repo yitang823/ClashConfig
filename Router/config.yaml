@@ -49,6 +49,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[Nova] "
 
+  Flownet:
+    url: https://5f236t3.flownet.store/s/ffe68a329aa8f9b497ab0b4eeabffa2f
+    proxy: 国外
+    <<: *default-proxy-providers
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[Flownet] "
+
   # Mitce:
   #   url: https://app.mitce.net/?sid=145054&token=d70484910852
   #   proxy: DIRECT
@@ -58,6 +66,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  白嫖机场:
+    url: https://bpjc.pics/tg-bpjcc/8f18e237d84c0c922f513addb7d949f8
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[白嫖机场] "
+
   斑马:
     url: http://107.173.31.17/s/6ef804d41e93c410264bf2eeacbd3f83
     <<: *default-proxy-providers
