@@ -49,13 +49,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[Nova] "
 
-  Flownet:
-    url: https://5f236t3.flownet.store/s/ffe68a329aa8f9b497ab0b4eeabffa2f
-    proxy: 国外
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[Flownet] "
+  # Flownet:
+  #   url: https://5f236t3.flownet.store/s/ffe68a329aa8f9b497ab0b4eeabffa2f
+  #   proxy: 国外
+  #   <<: *default-proxy-providers
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[Flownet] "
 
   曲径通幽:
     url: https://dhidyh.qjty.buzz/api/v1/client/subscribe?token=12f5d57ade80d1094a8a3bf8dea8318c
