@@ -59,7 +59,7 @@ proxy-providers:
 
   曲径通幽:
     url: https://dhidyh.qjty.buzz/api/v1/client/subscribe?token=12f5d57ade80d1094a8a3bf8dea8318c
-    proxy: 国外
+    proxy: DIRECT
     <<: *default-proxy-providers
     override:
       <<: *default-proxy-providers-override
