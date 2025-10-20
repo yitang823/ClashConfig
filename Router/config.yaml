@@ -74,6 +74,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  云易通:
+    url: https://sub.xn--9kqy68chx3a.shop/s/ce4948e28753936d79b172e3a0670c6c
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[云易通] "
+
   榴莲加速器:
     url: https://vlog.573193.xyz/aliyun/alist/apikey?token=d0ff502ba1fbb3e4dafb3cdf34249bcc
     <<: *default-proxy-providers
@@ -138,13 +146,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[LinluJS] "
 
-  游乐场:
-    url: https://ylccloud.top/api/v1/client/subscribe?token=4d87a72281cf46a36179b63b19075dd5
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[游乐场] "
+  # 游乐场:
+  #   url: https://ylccloud.top/api/v1/client/subscribe?token=4d87a72281cf46a36179b63b19075dd5
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[游乐场] "
 
   # 可信云:
   #   url: https://cloud.mxlk.net/s/ca02eacefc95a707302120eeae2295d2
