@@ -58,8 +58,8 @@ proxy-providers:
   #     additional-prefix: "[Flownet] "
 
   曲径通幽:
-    url: https://kjfsd.qjty.buzz/api/v1/client/subscribe?token=12f5d57ade80d1094a8a3bf8dea8318c
-    proxy: DIRECT
+    url: https://htfg.qjty.buzz/api/v1/client/subscribe?token=12f5d57ade80d1094a8a3bf8dea8318c
+    proxy: 国外
     <<: *default-proxy-providers
     override:
       <<: *default-proxy-providers-override
@@ -74,7 +74,7 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
-  乐猫_20261021_500:
+  乐猫_20261021_500G:
     url: https://er.lemaodydayu.top/s/ef2c8e28ef705f01cd2b992d57b4083b
     <<: *default-proxy-providers
     proxy: 国外
@@ -82,7 +82,31 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[乐猫] "
 
-  套路云_20251122_1500:
+  大牛云_20251128_500G:
+    url: https://sub.xn--9kqw1xbnu.shop/s/40390d89a2061c53bb588ddcec18cda1
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[大牛云] "
+
+  瑶瑶领先_20251128_500G:
+    url: https://sub666.yydzx.xyz/sub/1c30e9ccfa5622da/clash
+    <<: *default-proxy-providers
+    proxy: DIRECT
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[瑶瑶领先] "
+
+  诺亚龙舟_20251124_200G:
+    url: https://sub.nylz.xyz/subscribe/ccb3ac054681772eb7819a05caf582c3
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[诺亚龙舟] "
+
+  套路云_20251122_1500G:
     url: https://xn--9kq85xcu6b.com/api/v1/client/subscribe?token=bc04cce3557c1194c9fb448be8109d13
     <<: *default-proxy-providers
     proxy: 国外
@@ -106,13 +130,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[榴莲加速器] "
 
-  白嫖机场:
-    url: https://bpjc.pics/tg-bpjcc/8f18e237d84c0c922f513addb7d949f8
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[白嫖机场] "
+  # 白嫖机场:
+  #   url: https://bpjc.pics/tg-bpjcc/8f18e237d84c0c922f513addb7d949f8
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[白嫖机场] "
 
   斑马:
     url: http://107.173.31.17/s/6ef804d41e93c410264bf2eeacbd3f83
@@ -122,29 +146,29 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[斑马] "
 
-  白狗:
-    url: https://baigou.kkhhddnn.cn/baidu666?token=2cf60fe73a48d627c460a122876bcaa8
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[白狗] "
+  # 白狗:
+  #   url: https://baigou.kkhhddnn.cn/baidu666?token=2cf60fe73a48d627c460a122876bcaa8
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[白狗] "
 
-  麋鹿机场:
-    url: https://berber.pics/api/v1/client/subscribe?token=6250df5e1fcbf83550c6efc29ec5cca2
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[麋鹿机场] "
+  # 麋鹿机场:
+  #   url: https://berber.pics/api/v1/client/subscribe?token=6250df5e1fcbf83550c6efc29ec5cca2
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[麋鹿机场] "
 
-  拼好线:
-    url: https://pinhaoxian.top/s/866d286795af968280832fc98717f9af
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[拼好线] "
+  # 拼好线:
+  #   url: https://pinhaoxian.top/s/866d286795af968280832fc98717f9af
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[拼好线] "
 
   # 星港机场:
   #   url: https://2c.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
@@ -154,7 +178,7 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[星港机场] "
 
-  LinluJS:
+  LinluJS_20251120_200G:
     url: http://106.15.229.237:20031/lll/19ec6fb0f22666b9d504fc5a069f48cb
     <<: *default-proxy-providers
     proxy: 国外
@@ -177,119 +201,6 @@ proxy-providers:
   #   override:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[可信云] "
-
-  万利达:
-    url: https://mp4.wanlidag.top/s/wld/client/subscribe?token=0225384d6c2f4d519f52b15b25862ebc
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[万利达] "
-
-  # 轻量机场:
-  #   url: https://odysseycdn.cyou/api/v1/client/subscribe?token=3894da0c3def2f3c5e141e42775d1f7d
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[轻量机场] "
-
-  # 海豚加速公益机场:
-  #   url: https://www.htyun.cc/s/b5011515ce20454f782ef7f6c4dc6a76
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[海豚加速] "
-
-  # 悦通:
-  #   url: https://file.yuetoto.com/static/ae9a6cc4189d2567532a06addd79aed4
-  #   <<: *default-proxy-providers
-  #   proxy: DIRECT
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[悦通] "
-
-  # R云:
-  #   url: https://gghgyhty.dddddddddddddd.cc/strrn/3565a0bef4877e5eda7443704bf502dc
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[R云] "
-
-  # 小火龙:
-  #   url: https://xiaohuolongjc.top/api/v1/client/subscribe?token=b5166020cc3b37c834950f9c20288dce
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[小火龙] "
-
-  # 优良机场:
-  #   url: https://sub.yljc.xyz/youliang/ccc613e7d0edf88be43b1d61776dd755
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[优良机场] "
-
-  # 翻墙侠:
-  #   url: https://img.mystone.io/static/ddbf80f4aa8b0c63753e8ddea72d43cd
-  #   <<: *default-proxy-providers
-  #   proxy: DIRECT
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[翻墙侠] "
-
-  # 西路云:
-  #   url: https://xilucloud.top/api/v1/client/subscribe?token=55ffa9524da22214b93e9b29130aca72
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[西路云] "  
-
-  # 星链机场:
-  #   url: https://newrss.starlinkclash.ggff.net/s/c51cd11f642b10f37bbced6167cde788
-  #   <<: *default-proxy-providers
-  #   proxy: DIRECT
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[XL机场] " 
-
-  # fold机场:
-  #   url: https://foldjc.top/api/v1/client/subscribe?token=0241732a5901a83857a0d4dd9a982bb9
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[fold机场] "
-
-  # 迪莫云:
-  #   url: https://dimoyun.top/dimo/vvip/client/subscribe?token=ce23d4d33036ca02f422584866bb6deb
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[迪莫云] "
-
-  # 游戏虾:
-  #   url: https://youxixia.top/api/v1/client/subscribe?token=1cb7d43735ed0403c1b6e75ce16da7ff
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[游戏虾] "
-
-  # MistNet:
-  #   url: https://9770f00d98e.bigbigwatermelon.com/s?token=b7a605532bc5e9f3ad770796e7cf64c6
-  #   <<: *default-proxy-providers
-  #   proxy: DIRECT
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[MistNet] "
-
 
 # ========================
 # 主要端口设置
