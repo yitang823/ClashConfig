@@ -138,13 +138,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[白嫖机场] "
 
-  斑马:
-    url: http://107.173.31.17/s/6ef804d41e93c410264bf2eeacbd3f83
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[斑马] "
+  # 斑马:
+  #   url: http://107.173.31.17/s/6ef804d41e93c410264bf2eeacbd3f83
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[斑马] "
 
   # 白狗:
   #   url: https://baigou.kkhhddnn.cn/baidu666?token=2cf60fe73a48d627c460a122876bcaa8
@@ -179,7 +179,7 @@ proxy-providers:
   #     additional-prefix: "[试用]-[星港机场] "
 
   LinluJS_20251120_200G:
-    url: http://106.15.229.237:20031/lll/19ec6fb0f22666b9d504fc5a069f48cb
+    url: https://sub.linlujs-2.men/lll/19ec6fb0f22666b9d504fc5a069f48cb
     <<: *default-proxy-providers
     proxy: 国外
     override:
