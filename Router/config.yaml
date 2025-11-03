@@ -106,13 +106,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[瑶瑶领先] "
 
-  诺亚龙舟_20251124_200G:
-    url: https://sub.nylz.xyz/subscribe/ccb3ac054681772eb7819a05caf582c3
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[诺亚龙舟] "
+  # 诺亚龙舟_20251124_200G:
+  #   url: https://sub.nylz.xyz/subscribe/ccb3ac054681772eb7819a05caf582c3
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[诺亚龙舟] "
 
   套路云_20251122_1500G:
     url: https://xn--9kq85xcu6b.com/api/v1/client/subscribe?token=bc04cce3557c1194c9fb448be8109d13
