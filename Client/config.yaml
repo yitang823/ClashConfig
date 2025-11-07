@@ -74,6 +74,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  马里奥_20251207_100G:
+    url: http://107.172.90.153/dssd/we/fd/subscribe?token=d0602fd92bbf7f408b3e0aa1b45b394a
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[马里奥] "
+
   木木云_20251207_100G:
     url: https://sub609.999398.xyz/JWl8MsV8XY4TYi0W2A0W/c37e8796cfc2221a3c91c189e2213cce
     <<: *default-proxy-providers
