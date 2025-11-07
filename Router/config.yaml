@@ -82,13 +82,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[木木云] "
 
-  酱酱机场_20251203_500G:
-    url: https://sub2.sunglow.cfd/jiangjiang?token=a6c87f914abf666cc3e6c42dcd7df149
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[酱酱机场] "
+  # 酱酱机场_20251203_500G:
+  #   url: https://sub2.sunglow.cfd/jiangjiang?token=a6c87f914abf666cc3e6c42dcd7df149
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[酱酱机场] "
 
   乐猫_20261021_500G:
     url: https://er.lemaodydayu.top/s/ef2c8e28ef705f01cd2b992d57b4083b
