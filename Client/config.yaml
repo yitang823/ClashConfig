@@ -9,7 +9,7 @@ default-proxy-providers: &default-proxy-providers
     url: https://www.gstatic.com/generate_204
     interval: 180
     lazy: false
-  exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组|无法|官方"
+  exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|免费|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组|无法|官方|频道|等级|虛無閣"
 
 default-proxy-providers-override: &default-proxy-providers-override
   udp: true
@@ -537,7 +537,8 @@ proxy-groups:
   
   #- {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
   - {name: IPV6, <<: *defaultUrlTest, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter:  "(?=.*(IPV6|IPv6|ipv6)).*$"}
-  
+  - {name: 印度-自动, <<: *defaultUrlTest, filter: "(?=.*(印度|India)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/in.svg"}
+
   #- {name: HGFAST-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(HGFAST)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星舰云-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(星舰云)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星链-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(星链)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
