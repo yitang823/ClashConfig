@@ -74,6 +74,22 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  趣云_20251210_100G:
+    url: https://qucloud.top/api/v1/client/subscribe?token=7d4d7917b1567e7ecf8d3b11cb27e9bc
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[趣云] "
+
+  虛無閣_20251208_100G:
+    url: https://sub.xuwuge.xyz/xuwuge/06337bff63baefdca99476abef1dcad6
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[虛無閣] "
+
   马里奥_20251207_100G:
     url: http://107.172.90.153/dssd/we/fd/subscribe?token=d0602fd92bbf7f408b3e0aa1b45b394a
     <<: *default-proxy-providers
