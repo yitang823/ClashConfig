@@ -537,7 +537,7 @@ proxy-groups:
   
   #- {name: Block, <<: *default, filter: "^((?(直连|拒绝)).)*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"}
   - {name: IPV6, <<: *defaultUrlTest, "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg", filter:  "(?=.*(IPV6|IPv6|ipv6)).*$"}
-  - {name: 印度-自动, <<: *defaultUrlTest, filter: "(?=.*(印度|India)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/in.svg"}
+  - {name: 印度-自动, <<: *defaultUrlTest, filter: "^(?!.*印度尼西亚).*(印度|India).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/in.svg"}
 
   #- {name: HGFAST-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(HGFAST)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
   - {name: 星舰云-自动, hidden: true, <<: *defaultUrlTest, filter: "(?=.*(星舰云)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"}
