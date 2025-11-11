@@ -74,6 +74,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  免费机场_20251211_300G:
+    url: https://sub-1.xn--94q57lcvpw50b.cc/mfjc/cc2199dd6b3e67a15a366e2c67bd8c60
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[免费机场] "
+
   趣云_20251210_100G:
     url: https://qucloud.top/api/v1/client/subscribe?token=7d4d7917b1567e7ecf8d3b11cb27e9bc
     <<: *default-proxy-providers
