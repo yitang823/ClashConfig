@@ -74,6 +74,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  墨菲云_20251214_150G:
+    url: https://cn.mfxy.store/api/v1/client/subscribe?token=dc37c5056fc303daeaa4a3b05c56f486
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[墨菲云] "
+      
   免费机场_20251211_300G:
     url: https://sub-1.xn--94q57lcvpw50b.cc/mfjc/cc2199dd6b3e67a15a366e2c67bd8c60
     <<: *default-proxy-providers
@@ -130,13 +138,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[乐猫] "
 
-  大牛云_20251128_500G:
-    url: https://sub.xn--9kqw1xbnu.shop/s/c0fc4d844776f32e952644ad7a0b2e7e
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[大牛云] "
+  # 大牛云_20251128_500G:
+  #   url: https://sub.xn--9kqw1xbnu.shop/s/c0fc4d844776f32e952644ad7a0b2e7e
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[大牛云] "
 
   瑶瑶领先_20251128_500G:
     url: https://sub666.yydzx.xyz/sub/1c30e9ccfa5622da/clash
