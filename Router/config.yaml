@@ -186,13 +186,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[云易通] "
 
-  榴莲加速器:
-    url: https://vlog.573193.xyz/aliyun/alist/apikey?token=d0ff502ba1fbb3e4dafb3cdf34249bcc
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[榴莲加] "
+  # 榴莲加速器:
+  #   url: https://vlog.573193.xyz/aliyun/alist/apikey?token=d0ff502ba1fbb3e4dafb3cdf34249bcc
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[榴莲加] "
 
   # 白嫖机场:
   #   url: https://bpjc.pics/tg-bpjcc/8f18e237d84c0c922f513addb7d949f8
