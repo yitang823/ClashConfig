@@ -25,13 +25,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[星链] "
 
-  星舰云:
-    url: https://xing.needaycloud.top/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
-    proxy: 国外
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[星舰云] "
+  # 星舰云:
+  #   url: https://xing.needaycloud.top/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
+  #   proxy: 国外
+  #   <<: *default-proxy-providers
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[星舰云] "
 
   牛逼:
     url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=cdb94063e8fcc0d6da6b857e0369b315
@@ -75,7 +75,7 @@ proxy-providers:
 
 #Temporary
   三七机场_20251221_500G:
-    url: https://sub.3737137.xyz/sanqi?token=ecb2ka9QOREVJ3Lq5jz-Jbpi4Xwsdt_6
+    url: https://sub.3737137.xyz/sanqi?token=uTlWJBBdP7lSylxMrYH3g806ZQn7yCxa
     <<: *default-proxy-providers
     proxy: 国外
     override:
