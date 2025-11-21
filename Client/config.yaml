@@ -75,7 +75,7 @@ proxy-providers:
 
 #Temporary
   三七机场_20251221_500G:
-    url: https://sub.3737137.xyz/sanqi?token=uTlWJBBdP7lSylxMrYH3g806ZQn7yCxa
+    url: https://sub.3737137.xyz/sanqi?token=Bk3bkFayceABUD3X7-flM48gzgftC_Ve
     <<: *default-proxy-providers
     proxy: 国外
     override:
