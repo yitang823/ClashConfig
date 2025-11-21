@@ -83,7 +83,7 @@ proxy-providers:
       additional-prefix: "[试用]-[三七机场] "
 
   帝豪机场_20251218_400G:
-    url: https://sub.xn--mes13n8pi8x2b.shop/s/c7ee07417e32cb919c9190dfa7847de7
+    url: https://sub.xn--mes13n8pi8x2b.shop/s/6b497415346dd1df7b53172257a067bd
     <<: *default-proxy-providers
     proxy: 国外
     override:
