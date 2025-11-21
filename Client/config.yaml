@@ -26,7 +26,7 @@ proxy-providers:
       additional-prefix: "[星链] "
 
   星舰云:
-    url: https://cdn.subscribe-xing.xyz/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
+    url: https://xing.needaycloud.top/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
     proxy: 国外
     <<: *default-proxy-providers
     override:
@@ -74,6 +74,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  三七机场_20251221_500G:
+    url: https://sub.3737137.xyz/sanqi?token=ecb2ka9QOREVJ3Lq5jz-Jbpi4Xwsdt_6
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[三七机场] "
+
   帝豪机场_20251218_400G:
     url: https://sub.xn--mes13n8pi8x2b.shop/s/c7ee07417e32cb919c9190dfa7847de7
     <<: *default-proxy-providers
