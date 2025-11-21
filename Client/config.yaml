@@ -74,13 +74,13 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
-  三七机场_20251221_500G:
-    url: https://sub.3737137.xyz/sanqi?token=Bk3bkFayceABUD3X7-flM48gzgftC_Ve
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[三七机场] "
+  # 三七机场_20251221_500G:
+  #   url: https://sub.3737137.xyz/sanqi?token=Bk3bkFayceABUD3X7-flM48gzgftC_Ve
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[三七机场] "
 
   帝豪机场_20251218_400G:
     url: https://sub.xn--mes13n8pi8x2b.shop/s/6b497415346dd1df7b53172257a067bd
