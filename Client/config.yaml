@@ -82,6 +82,14 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[三七机场] "
 
+  蛋糕云_20251222_100G:
+    url: https://dy.cakecloud.sbs/cake/6d815f456c92aeb12c772d146a07d299
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[蛋糕云] "
+
   帝豪机场_20251218_400G:
     url: https://sub.xn--mes13n8pi8x2b.shop/s/6b497415346dd1df7b53172257a067bd
     <<: *default-proxy-providers
@@ -186,13 +194,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[诺亚龙舟] "
 
-  套路云_20251122_1500G:
-    url: https://xn--9kq85xcu6b.com/api/v1/client/subscribe?token=bc04cce3557c1194c9fb448be8109d13
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[套路云] "
+  # 套路云_20251122_1500G:
+  #   url: https://xn--9kq85xcu6b.com/api/v1/client/subscribe?token=bc04cce3557c1194c9fb448be8109d13
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[套路云] "
 
   # 云易通:
   #   url: https://sub.xn--9kqy68chx3a.shop/s/ce4948e28753936d79b172e3a0670c6c
