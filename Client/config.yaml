@@ -82,6 +82,14 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[三七机场] "
 
+  满身大汉加速器_20251223_1G:
+    url: https://hk.allmen.xyz/xfxs/fb2b825b2bd1d30e819e7faabc9bdb71
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[满身大汉加速器] "
+
   蛋糕云_20251222_100G:
     url: https://dy.cakecloud.sbs/cake/6d815f456c92aeb12c772d146a07d299
     <<: *default-proxy-providers
