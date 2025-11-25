@@ -81,6 +81,14 @@ proxy-providers:
   #   override:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[三七机场] "
+  金门云_20251225_400G:
+    url: https://sub.xn--9kq725n0tc.shop/s/d3059db1a3faac3aff5ff11a1585de37
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[金门云] "
+
   满身大汉加速器_20251223_1G:
     url: https://hk.allmen.xyz/xfxs/fb2b825b2bd1d30e819e7faabc9bdb71
     <<: *default-proxy-providers
@@ -88,7 +96,7 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[满身大汉加速器] "
-      
+
   蛋糕云_20251222_100G:
     url: https://dy.cakecloud.sbs/cake/6d815f456c92aeb12c772d146a07d299
     <<: *default-proxy-providers
