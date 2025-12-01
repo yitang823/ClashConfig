@@ -193,13 +193,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[大牛云] "
 
-  瑶瑶领先_20251128_500G:
-    url: https://sub666.yydzx.xyz/sub/1c30e9ccfa5622da/clash
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[瑶瑶领先] "
+  # 瑶瑶领先_20251128_500G:
+  #   url: https://sub666.yydzx.xyz/sub/1c30e9ccfa5622da/clash
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[瑶瑶领先] "
 
   # 诺亚龙舟_20251124_200G:
   #   url: https://sub.nylz.xyz/subscribe/ccb3ac054681772eb7819a05caf582c3
