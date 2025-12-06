@@ -113,13 +113,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[金门云] "
       
-  满身大汉加速器_20251223_1G:
-    url: https://hk.allmen.xyz/xfxs/fb2b825b2bd1d30e819e7faabc9bdb71
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[满身大汉加速器] "
+  # 满身大汉加速器_20251223_1G:
+  #   url: https://hk.allmen.xyz/xfxs/fb2b825b2bd1d30e819e7faabc9bdb71
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[满身大汉加速器] "
 
   蛋糕云_20251222_100G:
     url: https://sub.cakecloud.sbs/cake/6d815f456c92aeb12c772d146a07d299
@@ -177,13 +177,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[虛無閣] "
 
-  马里奥_20251207_100G:
-    url: https://maliaojc.top/bmg/v2/client/subscribe?token=d0602fd92bbf7f408b3e0aa1b45b394a
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[马里奥] "
+  # 马里奥_20251207_100G:
+  #   url: https://maliaojc.top/bmg/v2/client/subscribe?token=d0602fd92bbf7f408b3e0aa1b45b394a
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[马里奥] "
 
   木木云_20251207_100G:
     url: https://sub609.999398.xyz/JWl8MsV8XY4TYi0W2A0W/c37e8796cfc2221a3c91c189e2213cce
