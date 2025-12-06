@@ -74,6 +74,22 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  开心云_20260106_100G:
+    url: https://fddhasgdhfhbtrbea.kaixincloud.my/dasfvrnafc/dfsdvv2/gsteyfaf/mnnjhjcd?token=f16fc3bf21af0cf66ef3c77b1a506820
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[开心云] "
+
+  极致云_20260106_100G:
+    url: https://0a0107f031.jzcloud.xyz/api/reset/0ed08c36f512e80ad328fb92ec2111a7
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[极致云] "
+
   白嫖机场_20251231_500G:
     url: https://api.apihs.cfd/bpjc?token=ee2d2d8f236420eb9ad6eab8fc17311f
     <<: *default-proxy-providers
