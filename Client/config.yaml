@@ -74,6 +74,22 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  开心云_20260106_100G:
+    url: https://fddhasgdhfhbtrbea.kaixincloud.my/dasfvrnafc/dfsdvv2/gsteyfaf/mnnjhjcd?token=f16fc3bf21af0cf66ef3c77b1a506820
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[开心云] "
+
+  极致云_20260106_100G:
+    url: https://0a0107f031.jzcloud.xyz/api/reset/0ed08c36f512e80ad328fb92ec2111a7
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[极致云] "
+
   白嫖机场_20251231_500G:
     url: https://api.apihs.cfd/bpjc?token=ee2d2d8f236420eb9ad6eab8fc17311f
     <<: *default-proxy-providers
@@ -97,13 +113,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[金门云] "
       
-  满身大汉加速器_20251223_1G:
-    url: https://hk.allmen.xyz/xfxs/fb2b825b2bd1d30e819e7faabc9bdb71
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[满身大汉加速器] "
+  # 满身大汉加速器_20251223_1G:
+  #   url: https://hk.allmen.xyz/xfxs/fb2b825b2bd1d30e819e7faabc9bdb71
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[满身大汉加速器] "
 
   蛋糕云_20251222_100G:
     url: https://sub.cakecloud.sbs/cake/6d815f456c92aeb12c772d146a07d299
@@ -161,13 +177,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[虛無閣] "
 
-  马里奥_20251207_100G:
-    url: https://maliaojc.top/bmg/v2/client/subscribe?token=d0602fd92bbf7f408b3e0aa1b45b394a
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[马里奥] "
+  # 马里奥_20251207_100G:
+  #   url: https://maliaojc.top/bmg/v2/client/subscribe?token=d0602fd92bbf7f408b3e0aa1b45b394a
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[马里奥] "
 
   木木云_20251207_100G:
     url: https://sub609.999398.xyz/JWl8MsV8XY4TYi0W2A0W/c37e8796cfc2221a3c91c189e2213cce
