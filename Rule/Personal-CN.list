@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,teams.microsoft.com #直连
 #- DOMAIN-KEYWORD,teams # Teams直连
 DOMAIN-SUFFIX,figma.com
 
+DOMAIN, database.windows.net #Azure数据库
 DOMAIN-SUFFIX, database.windows.net #Azure数据库
 DOMAIN-KEYWORD, wogg
   
