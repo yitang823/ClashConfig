@@ -74,6 +74,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  白嫖妙妙屋_20260111_500G:
+    url: https://sub.baipiao.buzz/bpmmw?token=af1412b85219cdd282a08b0db62f9080
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[白嫖妙妙屋] "
+
   开心云_20260106_100G:
     url: https://fddhasgdhfhbtrbea.kaixincloud.my/dasfvrnafc/dfsdvv2/gsteyfaf/mnnjhjcd?token=f16fc3bf21af0cf66ef3c77b1a506820
     <<: *default-proxy-providers
@@ -153,21 +161,21 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[墨菲云] "
 
-  免费机场_20251211_300G:
-    url: https://sub-1.xn--94q57lcvpw50b.cc/mfjc/cc2199dd6b3e67a15a366e2c67bd8c60
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[免费机场] "
+  # 免费机场_20251211_300G:
+  #   url: https://sub-1.xn--94q57lcvpw50b.cc/mfjc/cc2199dd6b3e67a15a366e2c67bd8c60
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[免费机场] "
 
-  趣云_20251210_100G:
-    url: https://qucloud.top/api/v1/client/subscribe?token=7d4d7917b1567e7ecf8d3b11cb27e9bc
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[趣云] "
+  # 趣云_20251210_100G:
+  #   url: https://qucloud.top/api/v1/client/subscribe?token=7d4d7917b1567e7ecf8d3b11cb27e9bc
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[趣云] "
 
   # 虛無閣_20251208_100G:
   #   url: https://sub.xuwuge.xyz/xuwuge/06337bff63baefdca99476abef1dcad6
@@ -185,13 +193,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[马里奥] "
 
-  木木云_20251207_100G:
-    url: https://sub609.999398.xyz/JWl8MsV8XY4TYi0W2A0W/c37e8796cfc2221a3c91c189e2213cce
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[木木云] "
+  # 木木云_20251207_100G:
+  #   url: https://sub609.999398.xyz/JWl8MsV8XY4TYi0W2A0W/c37e8796cfc2221a3c91c189e2213cce
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[木木云] "
  
   # 酱酱机场_20251203_500G:
   #   url: https://sub2.sunglow.cfd/jiangjiang?token=a6c87f914abf666cc3e6c42dcd7df149
