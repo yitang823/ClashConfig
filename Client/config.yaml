@@ -74,7 +74,7 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
-  白嫖妙妙屋_20260111_500G:
+  白嫖妙妙屋_20260111_500g:
     url: https://sub.baipiao.buzz/bpmmw?token=af1412b85219cdd282a08b0db62f9080
     <<: *default-proxy-providers
     proxy: 国外
@@ -153,13 +153,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[白嫖机场] "
 
-  墨菲云_20251214_150G:
-    url: https://cn.mfxy.store/api/v1/client/subscribe?token=dc37c5056fc303daeaa4a3b05c56f486
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[墨菲云] "
+  # 墨菲云_20251214_150G:
+  #   url: https://cn.mfxy.store/api/v1/client/subscribe?token=dc37c5056fc303daeaa4a3b05c56f486
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[墨菲云] "
 
   # 免费机场_20251211_300G:
   #   url: https://sub-1.xn--94q57lcvpw50b.cc/mfjc/cc2199dd6b3e67a15a366e2c67bd8c60
