@@ -144,13 +144,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[帝豪机场] "
 
-  白嫖机场_20251217_1000G:
-    url: https://xuinibuhuizhenxinleba.v2bp.rest/zuihaodev2/35ef8f8dea33fa7e5c5c9c8d28add2fa
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[白嫖机场] "
+  # 白嫖机场_20251217_1000G:
+  #   url: https://xuinibuhuizhenxinleba.v2bp.rest/zuihaodev2/35ef8f8dea33fa7e5c5c9c8d28add2fa
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[白嫖机场] "
 
   # 墨菲云_20251214_150G:
   #   url: https://cn.mfxy.store/api/v1/client/subscribe?token=dc37c5056fc303daeaa4a3b05c56f486
