@@ -74,6 +74,14 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
+  FTClash_2026017_100g:
+    url: https://101.43.12.60:28364/api/v1/client/subscribe?token=7c0f57ff671e8cf1593b52dd0a8fe968
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[FTClash] "
+
   白嫖妙妙屋_20260111_500G:
     url: https://sub.baipiao.buzz/bpmmw?token=af1412b85219cdd282a08b0db62f9080
     <<: *default-proxy-providers
