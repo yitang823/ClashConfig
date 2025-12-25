@@ -74,7 +74,15 @@ proxy-providers:
   #     additional-prefix: "[Mitce] "
 
 #Temporary
-  FTClash_2026017_100g:
+  次元域_20260125_100g:
+    url: https://fasfaswdqwf.ciyuan.live/api/v1/client/subscribe?token=a8468b480fc10091b647c19a35c4cfe8
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[次元域] "
+
+  FTClash_20260117_100g:
     url: https://101.43.12.60:28364/api/v1/client/subscribe?token=7c0f57ff671e8cf1593b52dd0a8fe968
     <<: *default-proxy-providers
     proxy: 国外
@@ -136,13 +144,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[满身大汉加速器] "
 
-  蛋糕云_20251222_100G:
-    url: https://sub.cakecloud.sbs/cake/6d815f456c92aeb12c772d146a07d299
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[蛋糕云] "
+  # 蛋糕云_20251222_100G:
+  #   url: https://sub.cakecloud.sbs/cake/6d815f456c92aeb12c772d146a07d299
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[蛋糕云] "
 
   # 帝豪机场_20251218_400G:
   #   url: https://sub.xn--mes13n8pi8x2b.shop/s/6b497415346dd1df7b53172257a067bd
