@@ -73,7 +73,6 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[Mitce] "
 
-#Temporary
   靠谱云_20260125_50g:
     url: https://img.kaopucloud.online/static/4f9822c27fe4ead828addaf99bb2887b
     <<: *default-proxy-providers
@@ -81,6 +80,14 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[靠谱云] "
+#Temporary
+  主角_20260125_100g:
+    url: https://jue.zhujue.uk/api/zhujue/5fd039c0063fb4e90730e3a132b6f334
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[主角] "
 
 
   次元域_20260125_100g:
