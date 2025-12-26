@@ -81,6 +81,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[靠谱云] "
 #Temporary
+  LRT_20260126_100g:
+    url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[LRT] "
+
   主角_20260125_100g:
     url: https://jue.zhujue.uk/api/zhujue/5fd039c0063fb4e90730e3a132b6f334
     <<: *default-proxy-providers
@@ -88,7 +96,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[主角] "
-
 
   次元域_20260125_100g:
     url: https://fasfaswdqwf.ciyuan.live/api/v1/client/subscribe?token=a8468b480fc10091b647c19a35c4cfe8
