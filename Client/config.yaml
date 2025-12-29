@@ -88,7 +88,7 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[特朗普云] "
-      
+
   LRT_20260126_100g:
     url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
     <<: *default-proxy-providers
@@ -137,6 +137,21 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[开心云] "
 
+  乐猫_20261021_500G:
+    url: https://er.lemaodydayu.top/s/ef2c8e28ef705f01cd2b992d57b4083b
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[乐猫] "
+
+  临时1_20260101_2.93TB:
+    url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=23144d2206df3b0f2d0adb519d200278
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[临时1] "
   # 极致云_20260106_100G:
   #   url: https://0a0107f031.jzcloud.xyz/api/reset/0ed08c36f512e80ad328fb92ec2111a7
   #   <<: *default-proxy-providers
@@ -256,13 +271,7 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[酱酱机场] "
 
-  乐猫_20261021_500G:
-    url: https://er.lemaodydayu.top/s/ef2c8e28ef705f01cd2b992d57b4083b
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[乐猫] "
+
 
   # 大牛云_20251128_500G:
   #   url: https://sub.xn--9kqw1xbnu.shop/s/c0fc4d844776f32e952644ad7a0b2e7e
