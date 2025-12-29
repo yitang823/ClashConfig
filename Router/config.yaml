@@ -72,14 +72,22 @@ proxy-providers:
   #   override:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[Mitce] "
-  靠谱云_20260125_50g:
-    url: https://img.kaopucloud.online/static/4f9822c27fe4ead828addaf99bb2887b
+  # 靠谱云_20260125_50g:
+  #   url: https://img.kaopucloud.online/static/4f9822c27fe4ead828addaf99bb2887b
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[靠谱云] "
+#Temporary
+  特朗普云_20270219_200g:
+    url: https://api1.trumpyun1.com/s/a723e9a3d87e4542d277c255bfa8565d
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[靠谱云] "
-#Temporary
+      additional-prefix: "[试用]-[特朗普云] "
+
   LRT_20260126_100g:
     url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
     <<: *default-proxy-providers
@@ -87,7 +95,7 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[LRT] "
-      
+
   主角_20260125_100g:
     url: https://jue.zhujue.uk/api/zhujue/5fd039c0063fb4e90730e3a132b6f334
     <<: *default-proxy-providers
@@ -97,7 +105,7 @@ proxy-providers:
       additional-prefix: "[试用]-[主角] "
 
   次元域_20260125_100g:
-    url: https://fasfaswdqwf.ciyuan.live/api/v1/client/subscribe?token=a8468b480fc10091b647c19a35c4cfe8
+    url: https://ciqiyuanjiuyubad01y.ciyuan78.help/dy/ciyuan/yu/client/sub666/biying?token=a8468b480fc10091b647c19a35c4cfe8
     <<: *default-proxy-providers
     proxy: 国外
     override:
