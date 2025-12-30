@@ -96,7 +96,7 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[LinkHub] "
-      
+
   LRT_20260126_100g:
     url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
     <<: *default-proxy-providers
@@ -153,13 +153,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[乐猫] "
 
-  临时1_20260101_2.93TB:
-    url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=23144d2206df3b0f2d0adb519d200278
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[临时1] "
+  # 临时1_20260101_2.93TB:
+  #   url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=23144d2206df3b0f2d0adb519d200278
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[临时1] "
   # 极致云_20260106_100G:
   #   url: https://0a0107f031.jzcloud.xyz/api/reset/0ed08c36f512e80ad328fb92ec2111a7
   #   <<: *default-proxy-providers
