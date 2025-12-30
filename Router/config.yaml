@@ -88,6 +88,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[特朗普云] "
 
+  LinkHub_20260130_150g:
+    url: https://vciuyic.hublink.support/5bg67f89d0/v1/client/subscribe?token=edaf1f24cbc67eb56c1d7e6e4a6638e2
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[LinkHub] "
+
   LRT_20260126_100g:
     url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
     <<: *default-proxy-providers
