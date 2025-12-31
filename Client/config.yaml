@@ -688,9 +688,9 @@ proxy-groups:
 
 
   - {name: 香港-自动, <<: *defaultUrlTest, filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg"}
-  - {name: 日本-自动, <<: *defaultUrlTest, filter: "(?=.*(东瀛|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"}
-  - {name: 新加坡-自动, <<: *defaultUrlTest, filter: "(?=.*(星嘉坡|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/sg.svg"}
-  - {name: 美国-自动, <<: *defaultUrlTest, filter: "(?=.*(阿美莉卡|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$",   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg"}
+  - {name: 日本-自动, <<: *defaultUrlTest, filter: "(?=.*(东瀛|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|TYO)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/jp.svg"}
+  - {name: 新加坡-自动, <<: *defaultUrlTest, filter: "(?=.*(星嘉坡|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|SIN)).*$",      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/sg.svg"}
+  - {name: 美国-自动, <<: *defaultUrlTest, filter: "(?=.*(阿美莉卡|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States|SJC)).*$",   "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg"}
   
   - {name: 台湾-自动, <<: *defaultUrlTest, filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$", "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg"}
   - {name: 漏网之鱼, <<: *defaultOthers, 
