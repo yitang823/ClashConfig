@@ -88,6 +88,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[特朗普云] "
 
+  Noke_20260131_1TB:
+    url: http://70.39.180.91/s/74964abf6d73bddf05eca231d5ac1e7c
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[Noke] "
+
   LinkHub_20260130_150g:
     url: https://vciuyic.hublink.support/5bg67f89d0/v1/client/subscribe?token=edaf1f24cbc67eb56c1d7e6e4a6638e2
     <<: *default-proxy-providers
