@@ -41,44 +41,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
-  # Nova:
-  #   url: http://153.121.42.218/api/v1/client/subscribe?token=ff6082c4e967614851d92cde0940a8db
-  #   proxy: 国外
-  #   <<: *default-proxy-providers
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[Nova] "
-
-  # Flownet:
-  #   url: https://5f236t3.flownet.store/s/ffe68a329aa8f9b497ab0b4eeabffa2f
-  #   proxy: 国外
-  #   <<: *default-proxy-providers
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[Flownet] "
-
-  # 曲径通幽:
-  #   url: https://htfg.qjty.buzz/api/v1/client/subscribe?token=12f5d57ade80d1094a8a3bf8dea8318c
-  #   proxy: 国外
-  #   <<: *default-proxy-providers
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[曲径通幽] "
-
-  # Mitce:
-  #   url: https://app.mitce.net/?sid=145054&token=d70484910852
-  #   proxy: DIRECT
-  #   <<: *default-proxy-providers
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[Mitce] "
-  # 靠谱云_20260125_50g:
-  #   url: https://img.kaopucloud.online/static/4f9822c27fe4ead828addaf99bb2887b
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[靠谱云] "
+  卷王机场:
+    url: https://2.juanwang1.top/juanwang/dingyue1/sub1/babiq?token=b3a5fe6bc05773abf7d898231b73b658
+    proxy: 国外
+    <<: *default-proxy-providers
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[卷王机场] "
 #Temporary
   WeiJia_20260204_100g:
     url: https://sub.weijia.pics/weijia/fc90a1c6b5ef262a3ac5798bcc9a5388

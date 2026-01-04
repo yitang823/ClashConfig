@@ -41,13 +41,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
-  # 卷王机场:
-  #   url: https://2.juanwang1.top/juanwang/dingyue1/sub1/babiq?token=b3a5fe6bc05773abf7d898231b73b658
-  #   proxy: 国外
-  #   <<: *default-proxy-providers
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[卷王机场] "
+  卷王机场:
+    url: https://2.juanwang1.top/juanwang/dingyue1/sub1/babiq?token=b3a5fe6bc05773abf7d898231b73b658
+    proxy: 国外
+    <<: *default-proxy-providers
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[卷王机场] "
 
 #Temporary
   WeiJia_20260204_100g:
