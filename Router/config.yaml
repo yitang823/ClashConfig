@@ -41,13 +41,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
-  卷王机场:
-    url: https://2.juanwang1.top/juanwang/dingyue1/sub1/babiq?token=b3a5fe6bc05773abf7d898231b73b658
-    proxy: 国外
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[卷王机场] "
+  # 卷王机场:
+  #   url: https://2.juanwang1.top/juanwang/dingyue1/sub1/babiq?token=b3a5fe6bc05773abf7d898231b73b658
+  #   proxy: 国外
+  #   <<: *default-proxy-providers
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[卷王机场] "
 
   特朗普云_200g:
     url: https://api1.trumpyun.xyz/s/a723e9a3d87e4542d277c255bfa8565d
@@ -130,13 +130,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[开心云] "
 
-  乐猫_20261021_500G:
-    url: https://er.lemaodydayu.top/s/ef2c8e28ef705f01cd2b992d57b4083b
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[乐猫] "
+  # 乐猫_20261021_500G:
+  #   url: https://er.lemaodydayu.top/s/ef2c8e28ef705f01cd2b992d57b4083b
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[乐猫] "
 
   # 临时1_20260101_2.93TB:
   #   url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=23144d2206df3b0f2d0adb519d200278
