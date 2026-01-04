@@ -58,13 +58,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[WeiJia] "
 
-  # 特朗普云_20270219_200g:
-  #   url: https://api1.trumpyun1.com/s/a723e9a3d87e4542d277c255bfa8565d
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[特朗普云] "
+  特朗普云_20270219_200g:
+    url: https://api1.trumpyun.xyz/s/a723e9a3d87e4542d277c255bfa8565d
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[特朗普云] "
 
   Noke_20260131_1TB:
     url: http://70.39.180.91/s/74964abf6d73bddf05eca231d5ac1e7c
