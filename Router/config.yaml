@@ -123,7 +123,7 @@ proxy-providers:
       additional-prefix: "[试用]-[白嫖妙妙屋] "
 
   开心云_20260106_100G:
-    url: https://fddhasgdhfhbtrbea.kaixincloud.my/dasfvrnafc/dfsdvv2/gsteyfaf/mnnjhjcd?token=f16fc3bf21af0cf66ef3c77b1a506820
+    url: https://feujnbgrmafjc46532df.kaixincloud.top/dasfvrnafc/dfsdvv2/gsteyfaf/mnnjhjcd?token=f16fc3bf21af0cf66ef3c77b1a506820
     <<: *default-proxy-providers
     proxy: 国外
     override:
