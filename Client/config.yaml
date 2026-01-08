@@ -58,6 +58,30 @@ proxy-providers:
       additional-prefix: "[特朗普云] "
 
 #Temporary
+  YUQI_20260208_500g:
+    url: https://yuqidingyue.yuqi.best/yuqibest/e0782e258050dbd88a51911430210108
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[YUQI] "
+
+  永久免费云_20260208_800g:
+    url: https://rose.freegangkou.top/freegangkou/aefe188ad9e6080f36f71522caeabc4a
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[永久免费云] "
+
+  酷可云_20260207_100g:
+    url: https://ku-ke.cc/s/50055064bcd70ed7021c04d071f1cf38
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[酷可云] "
+
   WeiJia_20260204_100g:
     url: https://sub.weijia.pics/weijia/fc90a1c6b5ef262a3ac5798bcc9a5388
     <<: *default-proxy-providers
@@ -66,14 +90,6 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[WeiJia] "
 
-  # 特朗普云_20270219_200g:
-  #   url: https://api1.trumpyun.xyz/s/a723e9a3d87e4542d277c255bfa8565d
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[特朗普云] "
-
   Noke_20260131_1TB:
     url: http://70.39.180.91/s/74964abf6d73bddf05eca231d5ac1e7c
     <<: *default-proxy-providers
@@ -81,14 +97,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[Noke] "
-
-  # LinkHub_20260130_150g:
-  #   url: https://vciuyic.hublink.support/5bg67f89d0/v1/client/subscribe?token=edaf1f24cbc67eb56c1d7e6e4a6638e2
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[LinkHub] "
 
   LRT_20260126_100g:
     url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
@@ -129,270 +137,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[白嫖妙妙屋] "
-
-  开心云_20260106_100G:
-    url: https://feujnbgrmafjc46532df.kaixincloud.top/dasfvrnafc/dfsdvv2/gsteyfaf/mnnjhjcd?token=f16fc3bf21af0cf66ef3c77b1a506820
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[开心云] "
-
-  # 乐猫_20261021_500G:
-  #   url: https://er.lemaodydayu.top/s/ef2c8e28ef705f01cd2b992d57b4083b
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[乐猫] "
-
-  # 临时1_20260101_2.93TB:
-  #   url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=23144d2206df3b0f2d0adb519d200278
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[临时1] "
-  # 极致云_20260106_100G:
-  #   url: https://0a0107f031.jzcloud.xyz/api/reset/0ed08c36f512e80ad328fb92ec2111a7
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[极致云] "
-
-  # 白嫖机场_20251231_500G:
-  #   url: https://api.apihs.cfd/bpjc?token=ee2d2d8f236420eb9ad6eab8fc17311f
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[白嫖机场2] "
-
-  # 三七机场_20251221_500G:
-  #   url: https://sub.3737137.xyz/sanqi?token=Bk3bkFayceABUD3X7-flM48gzgftC_Ve
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[三七机场] "
-  # 金门云_20251225_400G:
-  #   url: https://sub.xn--9kq725n0tc.shop/s/d3059db1a3faac3aff5ff11a1585de37
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[金门云] "
-      
-  # 满身大汉加速器_20251223_1G:
-  #   url: https://hk.allmen.xyz/xfxs/fb2b825b2bd1d30e819e7faabc9bdb71
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[满身大汉加速器] "
-
-  # 蛋糕云_20251222_100G:
-  #   url: https://sub.cakecloud.sbs/cake/6d815f456c92aeb12c772d146a07d299
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[蛋糕云] "
-
-  # 帝豪机场_20251218_400G:
-  #   url: https://sub.xn--mes13n8pi8x2b.shop/s/6b497415346dd1df7b53172257a067bd
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[帝豪机场] "
-      
-  # 白嫖机场_20251217_1000G:
-  #   url: https://xuinibuhuizhenxinleba.v2bp.rest/zuihaodev2/35ef8f8dea33fa7e5c5c9c8d28add2fa
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[白嫖机场] "
-
-  # 墨菲云_20251214_150G:
-  #   url: https://cn.mfxy.store/api/v1/client/subscribe?token=dc37c5056fc303daeaa4a3b05c56f486
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[墨菲云] "
-
-  # 免费机场_20251211_300G:
-  #   url: https://sub-1.xn--94q57lcvpw50b.cc/mfjc/cc2199dd6b3e67a15a366e2c67bd8c60
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[免费机场] "
-
-  # 趣云_20251210_100G:
-  #   url: https://qucloud.top/api/v1/client/subscribe?token=7d4d7917b1567e7ecf8d3b11cb27e9bc
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[趣云] "
-
-  # 虛無閣_20251208_100G:
-  #   url: https://sub.xuwuge.xyz/xuwuge/06337bff63baefdca99476abef1dcad6
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[虛無閣] "
-
-  # 马里奥_20251207_100G:
-  #   url: https://maliaojc.top/bmg/v2/client/subscribe?token=d0602fd92bbf7f408b3e0aa1b45b394a
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[马里奥] "
-
-  # 木木云_20251207_100G:
-  #   url: https://sub609.999398.xyz/JWl8MsV8XY4TYi0W2A0W/c37e8796cfc2221a3c91c189e2213cce
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[木木云] "
- 
-  # 酱酱机场_20251203_500G:
-  #   url: https://sub2.sunglow.cfd/jiangjiang?token=a6c87f914abf666cc3e6c42dcd7df149
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[酱酱机场] "
-
-
-
-  # 大牛云_20251128_500G:
-  #   url: https://sub.xn--9kqw1xbnu.shop/s/c0fc4d844776f32e952644ad7a0b2e7e
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[大牛云] "
-
-  # 瑶瑶领先_20251128_500G:
-  #   url: https://sub666.yydzx.xyz/sub/1c30e9ccfa5622da/clash
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[瑶瑶领先] "
-
-  # 诺亚龙舟_20251124_200G:
-  #   url: https://sub.nylz.xyz/subscribe/ccb3ac054681772eb7819a05caf582c3
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[诺亚龙舟] "
-
-  # 套路云_20251122_1500G:
-  #   url: https://xn--9kq85xcu6b.com/api/v1/client/subscribe?token=bc04cce3557c1194c9fb448be8109d13
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[套路云] "
-
-  # 云易通:
-  #   url: https://sub.xn--9kqy68chx3a.shop/s/ce4948e28753936d79b172e3a0670c6c
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[云易通] "
-
-  # 榴莲加速器:
-  #   url: https://vlog.573193.xyz/aliyun/alist/apikey?token=d0ff502ba1fbb3e4dafb3cdf34249bcc
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[榴莲加] "
-
-  # 白嫖机场:
-  #   url: https://bpjc.pics/tg-bpjcc/8f18e237d84c0c922f513addb7d949f8
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[白嫖机场] "
-
-  # 斑马:
-  #   url: http://107.173.31.17/s/6ef804d41e93c410264bf2eeacbd3f83
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[斑马] "
-
-  # 白狗:
-  #   url: https://baigou.kkhhddnn.cn/baidu666?token=2cf60fe73a48d627c460a122876bcaa8
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[白狗] "
-
-  # 麋鹿机场:
-  #   url: https://berber.pics/api/v1/client/subscribe?token=6250df5e1fcbf83550c6efc29ec5cca2
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[麋鹿机场] "
-
-  # 拼好线:
-  #   url: https://pinhaoxian.top/s/866d286795af968280832fc98717f9af
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[拼好线] "
-
-  # 星港机场:
-  #   url: https://2c.xg-hub.icu/api/v1/client/subscribe?token=94aee3732c79b661083dceeabae3e34a
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[星港机场] "
-
-  # LinluJS_20251120_200G:
-  #   url: https://sub.linlujs-2.men/lll/19ec6fb0f22666b9d504fc5a069f48cb
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[LinluJS] "
-
-  # 游乐场:
-  #   url: https://ylccloud.top/api/v1/client/subscribe?token=4d87a72281cf46a36179b63b19075dd5
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[游乐场] "
-
-  # 可信云:
-  #   url: https://cloud.mxlk.net/s/ca02eacefc95a707302120eeae2295d2
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[可信云] "
 
 # ========================
 # 主要端口设置
