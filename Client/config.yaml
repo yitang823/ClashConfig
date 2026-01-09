@@ -67,8 +67,15 @@ proxy-providers:
       additional-prefix: "[试用]-[YUQI] "
 
   永久免费云_20260208_800g:
-    url: https://rose.freegangkou.top/freegangkou/aefe188ad9e6080f36f71522caeabc4a
-    <<: *default-proxy-providers
+    url: https://rose1.freegangkou.top/freegangkou/aefe188ad9e6080f36f71522caeabc4a
+    type: http
+    interval: 7200
+    health-check:
+    enable: true
+    url: https://www.gstatic.com/generate_204
+    interval: 180
+    lazy: false
+    exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组|无法|官方|频道|等级|虛無閣|售后|限速"
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
@@ -91,7 +98,7 @@ proxy-providers:
       additional-prefix: "[试用]-[WeiJia] "
 
   Noke_20260131_1TB:
-    url: http://70.39.180.91/s/74964abf6d73bddf05eca231d5ac1e7c
+    url: http://70.39.180.165:25525/s/74964abf6d73bddf05eca231d5ac1e7c
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -129,14 +136,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[FTClash] "
-
-  白嫖妙妙屋_20260111_500g:
-    url: https://sub.baipiao.buzz/bpmmw?token=af1412b85219cdd282a08b0db62f9080
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[白嫖妙妙屋] "
 
 # ========================
 # 主要端口设置
