@@ -58,6 +58,14 @@ proxy-providers:
       additional-prefix: "[特朗普云] "
 
 #Temporary
+  零际_20260212_100g:
+    url: https://zeroedgesublink.xn--9kqy16ofpa.com/oss/0b7de4fd23fb36efa02321252aaf53f0
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[零际] "
+      
   YUQI_20260208_500g:
     url: https://yuqidingyue.yuqi.best/yuqibest/e0782e258050dbd88a51911430210108
     <<: *default-proxy-providers
