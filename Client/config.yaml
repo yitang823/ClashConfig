@@ -59,7 +59,7 @@ proxy-providers:
 
 #Temporary
   来不及_20260213_100g:
-    url: https://sub.laibuji.pics/laibuji?token=MTc3NTowNmMzNDRiZGMzZDYwNzJlY2U0Nzk4YmM4NmVjNTZmZTdkYjMxODgw
+    url: https://sub.laibuji.pics/laibuji?token=MTc3NTowYTA1MjU3OTlhMWM2YmFjZjgwOTM2Mzc1MjQ0OTIyZDU1MDIxNGNm
     <<: *default-proxy-providers
     proxy: 国外
     override:
