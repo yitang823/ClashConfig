@@ -58,8 +58,16 @@ proxy-providers:
       additional-prefix: "[特朗普云] "
 
 #Temporary
+  红烧排骨_20260223_300g:
+    url: https://nizouyuandian.hongshao-paipai.top/s/c50bb9c2ad816a40d01cac6026c958ce
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[红烧排骨] "
+      
   来不及_20260213_100g:
-    url: https://sub.laibuji.pics/laibuji?token=MTc3NTowYTA1MjU3OTlhMWM2YmFjZjgwOTM2Mzc1MjQ0OTIyZDU1MDIxNGNm
+    url: https://sub.laibuji.pics/laibuji?token=MTc3NTo0YmFkMjJjZTM4ZjBhYmUzYjU4ZTExNjFmNTY0MDUwY2Y1ODE1OTFm
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -67,7 +75,7 @@ proxy-providers:
       additional-prefix: "[试用]-[来不及] "
       
   零际_20260212_100g:
-    url: https://zeroedgesublink.xn--9kqy16ofpa.com/oss/0b7de4fd23fb36efa02321252aaf53f0
+    url: https://zeroedge666.xn--9kqy16ofpa.com/oss/0b7de4fd23fb36efa02321252aaf53f0
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -114,20 +122,20 @@ proxy-providers:
       additional-prefix: "[试用]-[WeiJia] "
 
   Noke_20260131_1TB:
-    url: http://70.39.180.165:25525/s/74964abf6d73bddf05eca231d5ac1e7c
+    url: http://120.48.131.248:13558/s/74964abf6d73bddf05eca231d5ac1e7c
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[Noke] "
 
-  LRT_20260126_100g:
-    url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[LRT] "
+  # LRT_20260126_100g:
+  #   url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[LRT] "
 
   主角_20260125_100g:
     url: https://jue.zhujue.uk/api/zhujue/5fd039c0063fb4e90730e3a132b6f334
@@ -145,13 +153,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[次元域] "
 
-  FTClash_20260117_100g:
-    url: https://101.43.12.60:28364/api/v1/client/subscribe?token=7c0f57ff671e8cf1593b52dd0a8fe968
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[FTClash] "
+  # FTClash_20260117_100g:
+  #   url: https://101.43.12.60:28364/api/v1/client/subscribe?token=7c0f57ff671e8cf1593b52dd0a8fe968
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[FTClash] "
 
 # ========================
 # 主要端口设置
