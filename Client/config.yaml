@@ -137,13 +137,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[WeiJia] "
 
-  Noke_20260131_1TB:
-    url: http://120.48.131.248:13558/s/74964abf6d73bddf05eca231d5ac1e7c
-    <<: *default-proxy-providers
-    proxy: DIRECT
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Noke] "
+  # Noke_20260131_1TB:
+  #   url: http://120.48.131.248:13558/s/74964abf6d73bddf05eca231d5ac1e7c
+  #   <<: *default-proxy-providers
+  #   proxy: DIRECT
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[Noke] "
 
   # LRT_20260126_100g:
   #   url: https://lrtsub.a-a.sbs/lllll?token=0275f3551ad1f609975e38fc196a673b
