@@ -59,7 +59,7 @@ proxy-providers:
 
 #Temporary
   熊出没云_20260227_500g:
-    url: https://xiongchumo.shop/s/3d48172095c6f831e99f855aa63c8563
+    url: https://xiongchumo.shop/s/f3d802b9f0bc6fb9a70680172ea53016
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -83,7 +83,7 @@ proxy-providers:
       additional-prefix: "[试用]-[红烧排骨] "
 
   来不及_20260213_100g:
-    url: https://sub.laibuji.pics/laibuji?token=MTc3NTpkNDAzZmRjZWIzZjIxOTIyMTFkNTU3MDYxY2Y2ZDIzMTFkOThiMDYy
+    url: https://sub.laibuji.pics/laibuji?token=MTc3NToyYzdlMTFkZWRiM2M5YWFjZWRlZGNmN2IxZDRkYmMyNDZiZGMzMDBl
     <<: *default-proxy-providers
     proxy: 国外
     override:
