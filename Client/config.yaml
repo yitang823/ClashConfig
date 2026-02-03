@@ -25,13 +25,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[星链] "
 
-  # 星舰云:
-  #   url: https://xing.needaycloud.top/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
-  #   proxy: 国外
-  #   <<: *default-proxy-providers
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[星舰云] "
+  星舰云:
+    url: https://xingab.xing-avaliable.icu/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
+    proxy: 国外
+    <<: *default-proxy-providers
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[星舰云] "
 
   牛逼:
     url: https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=cdb94063e8fcc0d6da6b857e0369b315
@@ -41,13 +41,41 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
-  # 卷王机场:
-  #   url: https://2.juanwang1.top/juanwang/dingyue1/sub1/babiq?token=b3a5fe6bc05773abf7d898231b73b658
-  #   proxy: 国外
-  #   <<: *default-proxy-providers
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[卷王机场] "
+  卷王机场1:
+    url: https://2.juanwangjc.top/juanwang/dingyue1/sub1/babiq?token=214446242263d12cda87486c8ca350c3
+    type: http
+    interval: 7200
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+      lazy: false
+    exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组|无法|官方|频道|等级|虛無閣|售后|限速"
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[卷王机场1] "
+      proxy-name:
+      - pattern: "官网520\.juanwangjc\.top"
+        target: ""
+
+  卷王机场2:
+    url: https://2.juanwang1.top/juanwang/dingyue1/sub1/babiq?token=b3a5fe6bc05773abf7d898231b73b658
+    type: http
+    interval: 7200
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+      lazy: false
+    exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组|无法|官方|频道|等级|虛無閣|售后|限速"
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[卷王机场2] "
+      proxy-name:
+      - pattern: "官网520\.juanwangjc\.top"
+        target: ""
 
   特朗普云_200g:
     url: https://api1.trumpyun.xyz/s/a723e9a3d87e4542d277c255bfa8565d
@@ -83,7 +111,7 @@ proxy-providers:
       additional-prefix: "[试用]-[红烧排骨] "
       
   来不及_20260213_100g:
-    url: https://sub.laibuji.pics/laibuji?token=MTc3NToyYzdlMTFkZWRiM2M5YWFjZWRlZGNmN2IxZDRkYmMyNDZiZGMzMDBl
+    url: https://sub.laibuji.pics/laibuji?token=MTc3NTplMDJiYThhMTY1NTExMDAxOTUwMThkNjQzZWRiZTI5NTIzNDMwZDQ1
     <<: *default-proxy-providers
     proxy: 国外
     override:
