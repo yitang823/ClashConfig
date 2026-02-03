@@ -55,9 +55,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[卷王机场1] "
-      proxy-name:
-      - pattern: "官网520\.juanwangjc\.top"
-        target: ""
 
   卷王机场2:
     url: https://2.juanwang1.top/juanwang/dingyue1/sub1/babiq?token=b3a5fe6bc05773abf7d898231b73b658
@@ -73,9 +70,6 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[卷王机场2] "
-      proxy-name:
-      - pattern: "官网520\.juanwangjc\.top"
-        target: ""
 
   特朗普云_200g:
     url: https://api1.trumpyun.xyz/s/a723e9a3d87e4542d277c255bfa8565d
