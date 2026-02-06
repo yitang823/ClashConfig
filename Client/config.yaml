@@ -80,13 +80,13 @@ proxy-providers:
       additional-prefix: "[特朗普云] "
 
 #Temporary
-  熊出没云_20260227_500g:
-    url: https://xiongchumo.shop/s/f3d802b9f0bc6fb9a70680172ea53016
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[熊出没云] "
+  # 熊出没云_20260227_500g:
+  #   url: https://xiongchumo.shop/s/f3d802b9f0bc6fb9a70680172ea53016
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[熊出没云] "
 
   KooDog_20260226_200g:
     url: https://www.kdcloud.uk/api/v1/client/subscribe?token=4d1793801ff61e6f2dc91aac0fc41f7c
@@ -105,7 +105,7 @@ proxy-providers:
       additional-prefix: "[试用]-[红烧排骨] "
       
   来不及_20260213_100g:
-    url: https://sub.laibuji.pics/laibuji?token=MTc3NTplMDJiYThhMTY1NTExMDAxOTUwMThkNjQzZWRiZTI5NTIzNDMwZDQ1
+    url: https://sub.laibuji.pics/laibuji?token=MTc3NToyYTc4MmZmNjU4NDc2OTU3ZjNiOTk4MjMxMjNmYmFhYjQzMDZhMzcy
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -129,7 +129,7 @@ proxy-providers:
       additional-prefix: "[试用]-[YUQI] "
 
   永久免费云_20260208_800g:
-    url: https://rose1.freegangkou.top/freegangkou/aefe188ad9e6080f36f71522caeabc4a
+    url: https://dis-ni-ma-qia.freegangkou.top/freegangkou/aefe188ad9e6080f36f71522caeabc4a
     type: http
     interval: 7200
     health-check:
@@ -151,13 +151,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[酷可云] "
 
-  WeiJia_20260204_100g:
-    url: https://sub.weijia.pics/weijia/fc90a1c6b5ef262a3ac5798bcc9a5388
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[WeiJia] "
+  # WeiJia_20260204_100g:
+  #   url: https://sub.weijia.pics/weijia/fc90a1c6b5ef262a3ac5798bcc9a5388
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[WeiJia] "
 
   # Noke_20260131_1TB:
   #   url: http://120.48.131.248:13558/s/74964abf6d73bddf05eca231d5ac1e7c
