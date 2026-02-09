@@ -72,7 +72,7 @@ proxy-providers:
       additional-prefix: "[卷王机场2] "
 
   特朗普云_200g:
-    url: https://api1.trumpyun.xyz/s/a723e9a3d87e4542d277c255bfa8565d
+    url: https://api1.trumpyun1.com/s/a723e9a3d87e4542d277c255bfa8565d
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -87,6 +87,14 @@ proxy-providers:
   #   override:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[熊出没云] "
+
+  看片云_20260309_100g:
+    url: https://xn--9kq838ftid.shop/s/b5f31b008141e5c0cf731a858d16450b
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[看片云] "
 
   KooDog_20260226_200g:
     url: https://www.kdcloud.uk/api/v1/client/subscribe?token=4d1793801ff61e6f2dc91aac0fc41f7c
@@ -105,7 +113,7 @@ proxy-providers:
       additional-prefix: "[试用]-[红烧排骨] "
       
   来不及_20260213_100g:
-    url: https://sub.laibuji.pics/laibuji?token=MTc3NToyYTc4MmZmNjU4NDc2OTU3ZjNiOTk4MjMxMjNmYmFhYjQzMDZhMzcy
+    url: https://sub.laibuji.pics/laibuji?token=MTc3NTowYWZkMWJhMTBmOTkwOGIyNDBiOTczZjYxNDc1MGE4ZjMxM2ZjOGQx
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -113,43 +121,43 @@ proxy-providers:
       additional-prefix: "[试用]-[来不及] "
       
   零际_20260212_100g:
-    url: https://zeroedge666.xn--9kqy16ofpa.com/oss/0b7de4fd23fb36efa02321252aaf53f0
+    url: https://zeroedge777.xn--9kqy16ofpa.com/oss/0b7de4fd23fb36efa02321252aaf53f0
     <<: *default-proxy-providers
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[零际] "
 
-  YUQI_20260208_500g:
-    url: https://yuqidingyue.yuqi.best/yuqibest/e0782e258050dbd88a51911430210108
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[YUQI] "
+  # YUQI_20260208_500g:
+  #   url: https://yuqidingyue.yuqi.best/yuqibest/e0782e258050dbd88a51911430210108
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[YUQI] "
 
-  永久免费云_20260208_800g:
-    url: https://dis-ni-ma-qia.freegangkou.top/freegangkou/aefe188ad9e6080f36f71522caeabc4a
-    type: http
-    interval: 7200
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-      lazy: false
-    exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组|无法|官方|频道|等级|虛無閣|售后|限速"
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[永久免费云] "
+  # 永久免费云_20260208_800g:
+  #   url: https://dis-ni-ma-qia.freegangkou.top/freegangkou/aefe188ad9e6080f36f71522caeabc4a
+  #   type: http
+  #   interval: 7200
+  #   health-check:
+  #     enable: true
+  #     url: https://www.gstatic.com/generate_204
+  #     interval: 180
+  #     lazy: false
+  #   exclude-filter: "0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9|剩余|TG群|官网|订阅|持续|标准|并发|当前|前往|永久|恢复|重置|分享|长期|更新|过滤|文档|套餐|用户群|0.01|节点|教程|客户|电报|0.02|域名|商城|群组|无法|官方|频道|等级|虛無閣|售后|限速"
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[永久免费云] "
 
-  酷可云_20260207_100g:
-    url: https://ku-ke.cc/s/50055064bcd70ed7021c04d071f1cf38
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[酷可云] "
+  # 酷可云_20260207_100g:
+  #   url: https://ku-ke.cc/s/50055064bcd70ed7021c04d071f1cf38
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[酷可云] "
 
   # WeiJia_20260204_100g:
   #   url: https://sub.weijia.pics/weijia/fc90a1c6b5ef262a3ac5798bcc9a5388
