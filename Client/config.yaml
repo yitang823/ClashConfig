@@ -112,21 +112,21 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[红烧排骨] "
       
-  来不及_20260213_100g:
-    url: https://sub.laibuji.pics/laibuji?token=MTc3NTowYWZkMWJhMTBmOTkwOGIyNDBiOTczZjYxNDc1MGE4ZjMxM2ZjOGQx
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[来不及] "
+  # 来不及_20260213_100g:
+  #   url: https://sub.laibuji.pics/laibuji?token=MTc3NTowYWZkMWJhMTBmOTkwOGIyNDBiOTczZjYxNDc1MGE4ZjMxM2ZjOGQx
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[来不及] "
       
-  零际_20260212_100g:
-    url: https://zeroedge777.xn--9kqy16ofpa.com/oss/0b7de4fd23fb36efa02321252aaf53f0
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[零际] "
+  # 零际_20260212_100g:
+  #   url: https://zeroedge777.xn--9kqy16ofpa.com/oss/0b7de4fd23fb36efa02321252aaf53f0
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[零际] "
 
   # YUQI_20260208_500g:
   #   url: https://yuqidingyue.yuqi.best/yuqibest/e0782e258050dbd88a51911430210108

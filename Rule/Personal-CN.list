@@ -4,6 +4,8 @@ DOMAIN-SUFFIX,github.io # Github Pages
 DOMAIN,v2rayse.com  #V2rayse节点工具
 
 PROCESS-NAME, ms-teams.exe
+PROCESS-NAME, Ssms.exe
+PROCESS-NAME, SSMS.exe
 DOMAIN,nagarro-my.sharepoint.com #nagarro
 #- DOMAIN,statics.teams.cdn.office.net #直连
 DOMAIN-SUFFIX,teams.microsoft.com #直连
