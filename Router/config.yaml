@@ -87,7 +87,7 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[Mitce] "
-      
+
   TeraCloud_20260320_50g:
     url: https://subscribe002.awsy.top/subscribego/489a9c4fb884e3efc77f98a6f10c9392
     <<: *default-proxy-providers
@@ -96,29 +96,29 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[TeraCloud] "
 
-  看片云_20260309_100g:
-    url: https://xn--9kq838ftid.shop/s/b5f31b008141e5c0cf731a858d16450b
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[看片云] "
+  # 看片云_20260309_100g:
+  #   url: https://xn--9kq838ftid.shop/s/b5f31b008141e5c0cf731a858d16450b
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[看片云] "
 
-  KooDog_20260226_200g:
-    url: https://www.kdcloud.uk/api/v1/client/subscribe?token=4d1793801ff61e6f2dc91aac0fc41f7c
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[KooDog] "
+  # KooDog_20260226_200g:
+  #   url: https://www.kdcloud.uk/api/v1/client/subscribe?token=4d1793801ff61e6f2dc91aac0fc41f7c
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[KooDog] "
 
-  红烧排骨_20260223_300g:
-    url: https://hwdx-jiaysd.makadns.com/aizadi/c50bb9c2ad816a40d01cac6026c958ce
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[红烧排骨] "
+  # 红烧排骨_20260223_300g:
+  #   url: https://hwdx-jiaysd.makadns.com/aizadi/c50bb9c2ad816a40d01cac6026c958ce
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[红烧排骨] "
 
   # 来不及_20260213_100g:
   #   url: https://sub.laibuji.pics/laibuji?token=MTc3NTowYWZkMWJhMTBmOTkwOGIyNDBiOTczZjYxNDc1MGE4ZjMxM2ZjOGQx
