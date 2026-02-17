@@ -71,13 +71,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[卷王机场2] "
 
-  特朗普云_200g:
-    url: https://api1.trumpyun1.com/s/a723e9a3d87e4542d277c255bfa8565d
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[特朗普云] "
+  # 特朗普云_200g:
+  #   url: https://api1.trumpyun1.com/s/a723e9a3d87e4542d277c255bfa8565d
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[特朗普云] "
 
 #Temporary
   Mitce_100g:
@@ -87,7 +87,7 @@ proxy-providers:
     override:
       <<: *default-proxy-providers-override
       additional-prefix: "[Mitce] "
-      
+
   TeraCloud_20260320_50g:
     url: https://subscribe002.awsy.top/subscribego/489a9c4fb884e3efc77f98a6f10c9392
     <<: *default-proxy-providers
@@ -104,13 +104,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[看片云] "
 
-  # KooDog_20260226_200g:
-  #   url: https://www.kdcloud.uk/api/v1/client/subscribe?token=4d1793801ff61e6f2dc91aac0fc41f7c
-  #   <<: *default-proxy-providers
-  #   proxy: 国外
-  #   override:
-  #     <<: *default-proxy-providers-override
-  #     additional-prefix: "[试用]-[KooDog] "
+  KooDog_20260226_200g:
+    url: https://www.kdcloud.uk/api/v1/client/subscribe?token=4d1793801ff61e6f2dc91aac0fc41f7c
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[KooDog] "
       
   # 红烧排骨_20260223_300g:
   #   url: https://hwdx-jiaysd.makadns.com/aizadi/c50bb9c2ad816a40d01cac6026c958ce
