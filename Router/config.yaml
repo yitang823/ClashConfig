@@ -80,6 +80,30 @@ proxy-providers:
   #     additional-prefix: "[特朗普云] "
 
 #Temporary
+  舒克加速器_20260317_100g:
+    url: https://merovexia.xyz/link/?token=7a1bf6150f3f78e18668854ffb5c94b8
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[舒克加速器] "
+
+  公益直连机场_20260320_10T:
+    url: https://mcp.dpenly.org/api/v1/client/subscribe?token=fae4ff84959073478e62b9d3f18168ff
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[公益直连机场] "
+
+  平民加速_20260320_100g:
+    url: https://a.xn--gwt061a.com/pingmin?token=6387718989fc334f16d93b9b58bc190b
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[平民加速] "
+
   Mitce_100g:
     url: https://app.mitce.net/?sid=465913&token=srvwoaas&app=clashverge
     <<: *default-proxy-providers
