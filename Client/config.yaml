@@ -81,7 +81,7 @@ proxy-providers:
 
 #Temporary
   舒克加速器_20260317_100g:
-    url: https://merovexia.xyz/link/?token=7a1bf6150f3f78e18668854ffb5c94b8
+    url: https://down.novatrixlabs.xyz/static/version/?token=7a1bf6150f3f78e18668854ffb5c94b8
     <<: *default-proxy-providers
     proxy: 国外
     override:
