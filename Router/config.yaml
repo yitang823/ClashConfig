@@ -320,7 +320,11 @@ dns:
     - teams.events.data.microsoft.com
     - api.flightproxy.teams.microsoft.com
 
-    - +. 1163088.xyz
+    - +.1163088.xyz
+    - +.yisite.space
+    - +.yitang.qzz.io
+    - mobile.events.data.microsoft.com
+    - aka.ms
 
   nameserver:
     - 223.5.5.5 #dns.alidns.com
