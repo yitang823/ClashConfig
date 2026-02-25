@@ -81,7 +81,7 @@ proxy-providers:
 
 #Temporary
   刺客云_20260323_1000g:
-    url: https://ense-okes.makadns.com/lxdebnkdaf/9f47a4c0982c6f4b7a7ef9d09cbd4300
+    url: https://shop-piqiu.makadns.com/lxdebnkdaf/9f47a4c0982c6f4b7a7ef9d09cbd4300
     <<: *default-proxy-providers
     proxy: 国外
     override:
