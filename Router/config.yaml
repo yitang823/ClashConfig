@@ -96,13 +96,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[舒克加速器] "
 
-  公益直连机场_20260320_10T:
-    url: https://mcp.dpenly.org/api/v1/client/subscribe?token=fae4ff84959073478e62b9d3f18168ff
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[公益直连机场] "
+  # 公益直连机场_20260320_10T:
+  #   url: https://mcp.dpenly.org/api/v1/client/subscribe?token=fae4ff84959073478e62b9d3f18168ff
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[公益直连机场] "
 
   平民加速_20260320_100g:
     url: https://a.xn--gwt061a.com/pingmin?token=6387718989fc334f16d93b9b58bc190b
@@ -136,13 +136,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[看片云] "
 
-  KooDog_20260226_200g:
-    url: https://www.kdcloud.uk/api/v1/client/subscribe?token=4d1793801ff61e6f2dc91aac0fc41f7c
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[KooDog] "
+  # KooDog_20260226_200g:
+  #   url: https://www.kdcloud.uk/api/v1/client/subscribe?token=4d1793801ff61e6f2dc91aac0fc41f7c
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[KooDog] "
 
   # 红烧排骨_20260223_300g:
   #   url: https://hwdx-jiaysd.makadns.com/aizadi/c50bb9c2ad816a40d01cac6026c958ce
