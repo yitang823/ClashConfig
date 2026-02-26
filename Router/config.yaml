@@ -78,7 +78,14 @@ proxy-providers:
   #   override:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[特朗普云] "
-
+  星币_20290226_200g:
+    url: https://198.16.63.200/xbsub?token=d87e089772eeedddd50d28bc03bed124
+    proxy: 国外
+    <<: *default-proxy-providers
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[星币] "
+      
 #Temporary
   刺客云_20260323_1000g:
     url: https://shop-piqiu.makadns.com/lxdebnkdaf/9f47a4c0982c6f4b7a7ef9d09cbd4300
