@@ -87,6 +87,14 @@ proxy-providers:
       additional-prefix: "[星币] "
       
 #Temporary
+  三三云_20260405_500g:
+    url: https://xn--ehqa22b.site/s/5240919dc20e0831895bfbb89867dcec
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[三三云] "
+  
   拉萨云_20260328_1000g:
     url: https://xn--9kqt60cjmy.shop/s/31102d2953fb6a288553fd47d97d2dac
     <<: *default-proxy-providers
