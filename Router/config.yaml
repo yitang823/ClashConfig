@@ -135,13 +135,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[平民加速] "
 
-  Mitce_100g:
-    url: https://app.mitce.net/?sid=465913&token=srvwoaas&app=clashverge
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[Mitce] "
+  # Mitce_100g:
+  #   url: https://app.mitce.net/?sid=465913&token=srvwoaas&app=clashverge
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[Mitce] "
 
   TeraCloud_20260320_50g:
     url: https://subscribe002.awsy.top/subscribego/489a9c4fb884e3efc77f98a6f10c9392
