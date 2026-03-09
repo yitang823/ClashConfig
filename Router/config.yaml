@@ -88,7 +88,7 @@ proxy-providers:
       
 #Temporary
   三三云_20260405_500g:
-    url: https://xn--ehqa22b.site/s/5240919dc20e0831895bfbb89867dcec
+    url: https://xn--ehqa22b.site/s/32dcf4ce26c4e74be1a0a3e01e15236c
     <<: *default-proxy-providers
     proxy: 国外
     override:
@@ -96,7 +96,7 @@ proxy-providers:
       additional-prefix: "[试用]-[三三云] "
   
   拉萨云_20260328_1000g:
-    url: https://xn--9kqt60cjmy.shop/s/31102d2953fb6a288553fd47d97d2dac
+    url: https://xn--9kqt60cjmy.shop/s/fe9489efe48e6efa1c16dc745e831cf4
     <<: *default-proxy-providers
     proxy: 国外
     override:
