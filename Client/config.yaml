@@ -87,13 +87,13 @@ proxy-providers:
       additional-prefix: "[星币] "
 
 #Temporary
-  WolfTotem_20260412_1000g:
-    url: https://b6enwo8026sf4k.wca1rs59sefb1kl655b0.online/api/v1/client/subscribe?token=bfb6a47406acbaebde0ddb592f45ab07
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Wolf Totem] "
+  # WolfTotem_20260412_1000g:
+  #   url: https://b6enwo8026sf4k.wca1rs59sefb1kl655b0.online/api/v1/client/subscribe?token=bfb6a47406acbaebde0ddb592f45ab07
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[Wolf Totem] "
 
   三三云_20260405_500g:
     url: https://xn--ehqa22b.site/s/32dcf4ce26c4e74be1a0a3e01e15236c
@@ -119,13 +119,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[刺客云] "
 
-  舒克加速器_20260317_50g:
-    url: https://api.xiaomidomain.lol/static/css/?token=7a1bf6150f3f78e18668854ffb5c94b8
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[舒克加速器] "
+  # 舒克加速器_20260317_50g:
+  #   url: https://api.xiaomidomain.lol/static/css/?token=7a1bf6150f3f78e18668854ffb5c94b8
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[舒克加速器] "
 
   # 公益直连机场_20260320_10T:
   #   url: https://mcp.dpenly.org/api/v1/client/subscribe?token=fae4ff84959073478e62b9d3f18168ff
