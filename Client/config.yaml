@@ -78,13 +78,13 @@ proxy-providers:
   #   override:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[特朗普云] "
-  星币_20290226_200g:
-    url: https://198.16.63.200/xbsub?token=d87e089772eeedddd50d28bc03bed124
-    proxy: 国外
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[星币] "
+  # 星币_20290226_200g:
+  #   url: https://198.16.63.200/xbsub?token=d87e089772eeedddd50d28bc03bed124
+  #   proxy: 国外
+  #   <<: *default-proxy-providers
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[星币] "
 
 #Temporary
   # WolfTotem_20260412_1000g:
@@ -151,13 +151,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[Mitce] "
 
-  TeraCloud_20260320_50g:
-    url: https://subscribe002.awsy.top/subscribego/489a9c4fb884e3efc77f98a6f10c9392
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[TeraCloud] "
+  # TeraCloud_20260320_50g:
+  #   url: https://subscribe002.awsy.top/subscribego/489a9c4fb884e3efc77f98a6f10c9392
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[TeraCloud] "
 
   # 看片云_20260309_100g:
   #   url: https://xn--9kq838ftid.shop/s/b5f31b008141e5c0cf731a858d16450b
