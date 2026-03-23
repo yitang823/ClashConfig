@@ -135,13 +135,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[公益直连机场] "
 
-  平民加速_20260320_100g:
-    url: https://a.xn--gwt061a.com/pingmin?token=6387718989fc334f16d93b9b58bc190b
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[平民加速] "
+  # 平民加速_20260320_100g:
+  #   url: https://a.xn--gwt061a.com/pingmin?token=6387718989fc334f16d93b9b58bc190b
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[平民加速] "
 
   # Mitce_100g:
   #   url: https://app.mitce.net/?sid=465913&token=srvwoaas&app=clashverge
