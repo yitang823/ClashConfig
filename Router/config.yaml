@@ -41,6 +41,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
+  Mitce:
+    url: https://app.mitce.net/?sid=533596&token=srvdhdmq
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[Mitce] "
+
   # 卷王机场1:
   #   url: https://2.juanwangjc.top/juanwang/dingyue1/sub1/babiq?token=214446242263d12cda87486c8ca350c3
   #   type: http
@@ -95,13 +103,13 @@ proxy-providers:
   #     <<: *default-proxy-providers-override
   #     additional-prefix: "[试用]-[Wolf Totem] "
 
-  三三云_20260405_500g:
-    url: https://xn--ehqa22b.site/s/32dcf4ce26c4e74be1a0a3e01e15236c
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[三三云] "
+  # 三三云_20260405_500g:
+  #   url: https://xn--ehqa22b.site/s/32dcf4ce26c4e74be1a0a3e01e15236c
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[三三云] "
   
   # 拉萨云_20260328_1000g:
   #   url: https://xn--9kqt60cjmy.shop/s/fe9489efe48e6efa1c16dc745e831cf4

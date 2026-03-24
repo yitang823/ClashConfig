@@ -41,6 +41,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[牛逼] "
 
+  Mitce:
+    url: https://app.mitce.net/?sid=533596&token=srvdhdmq
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[Mitce] "
+
   # 卷王机场1:
   #   url: https://2.juanwangjc.top/juanwang/dingyue1/sub1/babiq?token=214446242263d12cda87486c8ca350c3
   #   type: http
