@@ -95,6 +95,14 @@ proxy-providers:
   #     additional-prefix: "[星币] "
 
 #Temporary
+  仙路湾加速_20260509_100g:
+    url: https://dingyue.xlw.app/https://qd.xlw.app/s/2d0eb0f153c05ed7071521894550f7b5
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[仙路湾加速] "
+
   Moviecloud_20260501_100g:
     url: https://userid.moviecloud.sbs/movie/e18cc6b35d6bc892a37d8a0edea2d7ae
     <<: *default-proxy-providers
