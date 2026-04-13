@@ -95,6 +95,22 @@ proxy-providers:
   #     additional-prefix: "[星币] "
       
 #Temporary
+  酷客云_20260513_100g:
+    url: https://y.kukeyun.cc/s/3409239d88e45563124c208de8613a1e
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[酷客云] "
+
+  Nice加速_20260513_100g:
+    url: https://nicejump.tiaotiao.org/https://hi.nicejiasu.com/nice/4dcfe49d71326f027e28607e6319d1b8
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[Nice加速] "
+
   仙路湾加速_20260509_100g:
     url: https://dingyue.xlw.app/https://qd.xlw.app/s/2d0eb0f153c05ed7071521894550f7b5
     <<: *default-proxy-providers
