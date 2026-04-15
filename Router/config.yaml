@@ -95,6 +95,14 @@ proxy-providers:
   #     additional-prefix: "[星币] "
       
 #Temporary
+  Jige_20260515_200g:
+    url: https://sub.jige.li/s/f5034bbcd054496e7807fb07a495f97f
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[Jige] "
+      
   酷客云_20260513_100g:
     url: https://y.kukeyun.cc/s/3409239d88e45563124c208de8613a1e
     <<: *default-proxy-providers
