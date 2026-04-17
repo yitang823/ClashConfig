@@ -95,6 +95,14 @@ proxy-providers:
   #     additional-prefix: "[星币] "
       
 #Temporary
+  联通云_20260517_200g:
+    url: https://api.skybridge.cc/nba/bi/gfw/07b01d9feef6fdc8ebb28c415330c296
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[联通云] "
+
   智联网络_20260516_100g:
     url: https://sub.zlwl.org/s/33816b806d93f57449c8016b7d59adb2
     <<: *default-proxy-providers
