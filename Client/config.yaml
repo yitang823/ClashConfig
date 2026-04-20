@@ -95,7 +95,15 @@ proxy-providers:
   #     additional-prefix: "[星币] "
 
 #Temporary
-  联通云_20260517_200g:
+  喵喵_20260520_100g:
+    url: https://www.vpnmiao.site/s/d97239a1ea01e12480b1aa70788ba676
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[喵喵] "
+
+  联通云_20260517_500g:
     url: https://api.skybridge.cc/nba/bi/gfw/07b01d9feef6fdc8ebb28c415330c296
     <<: *default-proxy-providers
     proxy: 国外
