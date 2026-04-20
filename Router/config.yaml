@@ -128,7 +128,7 @@ proxy-providers:
       additional-prefix: "[试用]-[Jige] "
       
   酷客云_20260513_100g:
-    url: https://y.kukeyun.cc/s/3409239d88e45563124c208de8613a1e
+    url: https://u.kukeyun.cc/s/3409239d88e45563124c208de8613a1e
     <<: *default-proxy-providers
     proxy: 国外
     override:
