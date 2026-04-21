@@ -104,7 +104,7 @@ proxy-providers:
       additional-prefix: "[试用]-[喵喵] "
 
   联通云_20260517_200g:
-    url: https://wed.13333331.xyz/nba/bi/gfw/07b01d9feef6fdc8ebb28c415330c296
+    url: https://api.xxbsyx.com/nba/bi/gfw/07b01d9feef6fdc8ebb28c415330c296
     <<: *default-proxy-providers
     proxy: 国外
     override:
