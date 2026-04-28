@@ -112,7 +112,7 @@ proxy-providers:
       additional-prefix: "[试用]-[联通云] "
 
   智联网络_20260516_100g:
-    url: https://sub.zlwl.org/s/33816b806d93f57449c8016b7d59adb2
+    url: https://dy1.zlwl.org/nb/33816b806d93f57449c8016b7d59adb2
     <<: *default-proxy-providers
     proxy: 国外
     override:
