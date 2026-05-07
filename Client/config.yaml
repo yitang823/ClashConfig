@@ -34,7 +34,7 @@ proxy-providers:
       additional-prefix: "[星舰云] "
 
   牛逼:
-    url: https://zhuzhuzhu.whtjdasha.com/dazhutou/cdb94063e8fcc0d6da6b857e0369b315
+    url: http://47.115.220.50:5998/dazhutou/cdb94063e8fcc0d6da6b857e0369b315
     proxy: DIRECT
     <<: *default-proxy-providers
     override:
@@ -151,13 +151,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[仙路湾加速] "
 
-  Moviecloud_20260501_100g:
-    url: https://userid.moviecloud.sbs/movie/e18cc6b35d6bc892a37d8a0edea2d7ae
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Moviecloud] "
+  # Moviecloud_20260501_100g:
+  #   url: https://userid.moviecloud.sbs/movie/e18cc6b35d6bc892a37d8a0edea2d7ae
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[Moviecloud] "
   # WolfTotem_20260412_1000g:
   #   url: https://b6enwo8026sf4k.wca1rs59sefb1kl655b0.online/api/v1/client/subscribe?token=bfb6a47406acbaebde0ddb592f45ab07
   #   <<: *default-proxy-providers
