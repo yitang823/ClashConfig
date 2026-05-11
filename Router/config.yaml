@@ -95,6 +95,22 @@ proxy-providers:
   #     additional-prefix: "[星币] "
       
 #Temporary
+  OneLight_316702026_97.66TB:
+    url: https://downloads.onelighter.site/api/v1/client/subscribe?token=bd62b7c88a3faeb741d534afc1a29301
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[OneLight] "
+
+  红杏出墙_20260609_50g:
+    url: https://proxy.ht.mk/ip/1b6b8fa6d37d72ab880fc0dbf818a2c3
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[红杏出墙] "
+      
   喵喵_20260520_100g:
     url: https://www.vpnmiao.site/s/d97239a1ea01e12480b1aa70788ba676
     <<: *default-proxy-providers
@@ -143,13 +159,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[Nice加速] "
 
-  仙路湾加速_20260509_100g:
-    url: https://dingyue.xlw.app/https://qd.xlw.app/s/2d0eb0f153c05ed7071521894550f7b5
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[仙路湾加速] "
+  # 仙路湾加速_20260509_100g:
+  #   url: https://dingyue.xlw.app/https://qd.xlw.app/s/2d0eb0f153c05ed7071521894550f7b5
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[仙路湾加速] "
 
   # Moviecloud_20260501_100g:
   #   url: https://userid.moviecloud.sbs/movie/e18cc6b35d6bc892a37d8a0edea2d7ae
