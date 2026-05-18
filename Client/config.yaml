@@ -25,21 +25,21 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[星链] "
 
-  星舰云:
-    url: https://xingab.xing-avaliable.icu/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
-    proxy: 国外
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[星舰云] "
+  # 星舰云:
+  #   url: https://xingab.xing-avaliable.icu/api/v1/client/subscribe?token=37773d596b81aa1e9837dc543f8957d0
+  #   proxy: 国外
+  #   <<: *default-proxy-providers
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[星舰云] "
 
-  牛逼:
-    url: http://47.115.220.50:5998/dazhutou/cdb94063e8fcc0d6da6b857e0369b315
-    proxy: DIRECT
-    <<: *default-proxy-providers
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[牛逼] "
+  # 牛逼:
+  #   url: http://47.115.220.50:5998/dazhutou/cdb94063e8fcc0d6da6b857e0369b315
+  #   proxy: DIRECT
+  #   <<: *default-proxy-providers
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[牛逼] "
 
   Mitce:
     url: https://app.mitce.net/?sid=533596&token=srvdhdmq
@@ -103,6 +103,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[OneLight] "
 
+  穿云加速_20260616_100g:
+    url: https://chuanyun-endpoint.cc/s/000bc8361e1b525aad2182baf46bef85
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[穿云加速] "
+
   红杏出墙_20260609_50g:
     url: https://proxy.ht.mk/ip/1b6b8fa6d37d72ab880fc0dbf818a2c3
     <<: *default-proxy-providers
@@ -119,21 +127,21 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[喵喵] "
 
-  联通云_20260517_200g:
-    url: https://api.xxbsyx.com/nba/bi/gfw/07b01d9feef6fdc8ebb28c415330c296
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[联通云] "
+  # 联通云_20260517_200g:
+  #   url: https://api.xxbsyx.com/nba/bi/gfw/07b01d9feef6fdc8ebb28c415330c296
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[联通云] "
 
-  Jige_20260515_200g:
-    url: https://sub.jige.li/s/f5034bbcd054496e7807fb07a495f97f
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[Jige] "
+  # Jige_20260515_200g:
+  #   url: https://sub.jige.li/s/f5034bbcd054496e7807fb07a495f97f
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[Jige] "
 
   # 酷客云_20260513_100g:
   #   url: https://u.kukeyun.cc/s/3409239d88e45563124c208de8613a1e
