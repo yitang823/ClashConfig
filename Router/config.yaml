@@ -18,7 +18,7 @@ default-proxy-providers-override: &default-proxy-providers-override
 proxy-providers:
 #Long-Term
   星链:
-    url: https://xship.top/v1/subscribe?starlink=0-MIp_48V1G5mPjY5FkdsgTp
+    url: https://xship.best/v1/subscribe?starlink=0-MIp_48V1G5mPjY5FkdsgTp
     proxy: 国外
     <<: *default-proxy-providers
     override:
