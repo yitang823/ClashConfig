@@ -103,6 +103,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[OneLight] "
 
+  白嫖机场_20260621_100g:
+    url: https://www.baipiaoo.site/baipiao?token=1c32703e7be3ae6cc2edf87500a069db
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[白嫖机场] "
+
   穿云加速_20260616_100g:
     url: https://chuanyun-endpoint.cc/s/000bc8361e1b525aad2182baf46bef85
     <<: *default-proxy-providers
@@ -119,13 +127,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[红杏出墙] "
 
-  喵喵_20260520_100g:
-    url: https://www.vpnmiao.site/s/d97239a1ea01e12480b1aa70788ba676
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[喵喵] "
+  # 喵喵_20260520_100g:
+  #   url: https://www.vpnmiao.site/s/d97239a1ea01e12480b1aa70788ba676
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[喵喵] "
 
   # 联通云_20260517_200g:
   #   url: https://api.xxbsyx.com/nba/bi/gfw/07b01d9feef6fdc8ebb28c415330c296
