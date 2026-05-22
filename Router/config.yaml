@@ -103,6 +103,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[OneLight] "
 
+  牢大云_316702026_9.54PB:
+    url: https://api.laodayun.com/s/6905691cb7f13421c9df54fc43b6e68f
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[牢大云] " 
+
   白嫖机场_20260621_100g:
     url: https://www.baipiaoo.site/baipiao?token=1c32703e7be3ae6cc2edf87500a069db
     <<: *default-proxy-providers
