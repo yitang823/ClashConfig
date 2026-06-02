@@ -49,6 +49,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[Mitce] "
 
+  Roxi_100g:
+    url: https://sub.roxi.cc/sub/13a48205-979e-4605-a995-c407d915bee4
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[Roxi] "
+
   # 卷王机场1:
   #   url: https://2.juanwangjc.top/juanwang/dingyue1/sub1/babiq?token=214446242263d12cda87486c8ca350c3
   #   type: http
@@ -109,7 +117,15 @@ proxy-providers:
     proxy: 国外
     override:
       <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[牢大云] " 
+      additional-prefix: "[试用]-[牢大云] "
+
+  娃爪_20260701_100g:
+    url: https://b.wazhua.org/web?token=4ab9005dfcb18bb80458405fcf3c0d2b
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[娃爪] "
 
   白嫖机场_20260621_100g:
     url: https://www.baipiaoo.site/baipiao?token=1c32703e7be3ae6cc2edf87500a069db
