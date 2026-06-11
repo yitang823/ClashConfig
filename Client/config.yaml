@@ -142,13 +142,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[穿云加速] "
 
-  红杏出墙_20260609_50g:
-    url: https://proxy.ht.mk/ip/1b6b8fa6d37d72ab880fc0dbf818a2c3
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[红杏出墙] "
+  # 红杏出墙_20260609_50g:
+  #   url: https://proxy.ht.mk/ip/1b6b8fa6d37d72ab880fc0dbf818a2c3
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[红杏出墙] "
 
   # 喵喵_20260520_100g:
   #   url: https://www.vpnmiao.site/s/d97239a1ea01e12480b1aa70788ba676
