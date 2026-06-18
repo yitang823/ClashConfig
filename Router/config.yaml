@@ -119,6 +119,14 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[牢大云] "
 
+  交个朋友_20260718_100g:
+    url: http://xn--ciq7ko0lg8x.com/ggbjgpy?token=b6051e7b2cc874d59c1e3a2e1ac0993a
+    <<: *default-proxy-providers
+    proxy: 国外
+    override:
+      <<: *default-proxy-providers-override
+      additional-prefix: "[试用]-[交个朋友] "
+
   娃爪_20260701_100g:
     url: https://b.wazhua.org/web?token=4ab9005dfcb18bb80458405fcf3c0d2b
     <<: *default-proxy-providers
