@@ -135,13 +135,13 @@ proxy-providers:
       <<: *default-proxy-providers-override
       additional-prefix: "[试用]-[白嫖机场] "
 
-  穿云加速_20260616_100g:
-    url: https://chuanyun-endpoint.cc/s/000bc8361e1b525aad2182baf46bef85
-    <<: *default-proxy-providers
-    proxy: 国外
-    override:
-      <<: *default-proxy-providers-override
-      additional-prefix: "[试用]-[穿云加速] "
+  # 穿云加速_20260616_100g:
+  #   url: https://chuanyun-endpoint.cc/s/000bc8361e1b525aad2182baf46bef85
+  #   <<: *default-proxy-providers
+  #   proxy: 国外
+  #   override:
+  #     <<: *default-proxy-providers-override
+  #     additional-prefix: "[试用]-[穿云加速] "
 
   # 红杏出墙_20260609_50g:
   #   url: https://proxy.ht.mk/ip/1b6b8fa6d37d72ab880fc0dbf818a2c3
